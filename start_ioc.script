@@ -57,7 +57,7 @@ epicsEnvSet("FFT_NELM", 4096)
 ## Load plugin: FFT AI CH1
 epicsEnvSet(ECMC_FFT_ID, 0)
 epicsEnvSet(ECMC_PLUGIN_FILNAME,"/home/pi/epics/base-7.0.4/require/3.2.0/siteMods/ecmcPlugin_FFT/master/lib/${EPICS_HOST_ARCH=linux-x86_64}/libecmcPlugin_FFT.so")
-epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH1_VALUE;DBG_PRINT=0;NFFT=${FFT_NELM};RATE=1000;DC_REMOVE=1;APPLY_SCALE=1;MODE=CONT;ENABLE=1;")
+epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH1_VALUE;DBG_PRINT=0;NFFT=${FFT_NELM};RATE=1000;DC_REMOVE=1;SCALE=1;MODE=CONT;ENABLE=1;")
 ${SCRIPTEXEC} ${ecmccfg_DIR}loadPlugin.cmd, "PLUGIN_ID=${ECMC_FFT_ID},FILE=${ECMC_PLUGIN_FILNAME},CONFIG='${ECMC_PLUGIN_CONFIG}', REPORT=1"
 # Note: INDEX is the index of FFT object in FFT plugin and not PLUGIN_ID. In this case the same
 dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${FFT_NELM}")
@@ -66,7 +66,7 @@ dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${FFT
 ## Load plugin: FFT AI CH2
 epicsEnvSet(ECMC_FFT_ID, 1)
 epicsEnvSet(ECMC_PLUGIN_FILNAME,"/home/pi/epics/base-7.0.4/require/3.2.0/siteMods/ecmcPlugin_FFT/master/lib/${EPICS_HOST_ARCH=linux-x86_64}/libecmcPlugin_FFT.so")
-epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH2_VALUE;DBG_PRINT=0;NFFT=${FFT_NELM};RATE=1000;DC_REMOVE=1;APPLY_SCALE=1;MODE=CONT;ENABLE=1;")
+epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH2_VALUE;DBG_PRINT=0;NFFT=${FFT_NELM};RATE=1000;DC_REMOVE=1;SCALE==1;MODE=CONT;ENABLE=1;")
 ${SCRIPTEXEC} ${ecmccfg_DIR}loadPlugin.cmd, "PLUGIN_ID=${ECMC_FFT_ID},FILE=${ECMC_PLUGIN_FILNAME},CONFIG='${ECMC_PLUGIN_CONFIG}', REPORT=1"
 # Note: INDEX is the index of FFT object in FFT plugin and not PLUGIN_ID. In this case the same
 dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${FFT_NELM}")
@@ -75,7 +75,7 @@ dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${FFT
 ## Load plugin: FFT AI CH3
 epicsEnvSet(ECMC_FFT_ID, 2)
 epicsEnvSet(ECMC_PLUGIN_FILNAME,"/home/pi/epics/base-7.0.4/require/3.2.0/siteMods/ecmcPlugin_FFT/master/lib/${EPICS_HOST_ARCH=linux-x86_64}/libecmcPlugin_FFT.so")
-epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH3_VALUE;DBG_PRINT=0;NFFT=${FFT_NELM};RATE=1000;DC_REMOVE=1;APPLY_SCALE=1;MODE=CONT;ENABLE=1;")
+epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH3_VALUE;DBG_PRINT=0;NFFT=${FFT_NELM};RATE=1000;DC_REMOVE=1;SCALE==1;MODE=CONT;ENABLE=1;")
 ${SCRIPTEXEC} ${ecmccfg_DIR}loadPlugin.cmd, "PLUGIN_ID=${ECMC_FFT_ID},FILE=${ECMC_PLUGIN_FILNAME},CONFIG='${ECMC_PLUGIN_CONFIG}', REPORT=1"
 # Note: INDEX is the index of FFT object in FFT plugin and not PLUGIN_ID. In this case the same
 dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${FFT_NELM}")
@@ -84,7 +84,7 @@ dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${FFT
 ## Load plugin: FFT AI CH4
 epicsEnvSet(ECMC_FFT_ID, 3)
 epicsEnvSet(ECMC_PLUGIN_FILNAME,"/home/pi/epics/base-7.0.4/require/3.2.0/siteMods/ecmcPlugin_FFT/master/lib/${EPICS_HOST_ARCH=linux-x86_64}/libecmcPlugin_FFT.so")
-epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH4_VALUE;DBG_PRINT=0;NFFT=${FFT_NELM};RATE=1000;DC_REMOVE=1;APPLY_SCALE=1;MODE=CONT;ENABLE=1;")
+epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH4_VALUE;DBG_PRINT=0;NFFT=${FFT_NELM};RATE=1000;DC_REMOVE=1;SCALE==1;MODE=CONT;ENABLE=1;")
 ${SCRIPTEXEC} ${ecmccfg_DIR}loadPlugin.cmd, "PLUGIN_ID=${ECMC_FFT_ID},FILE=${ECMC_PLUGIN_FILNAME},CONFIG='${ECMC_PLUGIN_CONFIG}', REPORT=1"
 # Note: INDEX is the index of FFT object in FFT plugin and not PLUGIN_ID. In this case the same
 dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${FFT_NELM}")
