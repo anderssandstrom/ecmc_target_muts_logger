@@ -65,7 +65,7 @@ ecmcEpicsEnvSetCalc("ECMC_CH4_SCALE",   "20/30518","%lf")
 epicsEnvShow(ECMC_CH4_SCALE)   # = Scale of CH4
 
 ##############################################################################
-## Load plugin: FFT AI CH1
+## Load plugin: FFT AI CH1 : Telemess 0..15
 epicsEnvSet(ECMC_FFT_ID, 0)
 epicsEnvSet(ECMC_PLUGIN_FILNAME,"${HOME}/epics/base-7.0.4/require/3.2.0/siteMods/ecmcPlugin_FFT/master/lib/${EPICS_HOST_ARCH=linux-x86_64}/libecmcPlugin_FFT.so")
 epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH1_VALUE;DBG_PRINT=0;NFFT=${ECMC_FFT_NELM};RATE=1000;DC_REMOVE=1;SCALE=${ECMC_CH1_3_SCALE};MODE=CONT;ENABLE=1;")
@@ -74,7 +74,7 @@ ${SCRIPTEXEC} ${ecmccfg_DIR}loadPlugin.cmd, "PLUGIN_ID=${ECMC_FFT_ID},FILE=${ECM
 dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECMC_FFT_NELM}")
 
 ##############################################################################
-## Load plugin: FFT AI CH2
+## Load plugin: FFT AI CH2 : Telemess 0..15
 epicsEnvSet(ECMC_FFT_ID, 1)
 
 epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH2_VALUE;DBG_PRINT=0;NFFT=${ECMC_FFT_NELM};RATE=1000;DC_REMOVE=1;SCALE=${ECMC_CH1_3_SCALE};MODE=CONT;ENABLE=1;")
@@ -83,7 +83,7 @@ ${SCRIPTEXEC} ${ecmccfg_DIR}loadPlugin.cmd, "PLUGIN_ID=${ECMC_FFT_ID},FILE=${ECM
 dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECMC_FFT_NELM}")
 
 ##############################################################################
-## Load plugin: FFT AI CH3
+## Load plugin: FFT AI CH3 : Telemess 0..15
 epicsEnvSet(ECMC_FFT_ID, 2)
 
 epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH3_VALUE;DBG_PRINT=0;NFFT=${ECMC_FFT_NELM};RATE=1000;DC_REMOVE=1;SCALE=${ECMC_CH1_3_SCALE};MODE=CONT;ENABLE=1;")
@@ -92,7 +92,7 @@ ${SCRIPTEXEC} ${ecmccfg_DIR}loadPlugin.cmd, "PLUGIN_ID=${ECMC_FFT_ID},FILE=${ECM
 dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECMC_FFT_NELM}")
 
 ##############################################################################
-## Load plugin: FFT AI CH4
+## Load plugin: FFT AI CH4 : Telemess 0..20
 epicsEnvSet(ECMC_FFT_ID, 3)
 
 epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH4_VALUE;DBG_PRINT=0;NFFT=${ECMC_FFT_NELM};RATE=1000;DC_REMOVE=1;SCALE=${ECMC_CH4_SCALE};MODE=CONT;ENABLE=1;")
