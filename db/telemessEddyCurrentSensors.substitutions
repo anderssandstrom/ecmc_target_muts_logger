@@ -1,0 +1,15 @@
+file "ecmcEcSlave.template"
+{
+  pattern {}
+          {}
+}
+
+#Actually the scalinging is between 0..10.737V (see manual)
+file "ecmcEL3XXX-chX.template"
+{
+  pattern {CH_ID, LINR,    ESLO,             EOFF,   EGU,        PREC, LOW, LOLO,  HIGH,  HIHI,  HYST, LLSV,    LSV,     HSV,     HHSV   }
+          {1,     "SLOPE", 4.9151320532E-4,  0,      "mm",       3,    0,   -1,    15,    16,    0,    "MAJOR", "MINOR", "MINOR", "MAJOR"}
+          {2,     "SLOPE", 4.9151320532E-4,  0,      "mm",       3,    0,   -1,    15,    16,    0,    "MAJOR", "MINOR", "MINOR", "MAJOR"}
+          {3,     "SLOPE", 4.9151320532E-4,  0,      "mm",       3,    0,   -1,    15,    16,    0,    "MAJOR", "MINOR", "MINOR", "MAJOR"}
+          {4,     "SLOPE", 6.5535094042E-4,  0,      "mm",       3,    0,   -1,    20,    21,    0,    "MAJOR", "MINOR", "MINOR", "MAJOR"}
+}
