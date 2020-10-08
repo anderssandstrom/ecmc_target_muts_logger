@@ -1,0 +1,4047 @@
+####################################################################:
+General information:
+  Port:                           MC_CPU1
+  Auto-connect:                   true
+  Priority:                       0
+  Param. table size:              1000
+  Param. count:                   64
+  Default sample time [ms]:       100
+  Fastest update rate [cycles]:   10
+  Realtime loop rate [Hz]:        1000.000000
+  Realtime loop sample time [ms]: 1.000000
+
+####################################################################:
+Parameters in use:
+  Parameter 0:
+    Param name:                ecmc.asynoctet
+    Param index:               0
+    Param type:                asynUnknownType (0)
+    Supported asyn types:
+      - asynUnknownType (0)
+    Param linked to record:    false
+    ECMC name:                 ecmc.asynoctet
+    ECMC data pointer valid:   false
+    ECMC size [bytes]:         0
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            NONE
+
+  Parameter 1:
+    Param name:                ec0.s1.ENC_STATUS
+    Param index:               1
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s1.ENC_STATUS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s1.ENC_STATUS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s1-EL5021-Enc-Stat
+    Record type:               mbbiDirect
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 2:
+    Param name:                ec0.s2.CH1_STATUS
+    Param index:               2
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s2.CH1_STATUS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH1_STATUS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI1-Stat
+    Record type:               mbbiDirect
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 3:
+    Param name:                ec0.s2.CH2_STATUS
+    Param index:               3
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s2.CH2_STATUS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH2_STATUS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI2-Stat
+    Record type:               mbbiDirect
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 4:
+    Param name:                ec0.s2.CH3_STATUS
+    Param index:               4
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s2.CH3_STATUS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH3_STATUS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI3-Stat
+    Record type:               mbbiDirect
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 5:
+    Param name:                ec0.s2.CH4_STATUS
+    Param index:               5
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s2.CH4_STATUS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH4_STATUS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI4-Stat
+    Record type:               mbbiDirect
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 6:
+    Param name:                ec0.s3.STM_STATUS
+    Param index:               6
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s3.STM_STATUS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.STM_STATUS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Drv-Stat
+    Record type:               mbbiDirect
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 7:
+    Param name:                ec0.s0.slavestatus
+    Param index:               7
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s0.slavestatus?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s0.slavestatus
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s0-EK1100-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 8:
+    Param name:                ec0.s1.slavestatus
+    Param index:               8
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s1.slavestatus?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s1.slavestatus
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s1-EL5021-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 9:
+    Param name:                ec0.s2.slavestatus
+    Param index:               9
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s2.slavestatus?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.slavestatus
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 10:
+    Param name:                ec0.s3.slavestatus
+    Param index:               10
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.slavestatus?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.slavestatus
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 11:
+    Param name:                ec0.s3.OUTPUTS
+    Param index:               11
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.OUTPUTS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.OUTPUTS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-BOx-RB
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 12:
+    Param name:                ec0.s3.OUTPUTS_MASK
+    Param index:               12
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.OUTPUTS_MASK?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.OUTPUTS_MASK
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Mask-BOx-RB
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 13:
+    Param name:                ec0.s3.OUTPUTS_RB
+    Param index:               13
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.OUTPUTS_RB?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.OUTPUTS_RB
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-BOx-RB2
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 14:
+    Param name:                ec0.s3.INPUTS
+    Param index:               14
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.INPUTS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.INPUTS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-BIx
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 15:
+    Param name:                ax1.status
+    Param index:               15
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ax1.status?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ax1.status
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 16:
+    Param name:                ec0.masterstatus
+    Param index:               16
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.masterstatus?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.masterstatus
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 17:
+    Param name:                ec0.slavecounter
+    Param index:               17
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.slavecounter?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.slavecounter
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-slavecounter
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 18:
+    Param name:                ec0.memmapcounter
+    Param index:               18
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.memmapcounter?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.memmapcounter
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-memmapcounter
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 19:
+    Param name:                ec0.domainfailcountertotal
+    Param index:               19
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.domainfailcountertotal?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.domainfailcountertotal
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-domainfailcountertotal
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 20:
+    Param name:                ec0.entrycounter
+    Param index:               20
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.entrycounter?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.entrycounter
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-entrycounter
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 21:
+    Param name:                ec0.domainstatus
+    Param index:               21
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.domainstatus?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.domainstatus
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-Domain-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 22:
+    Param name:                ec0.s3.STM_CONTROL
+    Param index:               22
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.STM_CONTROL=
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            false
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.STM_CONTROL
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Drv-Cmd
+    Record type:               ao
+    Record dtyp:               asynInt32
+
+  Parameter 23:
+    Param name:                ec0.s3.VELOCITY_SETPOINT
+    Param index:               23
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.VELOCITY_SETPOINT=
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            false
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.VELOCITY_SETPOINT
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            S32
+    ECMC Value Range:          -2147483648..2147483647, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Drv-Spd
+    Record type:               ao
+    Record dtyp:               asynInt32
+
+  Parameter 24:
+    Param name:                plcs.ax1.plc.enable
+    Param index:               24
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             CMD=FLOAT64TOINT32/T_SMP_MS=10/TYPE=asynFloat64/plcs.ax1.plc.enable?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 plcs.ax1.plc.enable
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            F64
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     true
+    Record name:               IOC_TEST:Axis1-PLC-CmdEn-RB
+    Record type:               bi
+    Record dtyp:               asynInt32
+
+  Parameter 25:
+    Param name:                plcs.ax1.plc.firstscan
+    Param index:               25
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             CMD=FLOAT64TOINT32/T_SMP_MS=10/TYPE=asynFloat64/plcs.ax1.plc.firstscan?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 plcs.ax1.plc.firstscan
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            F64
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     true
+    Record name:               IOC_TEST:Axis1-PLC-firstscan
+    Record type:               bi
+    Record dtyp:               asynInt32
+
+  Parameter 26:
+    Param name:                ec0.s0.ONE
+    Param index:               26
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s0.ONE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s0.ONE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s0-EK1100-One
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 27:
+    Param name:                ec0.s0.ZERO
+    Param index:               27
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s0.ZERO?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s0.ZERO
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s0-EK1100-Zero
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 28:
+    Param name:                ec0.s1.ONE
+    Param index:               28
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s1.ONE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s1.ONE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s1-EL5021-One
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 29:
+    Param name:                ec0.s1.ZERO
+    Param index:               29
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s1.ZERO?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s1.ZERO
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s1-EL5021-Zero
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 30:
+    Param name:                ec0.s2.ONE
+    Param index:               30
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s2.ONE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.ONE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-One
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 31:
+    Param name:                ec0.s2.ZERO
+    Param index:               31
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s2.ZERO?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.ZERO
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-Zero
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 32:
+    Param name:                ec0.s3.ONE
+    Param index:               32
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s3.ONE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.ONE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-One
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 33:
+    Param name:                ec0.s3.ZERO
+    Param index:               33
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s3.ZERO?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.ZERO
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Zero
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 34:
+    Param name:                ec0.s1.POSITION
+    Param index:               34
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s1.POSITION?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s1.POSITION
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s1-EL5021-PosAct
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 35:
+    Param name:                ec0.s2.CH1_VALUE
+    Param index:               35
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s2.CH1_VALUE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH1_VALUE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI1
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 36:
+    Param name:                ec0.s2.CH2_VALUE
+    Param index:               36
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s2.CH2_VALUE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH2_VALUE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI2
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 37:
+    Param name:                ec0.s2.CH3_VALUE
+    Param index:               37
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s2.CH3_VALUE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH3_VALUE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI3
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 38:
+    Param name:                ec0.s2.CH4_VALUE
+    Param index:               38
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s2.CH4_VALUE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH4_VALUE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI4
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 39:
+    Param name:                ec0.s3.POSITION
+    Param index:               39
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.POSITION?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.POSITION
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Enc-PosAct
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 40:
+    Param name:                ec0.s3.POSITION_FB2
+    Param index:               40
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.POSITION_FB2?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.POSITION_FB2
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Enc-PosAct2
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 41:
+    Param name:                ec0.s3.CURRENT
+    Param index:               41
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.CURRENT?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.CURRENT
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Drv-Curr
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 42:
+    Param name:                ec0.s3.ANALOG_REF
+    Param index:               42
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.ANALOG_REF?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.ANALOG_REF
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-AI1
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 43:
+    Param name:                ec0.s3.ANALOG_FB
+    Param index:               43
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.ANALOG_FB?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.ANALOG_FB
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-AI2
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 44:
+    Param name:                ec0.s3.DC_VOLTAGE
+    Param index:               44
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.DC_VOLTAGE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.DC_VOLTAGE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Drv-Volt
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 45:
+    Param name:                ax1.actpos
+    Param index:               45
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynFloat64/ax1.actpos?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ax1.actpos
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            F64
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-PosAct
+    Record type:               ai
+    Record dtyp:               asynFloat64
+
+  Parameter 46:
+    Param name:                ax1.setpos
+    Param index:               46
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynFloat64/ax1.setpos?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ax1.setpos
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            F64
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-PosSet
+    Record type:               ai
+    Record dtyp:               asynFloat64
+
+  Parameter 47:
+    Param name:                ax1.poserr
+    Param index:               47
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynFloat64/ax1.poserr?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ax1.poserr
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            F64
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-PosErr
+    Record type:               ai
+    Record dtyp:               asynFloat64
+
+  Parameter 48:
+    Param name:                plcs.ax1.plc.error
+    Param index:               48
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynFloat64/plcs.ax1.plc.error?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 plcs.ax1.plc.error
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            F64
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-PLC-error
+    Record type:               ai
+    Record dtyp:               asynFloat64
+
+  Parameter 49:
+    Param name:                ecmc.appmode
+    Param index:               49
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.appmode?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.appmode
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-app-mode
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 50:
+    Param name:                ecmc.error.id
+    Param index:               50
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.error.id?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.error.id
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-ErrId
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 51:
+    Param name:                ecmc.thread.latency.min
+    Param index:               51
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.latency.min?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.latency.min
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-latency-min
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 52:
+    Param name:                ecmc.thread.latency.max
+    Param index:               52
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.latency.max?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.latency.max
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-latency-max
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 53:
+    Param name:                ecmc.thread.period.min
+    Param index:               53
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.period.min?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.period.min
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-period-min
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 54:
+    Param name:                ecmc.thread.period.max
+    Param index:               54
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.period.max?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.period.max
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-period-max
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 55:
+    Param name:                ecmc.thread.execute.min
+    Param index:               55
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.execute.min?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.execute.min
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-execute-min
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 56:
+    Param name:                ecmc.thread.execute.max
+    Param index:               56
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.execute.max?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.execute.max
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-execute-max
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 57:
+    Param name:                ecmc.thread.send.min
+    Param index:               57
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.send.min?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.send.min
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-send-min
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 58:
+    Param name:                ecmc.thread.send.max
+    Param index:               58
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.send.max?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.send.max
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-send-max
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 59:
+    Param name:                ecmc.error.reset
+    Param index:               59
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.error.reset=
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            false
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.error.reset
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-ErrRst
+    Record type:               bo
+    Record dtyp:               asynInt32
+
+  Parameter 60:
+    Param name:                ax1.diagnostic
+    Param index:               60
+    Param type:                asynParamInt8Array (6)
+    Supported asyn types:
+      - asynParamInt8Array (6)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt8ArrayIn/ax1.diagnostic?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ax1.diagnostic
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     1024
+    ECMC data is array:        true
+    ECMC write allowed:        false
+    ECMC Data type:            S8
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-Array-Stat
+    Record type:               waveform
+    Record dtyp:               asynInt8ArrayIn
+
+  Parameter 61:
+    Param name:                ax1.plc.expression
+    Param index:               61
+    Param type:                asynParamInt8Array (6)
+    Supported asyn types:
+      - asynParamInt8Array (6)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt8ArrayIn/ax1.plc.expression?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ax1.plc.expression
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     0
+    ECMC data is array:        true
+    ECMC write allowed:        false
+    ECMC Data type:            S8
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-PLCExpr-RB
+    Record type:               waveform
+    Record dtyp:               asynInt8ArrayIn
+
+  Parameter 62:
+    Param name:                ecmc.error.msg
+    Param index:               62
+    Param type:                asynParamInt8Array (6)
+    Supported asyn types:
+      - asynParamInt8Array (6)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt8ArrayIn/ecmc.error.msg?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.error.msg
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     38
+    ECMC data is array:        true
+    ECMC write allowed:        false
+    ECMC Data type:            S8
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-ErrMsg
+    Record type:               waveform
+    Record dtyp:               asynInt8ArrayIn
+
+  Parameter 63:
+    Param name:                ecmc.updated
+    Param index:               63
+    Param type:                asynParamInt32Array (8)
+    Supported asyn types:
+      - asynParamInt32Array (8)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32ArrayIn/ecmc.updated?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.updated
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        true
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-updated
+    Record type:               waveform
+    Record dtyp:               asynInt32ArrayIn
+
+####################################################################:
+Available parameters:
+  Parameter 0:
+    Param name:                ecmc.asynoctet
+    Param index:               0
+    Param type:                asynUnknownType (0)
+    Supported asyn types:
+      - asynUnknownType (0)
+    Param linked to record:    false
+    ECMC name:                 ecmc.asynoctet
+    ECMC data pointer valid:   false
+    ECMC size [bytes]:         0
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            NONE
+
+  Parameter 1:
+    Param name:                ecmc.thread.latency.min
+    Param index:               51
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.latency.min?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.latency.min
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-latency-min
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 2:
+    Param name:                ecmc.thread.latency.max
+    Param index:               52
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.latency.max?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.latency.max
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-latency-max
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 3:
+    Param name:                ecmc.thread.period.min
+    Param index:               53
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.period.min?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.period.min
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-period-min
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 4:
+    Param name:                ecmc.thread.period.max
+    Param index:               54
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.period.max?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.period.max
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-period-max
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 5:
+    Param name:                ecmc.thread.execute.min
+    Param index:               55
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.execute.min?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.execute.min
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-execute-min
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 6:
+    Param name:                ecmc.thread.execute.max
+    Param index:               56
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.execute.max?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.execute.max
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-execute-max
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 7:
+    Param name:                ecmc.thread.send.min
+    Param index:               57
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.send.min?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.send.min
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-send-min
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 8:
+    Param name:                ecmc.thread.send.max
+    Param index:               58
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.thread.send.max?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.thread.send.max
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-thread-send-max
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 9:
+    Param name:                ecmc.appmode
+    Param index:               49
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.appmode?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.appmode
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-app-mode
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 10:
+    Param name:                ecmc.error.id
+    Param index:               50
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.error.id?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.error.id
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-ErrId
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 11:
+    Param name:                ecmc.error.reset
+    Param index:               59
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ecmc.error.reset=
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            false
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.error.reset
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-ErrRst
+    Record type:               bo
+    Record dtyp:               asynInt32
+
+  Parameter 12:
+    Param name:                ecmc.error.msg
+    Param index:               62
+    Param type:                asynParamInt8Array (6)
+    Supported asyn types:
+      - asynParamInt8Array (6)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt8ArrayIn/ecmc.error.msg?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.error.msg
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     38
+    ECMC data is array:        true
+    ECMC write allowed:        false
+    ECMC Data type:            S8
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-ErrMsg
+    Record type:               waveform
+    Record dtyp:               asynInt8ArrayIn
+
+  Parameter 13:
+    Param name:                ecmc.updated
+    Param index:               63
+    Param type:                asynParamInt32Array (8)
+    Supported asyn types:
+      - asynParamInt32Array (8)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32ArrayIn/ecmc.updated?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ecmc.updated
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        true
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:MCU-updated
+    Record type:               waveform
+    Record dtyp:               asynInt32ArrayIn
+
+  Parameter 14:
+    Param name:                ec0.masterstatus
+    Param index:               16
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.masterstatus?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.masterstatus
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 15:
+    Param name:                ec0.domainstatus
+    Param index:               21
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.domainstatus?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.domainstatus
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-Domain-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 16:
+    Param name:                ec0.slavecounter
+    Param index:               17
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.slavecounter?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.slavecounter
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-slavecounter
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 17:
+    Param name:                ec0.memmapcounter
+    Param index:               18
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.memmapcounter?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.memmapcounter
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-memmapcounter
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 18:
+    Param name:                ec0.domainfailcountertotal
+    Param index:               19
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.domainfailcountertotal?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.domainfailcountertotal
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-domainfailcountertotal
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 19:
+    Param name:                ec0.entrycounter
+    Param index:               20
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.entrycounter?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.entrycounter
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            S32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-entrycounter
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 20:
+    Param name:                ec0.s0.ZERO
+    Param index:               27
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s0.ZERO?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s0.ZERO
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s0-EK1100-Zero
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 21:
+    Param name:                ec0.s0.ONE
+    Param index:               26
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s0.ONE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s0.ONE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s0-EK1100-One
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 22:
+    Param name:                ec0.s0.slavestatus
+    Param index:               7
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s0.slavestatus?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s0.slavestatus
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s0-EK1100-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 23:
+    Param name:                ec0.s1.ZERO
+    Param index:               29
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s1.ZERO?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s1.ZERO
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s1-EL5021-Zero
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 24:
+    Param name:                ec0.s1.ONE
+    Param index:               28
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s1.ONE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s1.ONE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s1-EL5021-One
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 25:
+    Param name:                ec0.s1.slavestatus
+    Param index:               8
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s1.slavestatus?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s1.slavestatus
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s1-EL5021-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 26:
+    Param name:                ec0.s1.ENC_CONTROL
+    Param index:               0
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    false
+    ECMC name:                 ec0.s1.ENC_CONTROL
+    ECMC data pointer valid:   true
+    ECMC size [bytes]:         8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U16
+
+  Parameter 27:
+    Param name:                ec0.s1.VALUE
+    Param index:               0
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    false
+    ECMC name:                 ec0.s1.VALUE
+    ECMC data pointer valid:   true
+    ECMC size [bytes]:         8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+
+  Parameter 28:
+    Param name:                ec0.s1.ENC_STATUS
+    Param index:               1
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s1.ENC_STATUS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s1.ENC_STATUS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s1-EL5021-Enc-Stat
+    Record type:               mbbiDirect
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 29:
+    Param name:                ec0.s1.POSITION
+    Param index:               34
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s1.POSITION?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s1.POSITION
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s1-EL5021-PosAct
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 30:
+    Param name:                ec0.s1.LATCH_POSITION
+    Param index:               0
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    false
+    ECMC name:                 ec0.s1.LATCH_POSITION
+    ECMC data pointer valid:   true
+    ECMC size [bytes]:         8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+
+  Parameter 31:
+    Param name:                ec0.s2.ZERO
+    Param index:               31
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s2.ZERO?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.ZERO
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-Zero
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 32:
+    Param name:                ec0.s2.ONE
+    Param index:               30
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s2.ONE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.ONE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-One
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 33:
+    Param name:                ec0.s2.slavestatus
+    Param index:               9
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s2.slavestatus?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.slavestatus
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 34:
+    Param name:                ec0.s2.CH1_STATUS
+    Param index:               2
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s2.CH1_STATUS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH1_STATUS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI1-Stat
+    Record type:               mbbiDirect
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 35:
+    Param name:                ec0.s2.CH1_VALUE
+    Param index:               35
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s2.CH1_VALUE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH1_VALUE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI1
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 36:
+    Param name:                ec0.s2.CH2_STATUS
+    Param index:               3
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s2.CH2_STATUS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH2_STATUS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI2-Stat
+    Record type:               mbbiDirect
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 37:
+    Param name:                ec0.s2.CH2_VALUE
+    Param index:               36
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s2.CH2_VALUE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH2_VALUE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI2
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 38:
+    Param name:                ec0.s2.CH3_STATUS
+    Param index:               4
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s2.CH3_STATUS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH3_STATUS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI3-Stat
+    Record type:               mbbiDirect
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 39:
+    Param name:                ec0.s2.CH3_VALUE
+    Param index:               37
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s2.CH3_VALUE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH3_VALUE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI3
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 40:
+    Param name:                ec0.s2.CH4_STATUS
+    Param index:               5
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s2.CH4_STATUS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH4_STATUS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI4-Stat
+    Record type:               mbbiDirect
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 41:
+    Param name:                ec0.s2.CH4_VALUE
+    Param index:               38
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s2.CH4_VALUE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s2.CH4_VALUE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s2-EL3174_0to10V-AI4
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 42:
+    Param name:                ec0.s3.ZERO
+    Param index:               33
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s3.ZERO?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.ZERO
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Zero
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 43:
+    Param name:                ec0.s3.ONE
+    Param index:               32
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s3.ONE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.ONE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-One
+    Record type:               longout
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 44:
+    Param name:                ec0.s3.slavestatus
+    Param index:               10
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.slavestatus?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.slavestatus
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 45:
+    Param name:                ec0.s3.STM_CONTROL
+    Param index:               22
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.STM_CONTROL=
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            false
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.STM_CONTROL
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Drv-Cmd
+    Record type:               ao
+    Record dtyp:               asynInt32
+
+  Parameter 46:
+    Param name:                ec0.s3.VELOCITY_SETPOINT
+    Param index:               23
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.VELOCITY_SETPOINT=
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            false
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.VELOCITY_SETPOINT
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            S32
+    ECMC Value Range:          -2147483648..2147483647, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Drv-Spd
+    Record type:               ao
+    Record dtyp:               asynInt32
+
+  Parameter 47:
+    Param name:                ec0.s3.OUTPUTS
+    Param index:               11
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.OUTPUTS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.OUTPUTS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-BOx-RB
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 48:
+    Param name:                ec0.s3.OUTPUTS_MASK
+    Param index:               12
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.OUTPUTS_MASK?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.OUTPUTS_MASK
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Mask-BOx-RB
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 49:
+    Param name:                ec0.s3.STM_STATUS
+    Param index:               6
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynUInt32Digital/ec0.s3.STM_STATUS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.STM_STATUS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Drv-Stat
+    Record type:               mbbiDirect
+    Record dtyp:               asynUInt32Digital
+
+  Parameter 50:
+    Param name:                ec0.s3.POSITION
+    Param index:               39
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.POSITION?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.POSITION
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Enc-PosAct
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 51:
+    Param name:                ec0.s3.CURRENT
+    Param index:               41
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.CURRENT?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.CURRENT
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Drv-Curr
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 52:
+    Param name:                ec0.s3.INPUTS
+    Param index:               14
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.INPUTS?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.INPUTS
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-BIx
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 53:
+    Param name:                ec0.s3.OUTPUTS_RB
+    Param index:               13
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.OUTPUTS_RB?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.OUTPUTS_RB
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-BOx-RB2
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 54:
+    Param name:                ec0.s3.ANALOG_REF
+    Param index:               42
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.ANALOG_REF?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.ANALOG_REF
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-AI1
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 55:
+    Param name:                ec0.s3.ANALOG_FB
+    Param index:               43
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.ANALOG_FB?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.ANALOG_FB
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-AI2
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 56:
+    Param name:                ec0.s3.DC_VOLTAGE
+    Param index:               44
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.DC_VOLTAGE?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.DC_VOLTAGE
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          16
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+    ECMC Value Range:          0..65535, 16 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Drv-Volt
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 57:
+    Param name:                ec0.s3.TEMPERATURE
+    Param index:               0
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    false
+    ECMC name:                 ec0.s3.TEMPERATURE
+    ECMC data pointer valid:   true
+    ECMC size [bytes]:         8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U16
+
+  Parameter 58:
+    Param name:                ec0.s3.POSITION_FB2
+    Param index:               40
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ec0.s3.POSITION_FB2?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ec0.s3.POSITION_FB2
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          32
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Value Range:          0..4294967295, 32 bit(s)
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:ec0-s3-iPOS8020-Enc-PosAct2
+    Record type:               ai
+    Record dtyp:               asynInt32
+
+  Parameter 59:
+    Param name:                ax1.actpos
+    Param index:               45
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynFloat64/ax1.actpos?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ax1.actpos
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            F64
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-PosAct
+    Record type:               ai
+    Record dtyp:               asynFloat64
+
+  Parameter 60:
+    Param name:                ax1.setpos
+    Param index:               46
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynFloat64/ax1.setpos?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ax1.setpos
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            F64
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-PosSet
+    Record type:               ai
+    Record dtyp:               asynFloat64
+
+  Parameter 61:
+    Param name:                ax1.poserr
+    Param index:               47
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynFloat64/ax1.poserr?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ax1.poserr
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            F64
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-PosErr
+    Record type:               ai
+    Record dtyp:               asynFloat64
+
+  Parameter 62:
+    Param name:                ax1.diagnostic
+    Param index:               60
+    Param type:                asynParamInt8Array (6)
+    Supported asyn types:
+      - asynParamInt8Array (6)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt8ArrayIn/ax1.diagnostic?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ax1.diagnostic
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     1024
+    ECMC data is array:        true
+    ECMC write allowed:        false
+    ECMC Data type:            S8
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-Array-Stat
+    Record type:               waveform
+    Record dtyp:               asynInt8ArrayIn
+
+  Parameter 63:
+    Param name:                ax1.statusbin
+    Param index:               0
+    Param type:                asynParamInt8Array (6)
+    Supported asyn types:
+      - asynParamInt8Array (6)
+    Param linked to record:    false
+    ECMC name:                 ax1.statusbin
+    ECMC data pointer valid:   true
+    ECMC size [bytes]:         168
+    ECMC data is array:        true
+    ECMC write allowed:        false
+    ECMC Data type:            S8
+
+  Parameter 64:
+    Param name:                ax1.status
+    Param index:               15
+    Param type:                asynParamInt32 (1)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt32/ax1.status?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ax1.status
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     4
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-Stat
+    Record type:               longin
+    Record dtyp:               asynInt32
+
+  Parameter 65:
+    Param name:                ax1.drv.control
+    Param index:               0
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    false
+    ECMC name:                 ax1.drv.control
+    ECMC data pointer valid:   true
+    ECMC size [bytes]:         8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            U32
+
+  Parameter 66:
+    Param name:                ax1.drv.status
+    Param index:               0
+    Param type:                asynParamUInt32Digital (3)
+    Supported asyn types:
+      - asynParamInt32 (1)
+      - asynParamUInt32Digital (3)
+    Param linked to record:    false
+    ECMC name:                 ax1.drv.status
+    ECMC data pointer valid:   true
+    ECMC size [bytes]:         8
+    ECMC data is array:        false
+    ECMC write allowed:        false
+    ECMC Data type:            U32
+
+  Parameter 67:
+    Param name:                plcs.ec0.masterstatus
+    Param index:               0
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    false
+    ECMC name:                 plcs.ec0.masterstatus
+    ECMC data pointer valid:   true
+    ECMC size [bytes]:         8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            F64
+
+  Parameter 68:
+    Param name:                ax1.plc.expression
+    Param index:               61
+    Param type:                asynParamInt8Array (6)
+    Supported asyn types:
+      - asynParamInt8Array (6)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynInt8ArrayIn/ax1.plc.expression?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 ax1.plc.expression
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     0
+    ECMC data is array:        true
+    ECMC write allowed:        false
+    ECMC Data type:            S8
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-PLCExpr-RB
+    Record type:               waveform
+    Record dtyp:               asynInt8ArrayIn
+
+  Parameter 69:
+    Param name:                plcs.ax1.plc.enable
+    Param index:               24
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             CMD=FLOAT64TOINT32/T_SMP_MS=10/TYPE=asynFloat64/plcs.ax1.plc.enable?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 plcs.ax1.plc.enable
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            F64
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     true
+    Record name:               IOC_TEST:Axis1-PLC-CmdEn-RB
+    Record type:               bi
+    Record dtyp:               asynInt32
+
+  Parameter 70:
+    Param name:                plcs.ax1.plc.error
+    Param index:               48
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             T_SMP_MS=10/TYPE=asynFloat64/plcs.ax1.plc.error?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 plcs.ax1.plc.error
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            F64
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     false
+    Record name:               IOC_TEST:Axis1-PLC-error
+    Record type:               ai
+    Record dtyp:               asynFloat64
+
+  Parameter 71:
+    Param name:                plcs.ax1.plc.scantime
+    Param index:               0
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    false
+    ECMC name:                 plcs.ax1.plc.scantime
+    ECMC data pointer valid:   true
+    ECMC size [bytes]:         8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            F64
+
+  Parameter 72:
+    Param name:                plcs.ax1.plc.firstscan
+    Param index:               25
+    Param type:                asynParamFloat64 (4)
+    Supported asyn types:
+      - asynParamFloat64 (4)
+    Param linked to record:    true
+    Param drvInfo:             CMD=FLOAT64TOINT32/T_SMP_MS=10/TYPE=asynFloat64/plcs.ax1.plc.firstscan?
+    Param sample time [ms]:    10
+    Param sample cycles []:    10
+    Param isIOIntr:            true
+    Param asyn addr:           0
+    Param alarm:               0
+    Param severity:            0
+    ECMC name:                 plcs.ax1.plc.firstscan
+    ECMC data pointer valid:   true
+    ECMC size [bits]:          0
+    ECMC max size [bytes]:     8
+    ECMC data is array:        false
+    ECMC write allowed:        true
+    ECMC Data type:            F64
+    ECMC Cmd: Uint2Float64:    false
+    ECMC Cmd: Int2Float64:     false
+    ECMC Cmd: Float642Int:     true
+    Record name:               IOC_TEST:Axis1-PLC-firstscan
+    Record type:               bi
+    Record dtyp:               asynInt32
+
+####################################################################:
+Report from base class (asynPortDriver):
+Port: MC_CPU1
+  Timestamp: 2020/10/08 11:01:53.099
+  Input EOS[2]: ;\n
+  Output EOS[2]: ;\n
+Parameter list 0
+Number of parameters is: 64
+Parameter 0 is undefined, name=ecmc.asynoctet
+Parameter 1 type=asynUInt32Digital, name=ec0.s1.ENC_STATUS, value=0xc010, status=0, risingMask=0x0, fallingMask=0x5550435f, callbackMask=0x0
+Parameter 2 type=asynUInt32Digital, name=ec0.s2.CH1_STATUS, value=0x42, status=0, risingMask=0x0, fallingMask=0x31555043, callbackMask=0x0
+Parameter 3 type=asynUInt32Digital, name=ec0.s2.CH2_STATUS, value=0x0, status=0, risingMask=0x746e4955, fallingMask=0x69443233, callbackMask=0x0
+Parameter 4 type=asynUInt32Digital, name=ec0.s2.CH3_STATUS, value=0x0, status=0, risingMask=0x746e4955, fallingMask=0x69443233, callbackMask=0x0
+Parameter 5 type=asynUInt32Digital, name=ec0.s2.CH4_STATUS, value=0x0, status=0, risingMask=0x746e4955, fallingMask=0x69443233, callbackMask=0x0
+Parameter 6 type=asynUInt32Digital, name=ec0.s3.STM_STATUS, value=0x9637, status=0, risingMask=0xb6739858, fallingMask=0x0, callbackMask=0x0
+Parameter 7 type=asynInt32, name=ec0.s0.slavestatus, value=131107, status=0
+Parameter 8 type=asynInt32, name=ec0.s1.slavestatus, value=458787, status=0
+Parameter 9 type=asynInt32, name=ec0.s2.slavestatus, value=655395, status=0
+Parameter 10 type=asynInt32, name=ec0.s3.slavestatus, value=1048611, status=0
+Parameter 11 type=asynInt32, name=ec0.s3.OUTPUTS, value=0, status=0
+Parameter 12 type=asynInt32, name=ec0.s3.OUTPUTS_MASK, value=0, status=0
+Parameter 13 type=asynInt32, name=ec0.s3.OUTPUTS_RB, value=7, status=0
+Parameter 14 type=asynInt32, name=ec0.s3.INPUTS, value=32505864, status=0
+Parameter 15 type=asynInt32, name=ax1.status, value=83887599, status=0
+Parameter 16 type=asynInt32, name=ec0.masterstatus, value=262161, status=0
+Parameter 17 type=asynInt32, name=ec0.slavecounter, value=4, status=0
+Parameter 18 type=asynInt32, name=ec0.memmapcounter, value=0, status=0
+Parameter 19 type=asynInt32, name=ec0.domainfailcountertotal, value=1134, status=0
+Parameter 20 type=asynInt32, name=ec0.entrycounter, value=27, status=0
+Parameter 21 type=asynInt32, name=ec0.domainstatus, value=458760, status=0
+Parameter 22 type=asynInt32, name=ec0.s3.STM_CONTROL, value=15, status=0
+Parameter 23 type=asynInt32, name=ec0.s3.VELOCITY_SETPOINT, value=6710868, status=0
+Parameter 24 type=asynInt32, name=plcs.ax1.plc.enable, value=0, status=0
+Parameter 25 type=asynInt32, name=plcs.ax1.plc.firstscan, value=1, status=0
+Parameter 26 type=asynUInt32Digital, name=ec0.s0.ONE, value=0xffffffff, status=0, risingMask=0x0, fallingMask=0x5550435f, callbackMask=0x0
+Parameter 27 type=asynUInt32Digital, name=ec0.s0.ZERO, value=0x0, status=0, risingMask=0x0, fallingMask=0x5550435f, callbackMask=0x2c302c31
+Parameter 28 type=asynUInt32Digital, name=ec0.s1.ONE, value=0xffffffff, status=0, risingMask=0x0, fallingMask=0x5550435f, callbackMask=0x0
+Parameter 29 type=asynUInt32Digital, name=ec0.s1.ZERO, value=0x0, status=0, risingMask=0x0, fallingMask=0x5550435f, callbackMask=0x2c302c31
+Parameter 30 type=asynUInt32Digital, name=ec0.s2.ONE, value=0xffffffff, status=0, risingMask=0x0, fallingMask=0x5550435f, callbackMask=0x0
+Parameter 31 type=asynUInt32Digital, name=ec0.s2.ZERO, value=0x0, status=0, risingMask=0x0, fallingMask=0x5550435f, callbackMask=0x2c302c31
+Parameter 32 type=asynUInt32Digital, name=ec0.s3.ONE, value=0xffffffff, status=0, risingMask=0x0, fallingMask=0x5550435f, callbackMask=0x0
+Parameter 33 type=asynUInt32Digital, name=ec0.s3.ZERO, value=0x0, status=0, risingMask=0x0, fallingMask=0x5550435f, callbackMask=0x2c302c31
+Parameter 34 type=asynInt32, name=ec0.s1.POSITION, value=0, status=0
+Parameter 35 type=asynInt32, name=ec0.s2.CH1_VALUE, value=32767, status=0
+Parameter 36 type=asynInt32, name=ec0.s2.CH2_VALUE, value=721, status=0
+Parameter 37 type=asynInt32, name=ec0.s2.CH3_VALUE, value=628, status=0
+Parameter 38 type=asynInt32, name=ec0.s2.CH4_VALUE, value=98, status=0
+Parameter 39 type=asynInt32, name=ec0.s3.POSITION, value=45313468, status=0
+Parameter 40 type=asynInt32, name=ec0.s3.POSITION_FB2, value=0, status=0
+Parameter 41 type=asynInt32, name=ec0.s3.CURRENT, value=4165, status=0
+Parameter 42 type=asynInt32, name=ec0.s3.ANALOG_REF, value=32491, status=0
+Parameter 43 type=asynInt32, name=ec0.s3.ANALOG_FB, value=669, status=0
+Parameter 44 type=asynInt32, name=ec0.s3.DC_VOLTAGE, value=30752, status=0
+Parameter 45 type=asynFloat64, name=ax1.actpos, value=7.08187, status=0
+Parameter 46 type=asynFloat64, name=ax1.setpos, value=7.08232, status=0
+Parameter 47 type=asynFloat64, name=ax1.poserr, value=0.000445003, status=0
+Parameter 48 type=asynFloat64, name=plcs.ax1.plc.error, value=0, status=0
+Parameter 49 type=asynInt32, name=ecmc.appmode, value=1, status=0
+Parameter 50 type=asynInt32, name=ecmc.error.id, value=0, status=0
+Parameter 51 type=asynInt32, name=ecmc.thread.latency.min, value=16788, status=0
+Parameter 52 type=asynInt32, name=ecmc.thread.latency.max, value=70173, status=0
+Parameter 53 type=asynInt32, name=ecmc.thread.period.min, value=975726, status=0
+Parameter 54 type=asynInt32, name=ecmc.thread.period.max, value=1037114, status=0
+Parameter 55 type=asynInt32, name=ecmc.thread.execute.min, value=77739, status=0
+Parameter 56 type=asynInt32, name=ecmc.thread.execute.max, value=336810, status=0
+Parameter 57 type=asynInt32, name=ecmc.thread.send.min, value=883950, status=0
+Parameter 58 type=asynInt32, name=ecmc.thread.send.max, value=1127261, status=0
+Parameter 59 type=asynInt32, name=ecmc.error.reset, value=0, status=0
+Parameter 60 type=asynInt8Array, name=ax1.diagnostic, value is undefined
+Parameter 61 type=asynInt8Array, name=ax1.plc.expression, value is undefined
+Parameter 62 type=asynInt8Array, name=ecmc.error.msg, value is undefined
+Parameter 63 type=asynInt32Array, name=ecmc.updated, value is undefined
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=7, userPvt=0x1189890
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=8, userPvt=0x118a138
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=9, userPvt=0x118a8a8
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=10, userPvt=0x118b048
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=11, userPvt=0x118b800
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=12, userPvt=0x118c008
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=13, userPvt=0x118c808
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=14, userPvt=0x118cff8
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=15, userPvt=0x118fb38
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=16, userPvt=0x1193a18
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=17, userPvt=0x11943a8
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=18, userPvt=0x1194b70
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=19, userPvt=0x1195358
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=20, userPvt=0x1195ba8
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=21, userPvt=0x1196318
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=24, userPvt=0x119a000
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=25, userPvt=0x119a8f8
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=34, userPvt=0x11a6418
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=35, userPvt=0x11a6dd8
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=36, userPvt=0x11a75c0
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=37, userPvt=0x11a7da8
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=38, userPvt=0x11a8590
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=22, userPvt=0x11a8d78
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=23, userPvt=0x11a93e8
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=39, userPvt=0x11a9a20
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=40, userPvt=0x11aa1f8
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=41, userPvt=0x11aa9d8
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=42, userPvt=0x11ab1c8
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=43, userPvt=0x11ab9b0
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=44, userPvt=0x11ac198
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=44, userPvt=0x11ac980
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=49, userPvt=0x11bc3f8
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=50, userPvt=0x11bced8
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=51, userPvt=0x11bd690
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=52, userPvt=0x11bdeb0
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=53, userPvt=0x11be6b0
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=54, userPvt=0x11bf438
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=55, userPvt=0x11bfd18
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=56, userPvt=0x11c0518
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=57, userPvt=0x11c0d18
+    int32 callback client address=0xb5cc3ef4, addr=-1, reason=58, userPvt=0x11c1518
+    uint32 callback client address=0xb5cd1968, addr=-1, reason=26, mask=0xffffffff, userPvt=0x119b470
+    uint32 callback client address=0xb5cd1968, addr=-1, reason=27, mask=0xffffffff, userPvt=0x119c0d8
+    uint32 callback client address=0xb5cd1968, addr=-1, reason=28, mask=0xffffffff, userPvt=0x119cbd8
+    uint32 callback client address=0xb5cd1968, addr=-1, reason=29, mask=0xffffffff, userPvt=0x119d6d8
+    uint32 callback client address=0xb5cd1968, addr=-1, reason=30, mask=0xffffffff, userPvt=0x119e1f0
+    uint32 callback client address=0xb5cd1968, addr=-1, reason=31, mask=0xffffffff, userPvt=0x119f288
+    uint32 callback client address=0xb5cd1968, addr=-1, reason=32, mask=0xffffffff, userPvt=0x119fde0
+    uint32 callback client address=0xb5cd1968, addr=-1, reason=33, mask=0xffffffff, userPvt=0x11a08f0
+    uint32 callback client address=0xb5cd1804, addr=-1, reason=1, mask=0xffff, userPvt=0x11862e8
+    uint32 callback client address=0xb5cd1804, addr=-1, reason=2, mask=0xffff, userPvt=0x1186c70
+    uint32 callback client address=0xb5cd1804, addr=-1, reason=3, mask=0xffff, userPvt=0x1187400
+    uint32 callback client address=0xb5cd1804, addr=-1, reason=4, mask=0xffff, userPvt=0x1187bd0
+    uint32 callback client address=0xb5cd1804, addr=-1, reason=5, mask=0xffff, userPvt=0x11883b0
+    uint32 callback client address=0xb5cd1804, addr=-1, reason=6, mask=0xffffffff, userPvt=0x1189108
+    float64 callback client address=0xb5cbf6f4, addr=-1, reason=45, userPvt=0x11b58a0
+    float64 callback client address=0xb5cbf6f4, addr=-1, reason=46, userPvt=0x11b61d8
+    float64 callback client address=0xb5cbf6f4, addr=-1, reason=47, userPvt=0x11ba100
+    float64 callback client address=0xb5cbf6f4, addr=-1, reason=48, userPvt=0x11ba7f0
+    int8Array callback client address=0xb5ccd190, addr=-1, reason=60, userPvt=0x11cb2c8
+    int8Array callback client address=0xb5ccd190, addr=-1, reason=61, userPvt=0x11cb808
+    int8Array callback client address=0xb5ccd190, addr=-1, reason=62, userPvt=0x11d09c0
+    int32Array callback client address=0xb5cc89e8, addr=-1, reason=63, userPvt=0x11d0fd8
+    Enum callback client address=0xb5cc6598, addr=-1, reason=24, userPvt=0x119a000
+    Enum callback client address=0xb5cc6598, addr=-1, reason=25, userPvt=0x119a8f8
+    Enum callback client address=0xb5cc7e58, addr=-1, reason=59, userPvt=0x11c9e18
+####################################################################:
