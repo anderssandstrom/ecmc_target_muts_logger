@@ -1,0 +1,42 @@
+############################################
+# ecmc PLC file to calculate phase error from timestaps:
+# MACROS:
+#  PHOTOCELL_POSTIME : EL1252 var for pos time latch of photocell (ec0.s4.CH1_LATCH_POS)
+#  TIMING_POSTIME    : EL1252 var for pos time latch of timing system (ec0.s4.CH2_LATCH_POS)
+#  MAX_PHASE_ERROR   : Maximum phase error [mm] (default 20mm)
+#  PLC_ID            : Id of this PLC
+#
+# ALWAYS output the shortest time diff.
+# NOTE: Both these devices are 64 bit which could lead to unwanted 
+#
+# Author: Anders Sandström 2020-11-20
+# 
+
+var tempPhaseErrorMM:=0;
+if(plc${PLC_ID}.firstscan) {
+  static.scaleTimeToMM:=2500*pi*14/36/1e9;
+  static.discardLatch:=1;  # First latch is rubbish
+}
+
+// Check for new latches
+if(static.oldTiming<>${TIMING_POSTIME} or static.oldPhotoCell<>${PHOTOCELL_POSTIME} ) {
+  
+  ${DBG=#}println('New latch from timing system or photo cell');
+  tempPhaseErrorMM:=(${TIMING_POSTIME}-${PHOTOCELL_POSTIME})*static.scaleTimeToMM;
+
+  # If error is below 20mm then it must be a valid phaseerror (if we are in correct speed)
+  if(abs(tempPhaseErrorMM)<${MAX_PHASE_ERROR=20}) {  
+  
+    if(not(static.discardLatch)) {
+      ${DBG=#}println('New phase error calculated');
+      static.phaseErrorMM:=tempPhaseErrorMM;  // new value will propagate to epics automatically
+    }
+    else {
+      ${DBG=#}println('First latch discarded since its rubbish!');
+      static.discardLatch:=0;
+    }
+  }
+};
+
+static.oldPhotoCell:= ${PHOTOCELL_POSTIME};
+static.oldTiming := ${TIMING_POSTIME};
