@@ -1,0 +1,37 @@
+List of activiets to tests:
+
+Note in DOC!!! Big errorbar in times estimates.
+
+MUTS:
+1. MUTS Pre-SAT (basic commissioning) No rotor:
+- Commissionig of cabinet 5days
+- Safety (overspeed, E-STOP, STOs)
+- MPS
+- Check x-axis stroke: 2 days
+- Check y-axis stroke: 2 days
+- Check z-axis stroke: 2 days
+- Rotation: 2 days
+
+2. MUTS SAT with rotor:
+Need alignment team to align rotor and encoders, positions of x,y,z
+- Rotation weeks 1-4 weeks
+- X: 2 days
+- Y: 2 days
+- Z: 2 days
+
+3 (SAT) In monolith (with rotary joints):
+Same as 1 + 2
+
+All tests with energized should be in document.
+
+What should I do?
+Add to kristoffers documents... List of activities: Ref to my docuemnt
+
+
+Add overspeed protection, Markus if already ordered and if we can connect..
+
+For info:
+MPS only stop beam and only in Z on outer limits
+
+Within 2 weeks needs to be done..
+
