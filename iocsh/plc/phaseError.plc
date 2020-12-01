@@ -25,11 +25,11 @@ if(static.oldTiming<>${TIMING_POSTIME} or static.oldPhotoCell<>${PHOTOCELL_POSTI
   tempPhaseErrorMM:=(${TIMING_POSTIME}-${PHOTOCELL_POSTIME})*static.scaleTimeToMM;
 
   # If error is below 20mm then it must be a valid phaseerror (if we are in correct speed)
-  if(abs(tempPhaseErrorMM)<${MAX_PHASE_ERROR=20}) {  
+  if(tempPhaseErrorMM<${MAX_PHASE_ERROR=20} and tempPhaseErrorMM>${MIN_PHASE_ERROR=0}) {  
   
     if(not(static.discardLatch)) {
       ${DBG=#}println('New phase error calculated');
-      static.phaseErrorMM:=tempPhaseErrorMM;  // new value will propagate to epics automatically
+      static.phaseErrorMM:=-tempPhaseErrorMM;  // new value will propagate to epics automatically
     }
     else {
       ${DBG=#}println('First latch discarded since its rubbish!');

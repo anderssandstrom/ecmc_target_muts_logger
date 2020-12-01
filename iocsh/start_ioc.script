@@ -27,7 +27,7 @@ epicsEnvSet("ECMC_EC_SLAVE_NUM",              "1")
 ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL5021, SUBST_FILE=../db/amo.substitutions"
 
 # Enable reset on c-latch (index track)
-ecmcConfigOrDie "Cfg.EcAddSdo($(ECMC_EC_SLAVE_NUM),0x8000,0x1,1,1)"
+#ecmcConfigOrDie "Cfg.EcAddSdo($(ECMC_EC_SLAVE_NUM),0x8000,0x1,1,1)"
 
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "2")
 ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL3174_0to10V, SUBST_FILE=../db/telemessEddyCurrentSensors.substitutions"
@@ -54,9 +54,10 @@ ${SCRIPTEXEC} ${ecmccfg_DIR}ecmcEL3164-Sensor-chX-default.cmd
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "3")
 ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL9505"
 
+#epicsEnvSet("ECMC_SAMPLE_RATE_MS", 1)
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "4")
 ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL1252"
-
+#epicsEnvSet("ECMC_SAMPLE_RATE_MS", 10)
 #Apply hardware configuration
 ecmcConfigOrDie "Cfg.EcApplyConfig(1)"
 
@@ -66,7 +67,7 @@ require ecmc_plugin_fft master  # to get access to db file..
 
 # Decide how many revs to FFT then calc buffer size
 epicsEnvSet("ECMC_REVS_TO_FFT", 10)
-epicsEnvSet("ECMC_FFT_RATE", 100)
+epicsEnvSet("ECMC_FFT_RATE", 1000)
 ecmcEpicsEnvSetCalc("ECMC_FFT_NELM",   "${ECMC_REVS_TO_FFT=2}*36.0/14.0*${ECMC_FFT_RATE=1000}","%d")
 
 # Scale sensors in mm (same as in ./db/telemessEddyCurrentSensors.substitutions)
@@ -131,7 +132,7 @@ dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECM
 
 ##############################################################################
 ## PLC 0: For calculating the phase error
-$(SCRIPTEXEC) $(ecmccfg_DIR)loadPLCFile.cmd, "PLC_ID=0, SAMPLE_RATE_MS=10,FILE=./plc/phaseError.plc, PLC_MACROS='DBG=#,PLC_ID=0,PHOTOCELL_POSTIME=ec0.s4.CH1_LATCH_POS,TIMING_POSTIME=ec0.s4.CH2_LATCH_POS,MAX_PHASE_ERROR=20'")
+$(SCRIPTEXEC) $(ecmccfg_DIR)loadPLCFile.cmd, "PLC_ID=0, SAMPLE_RATE_MS=10,FILE=./plc/phaseError.plc, PLC_MACROS='DBG=#,PLC_ID=0,PHOTOCELL_POSTIME=ec0.s4.CH1_LATCH_POS,TIMING_POSTIME=ec0.s4.CH2_LATCH_POS,MIN_PHASE_ERROR=0,MAX_PHASE_ERROR=5'")
 dbLoadRecords("ecmcPlcAnalog.db","P=$(IOC):,PORT=MC_CPU1,ASYN_NAME=plcs.plc0.static.phaseErrorMM,REC_NAME=-PhaseErrorMM,TSE=0,T_SMP_MS=10")
 
 ##############################################################################
