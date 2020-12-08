@@ -91,7 +91,7 @@ epicsEnvSet(ECMC_PLUGIN_FILNAME,"${HOME}/epics/base-7.0.4/require/3.3.0/siteMods
 epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s1.POSITION;RM_LIN=1;DBG_PRINT=0;NFFT=${ECMC_FFT_NELM};RATE=${ECMC_FFT_RATE};RM_DC=1;SCALE=${ECMC_ENC_SCALE} ;MODE=CONT;ENABLE=1;")
 ${SCRIPTEXEC} ${ecmccfg_DIR}loadPlugin.cmd, "PLUGIN_ID=${ECMC_FFT_ID},FILE=${ECMC_PLUGIN_FILNAME},CONFIG='${ECMC_PLUGIN_CONFIG}', REPORT=0"
 # Note: INDEX is the index of FFT object in FFT plugin and not PLUGIN_ID. In this case the same
-dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECMC_FFT_NELM}, ,AMP_DESC='Position amplitude',AMP_EGU='°',RAW_DESC='Position',AMP_EGU='°',TITLE='FFT for rotational AMO encoder'")
+dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECMC_FFT_NELM}, ,AMP_DESC='Position amplitude',AMP_EGU='°',RAW_DESC='Position',RAW_EGU='°',TITLE='FFT for rotational AMO encoder'")
 
 ##############################################################################
 ## Load plugin: FFT AI CH1 : Telemess 0..15
@@ -99,7 +99,7 @@ epicsEnvSet(ECMC_FFT_ID, 1)
 epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH1_VALUE;DBG_PRINT=0;NFFT=${ECMC_FFT_NELM};RATE=${ECMC_FFT_RATE};RM_DC=1;SCALE=${ECMC_CH1_3_SCALE};MODE=CONT;ENABLE=1;")
 ${SCRIPTEXEC} ${ecmccfg_DIR}loadPlugin.cmd, "PLUGIN_ID=${ECMC_FFT_ID},FILE=${ECMC_PLUGIN_FILNAME},CONFIG='${ECMC_PLUGIN_CONFIG}', REPORT=1"
 # Note: INDEX is the index of FFT object in FFT plugin and not PLUGIN_ID. In this case the same
-dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECMC_FFT_NELM},AMP_DESC='Position amplitude',AMP_EGU='mm',RAW_DESC='Position',AMP_EGU='mm',TITLE='FFT for Telemess sensor 0°'")
+dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECMC_FFT_NELM},AMP_DESC='Position amplitude',AMP_EGU='mm',RAW_DESC='Position',RAW_EGU='mm',TITLE='FFT for Telemess sensor 0°'")
 
 ##############################################################################
 ## Load plugin: FFT AI CH2 : Telemess 0..15
@@ -108,7 +108,7 @@ epicsEnvSet(ECMC_FFT_ID, 2)
 epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH2_VALUE;DBG_PRINT=0;NFFT=${ECMC_FFT_NELM};RATE=${ECMC_FFT_RATE};RM_DC=1;SCALE=${ECMC_CH1_3_SCALE};MODE=CONT;ENABLE=1;")
 ${SCRIPTEXEC} ${ecmccfg_DIR}loadPlugin.cmd, "PLUGIN_ID=${ECMC_FFT_ID},FILE=${ECMC_PLUGIN_FILNAME},CONFIG='${ECMC_PLUGIN_CONFIG}', REPORT=0"
 # Note: INDEX is the index of FFT object in FFT plugin and not PLUGIN_ID. In this case the same
-dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECMC_FFT_NELM},AMP_DESC='Position amplitude',AMP_EGU='mm',RAW_DESC='Position',AMP_EGU='mm',TITLE='FFT for Telemess sensor 120°'")
+dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECMC_FFT_NELM},AMP_DESC='Position amplitude',AMP_EGU='mm',RAW_DESC='Position',RAW_EGU='mm',TITLE='FFT for Telemess sensor 120°'")
 
 ##############################################################################
 ## Load plugin: FFT AI CH3 : Telemess 0..15
@@ -117,7 +117,7 @@ epicsEnvSet(ECMC_FFT_ID, 3)
 epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH3_VALUE;DBG_PRINT=0;NFFT=${ECMC_FFT_NELM};RATE=${ECMC_FFT_RATE};RM_DC=1;SCALE=${ECMC_CH1_3_SCALE};MODE=CONT;ENABLE=1;")
 ${SCRIPTEXEC} ${ecmccfg_DIR}loadPlugin.cmd, "PLUGIN_ID=${ECMC_FFT_ID},FILE=${ECMC_PLUGIN_FILNAME},CONFIG='${ECMC_PLUGIN_CONFIG}', REPORT=0"
 # Note: INDEX is the index of FFT object in FFT plugin and not PLUGIN_ID. In this case the same
-dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECMC_FFT_NELM}, ,AMP_DESC='Position amplitude',AMP_EGU='mm',RAW_DESC='Position',AMP_EGU='mm',TITLE='FFT for Telemess sensor 240°'")
+dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECMC_FFT_NELM}, ,AMP_DESC='Position amplitude',AMP_EGU='mm',RAW_DESC='Position',RAW_EGU='mm',TITLE='FFT for Telemess sensor 240°'")
 
 ##############################################################################
 ## Load plugin: FFT AI CH4 : Telemess 0..20
@@ -126,7 +126,7 @@ epicsEnvSet(ECMC_FFT_ID, 4)
 epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH4_VALUE;DBG_PRINT=0;NFFT=${ECMC_FFT_NELM};RATE=${ECMC_FFT_RATE};RM_DC=1;SCALE=${ECMC_CH4_SCALE};MODE=CONT;ENABLE=1;")
 ${SCRIPTEXEC} ${ecmccfg_DIR}loadPlugin.cmd, "PLUGIN_ID=${ECMC_FFT_ID},FILE=${ECMC_PLUGIN_FILNAME},CONFIG='${ECMC_PLUGIN_CONFIG}', REPORT=0"
 # Note: INDEX is the index of FFT object in FFT plugin and not PLUGIN_ID. In this case the same
-dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECMC_FFT_NELM},AMP_DESC='Position amplitude',AMP_EGU='mm',RAW_DESC='Position',AMP_EGU='mm',TITLE='FFT for Telemess sensor vertical'")
+dbLoadRecords(ecmcPluginFFT.template,"P=$(IOC):,INDEX=${ECMC_FFT_ID}, NELM=${ECMC_FFT_NELM},AMP_DESC='Position amplitude',AMP_EGU='mm',RAW_DESC='Position',RAW_EGU='mm',TITLE='FFT for Telemess sensor vertical'")
 
 ##############################################################################
 ## PLC 0: For calculating the phase error
