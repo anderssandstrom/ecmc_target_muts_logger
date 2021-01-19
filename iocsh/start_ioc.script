@@ -87,7 +87,7 @@ ecmcEpicsEnvSetCalc("ECMC_ENC_SCALE",   "360/2097152","%lf")
 ##############################################################################
 ## Load plugin: FFT AMO encoder
 epicsEnvSet(ECMC_FFT_ID, 0)
-epicsEnvSet(ECMC_PLUGIN_FILNAME,"${HOME}/epics/base-7.0.4/require/3.3.0/siteMods/ecmc_plugin_fft/master/lib/${EPICS_HOST_ARCH=linux-x86_64}/libecmc_plugin_fft.so")
+epicsEnvSet(ECMC_PLUGIN_FILNAME,"${HOME}/epics/base-7.0.4/require/${E3_REQUIRE_VERSION}/siteMods/ecmc_plugin_fft/master/lib/${EPICS_HOST_ARCH=linux-x86_64}/libecmc_plugin_fft.so")
 epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s1.POSITION;RM_LIN=1;DBG_PRINT=0;NFFT=${ECMC_FFT_NELM};RATE=${ECMC_FFT_RATE};RM_DC=1;SCALE=${ECMC_ENC_SCALE} ;MODE=CONT;ENABLE=1;")
 ${SCRIPTEXEC} ${ecmccfg_DIR}loadPlugin.cmd, "PLUGIN_ID=${ECMC_FFT_ID},FILE=${ECMC_PLUGIN_FILNAME},CONFIG='${ECMC_PLUGIN_CONFIG}', REPORT=0"
 # Note: INDEX is the index of FFT object in FFT plugin and not PLUGIN_ID. In this case the same
