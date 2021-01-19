@@ -42,6 +42,10 @@ WARNING: The EL1252-0050 is a 5V terminal and will break if a 24 V signal is con
 The phase is calculated as the difference between the two timestamps by a ecmc plc. Phase errors bigger than 20mm will be filtered away by the plc.
 
 ## Start ioc
+
+Note: Require version 3.4.0
+
+Note: Use ecmccomgui_py36 to activate python env for ecmccomgui
 ```
 $ cd iosch
 $ iocsh.bash start_ioc.script

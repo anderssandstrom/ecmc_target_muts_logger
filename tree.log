@@ -1,0 +1,88 @@
+.
+├── cfg
+│   └── ipos8020_mod_1.ax
+├── db
+│   ├── amo.substitutions
+│   └── telemessEddyCurrentSensors.substitutions
+├── doc
+│   ├── amo
+│   │   ├── 1206103-21_Cables_and_Connectors_en_01.pdf
+│   │   ├── amosinEncoder.pdf
+│   │   └── heidenhain_cable.jpg
+│   ├── gui
+│   │   └── ecmcFFTMainGui.png
+│   ├── hardware.log
+│   ├── logfile.log
+│   ├── MutsTests.txt
+│   ├── params.log
+│   └── pvs.log
+├── iocsh
+│   ├── obsolete
+│   │   └── start_ioc_ipos.script
+│   ├── plc
+│   │   └── phaseError.plc
+│   ├── pvs.log
+│   └── start_ioc.script
+├── rats_data
+│   ├── 20210119
+│   │   ├── 0_data.npz
+│   │   ├── 0.png
+│   │   ├── 0_zoom.png
+│   │   ├── 120_data.npz
+│   │   ├── 120.png
+│   │   ├── 120_zoom.png
+│   │   ├── 240_data.npz
+│   │   ├── 240.png
+│   │   ├── 240_zoom.png
+│   │   ├── encoder_data.npz
+│   │   ├── encoder.png
+│   │   └── encoder_zoom.png
+│   └── old_sensor_conf
+│       ├── README.md
+│       ├── ref
+│       │   ├── data_1_ref_1000_day2.npz
+│       │   ├── data_1_ref_100.npz
+│       │   ├── data_1_ref.npz
+│       │   ├── data_2_ref_1000_day2.npz
+│       │   ├── data_2_ref_100.npz
+│       │   ├── data_2_ref.npz
+│       │   ├── data_3_ref_1000_day2.npz
+│       │   ├── data_3_ref_100.npz
+│       │   ├── data_3_ref.npz
+│       │   ├── data_AMO_ref_1000_day2.npz
+│       │   ├── data_AMO_ref_1000.npz
+│       │   └── data_AMO_ref_100.npz
+│       ├── unbalance_day2_100Nm
+│       │   ├── data_1_1000__100nm_day2_2.npz
+│       │   ├── data_1_1000__100nm_day2.npz
+│       │   ├── data_2_1000__100nm_day2_2.npz
+│       │   ├── data_2_1000__100nm_day2.npz
+│       │   ├── data_3_1000__100nm_day2_2.npz
+│       │   ├── data_3_1000__100nm_day2.npz
+│       │   ├── data_AMO_1000_100nm_day2_2.npz
+│       │   ├── data_AMO_1000_100nm_day2.npz
+│       │   └── phaseErrorBoxVsTDU_100nm.log
+│       ├── unbalance_day2_50Nm
+│       │   ├── data_1_1000_day2_2.npz
+│       │   ├── data_1_1000_day2.npz
+│       │   ├── data_2_1000_day2_2.npz
+│       │   ├── data_2_1000_day2.npz
+│       │   ├── data_3_1000_day2_2.npz
+│       │   ├── data_3_1000_day2_3.npz
+│       │   ├── data_3_1000_day2.npz
+│       │   ├── data_Pos_1000_day2_2.npz
+│       │   ├── data_Pos_1000_day2.npz
+│       │   ├── phaseErrorBoxVsTDU_2.log
+│       │   └── phaseErrorBoxVsTDU.log
+│       └── unbalance_day3_100Nm
+│           ├── ch0_Superimpose_100Nm.npz
+│           ├── ch1_Superimpose_100Nm.npz
+│           ├── ch2_Superimpose_100Nm.npz
+│           ├── phaseErrorBoxVsTDU_100nm_day3.log
+│           ├── Position_Superimpose_100Nm_2.npz
+│           ├── Position_Superimpose_100Nm.npz
+│           └── readme.md
+├── README.md
+└── tree.log
+
+15 directories, 70 files
