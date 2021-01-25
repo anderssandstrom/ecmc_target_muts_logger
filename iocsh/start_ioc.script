@@ -15,6 +15,11 @@ require ecmccfg develop
 # run module startup.cmd (only needed at ESS  PSI auto call at require)
 $(ECMCCFG_INIT)$(SCRIPTEXEC) ${ecmccfg_DIR}startup.cmd, "IOC=$(IOC),ECMC_VER=develop,stream_VER=2.8.10, EC_RATE=1000"
 
+dbLoadDatabase ./menuConvert.dbd
+dbDumpBreaktable
+dbLoadRecords ./bptTelemess33018_21876.dbd
+dbDumpBreaktable
+
 ##############################################################################
 ## Configure hardware:
 
