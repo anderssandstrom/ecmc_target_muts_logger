@@ -75,17 +75,6 @@ epicsEnvSet("ECMC_REVS_TO_FFT", 10)
 epicsEnvSet("ECMC_FFT_RATE", 1000)
 ecmcEpicsEnvSetCalc("ECMC_FFT_NELM",   "${ECMC_REVS_TO_FFT=2}*36.0/14.0*${ECMC_FFT_RATE=1000}","%d")
 
-# Scale sensors in mm (same as in ./db/telemessEddyCurrentSensors.substitutions)
-# According to EL3174 doc: 0..10V is 0..30518  (10.737V = 32767)
-# CH1 0..15mm =>  scale = 15/30518
-# CH1 0..15mm =>  scale = 15/30518
-# CH1 0..15mm =>  scale = 15/30518
-ecmcEpicsEnvSetCalc("ECMC_CH1_3_SCALE", "15/30518","%lf")
-epicsEnvShow(ECMC_CH1_3_SCALE) # = Scale of CH1..CH3
-# CH4 0..20mm =>  scale = 20/30518
-ecmcEpicsEnvSetCalc("ECMC_CH4_SCALE",   "20/30518","%lf")
-epicsEnvShow(ECMC_CH4_SCALE)   # = Scale of CH4
-
 # Scale encoder in deg (21 bit per rev)
 ecmcEpicsEnvSetCalc("ECMC_ENC_SCALE",   "360/2097152","%lf")
 
@@ -147,8 +136,6 @@ epicsEnvUnset(ECMC_FFT_NELM)
 epicsEnvUnset(ECMC_REVS_TO_FFT)
 epicsEnvUnset(ECMC_PLUGIN_CONFIG)
 epicsEnvUnset(ECMC_PLUGIN_FILNAME)
-epicsEnvUnset(ECMC_CH1_3_SCALE)
-epicsEnvUnset(ECMC_CH4_SCALE)
 epicsEnvUnset(ECMC_ENC_SCALE)
 
 ##############################################################################
