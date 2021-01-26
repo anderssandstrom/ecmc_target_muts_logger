@@ -1,25 +1,8 @@
 # Calibration data for Telemess combination:
-#   Sensor:    33018
-#   Amplifier: 21876
-#   Range:     0..15mm
-breaktable(typeTelemess33018_21876) {
-	2594.03 0
-	4119.93 1.5
-    6195.15 3
-    8911.26 4.5
-    12024.09 6
-    15259.00 7.5
-    18341.32 9
-    21301.56 10.5
-    24597.51 12
-    27466.20 13.5
-    29388.83 15
-}
-
-# Calibration data for Telemess combination:
-#   Sensor:    33020
-#   Amplifier: 21877
-#   Range:     0..15mm
+#   Sensor:            33020
+#   Amplifier:         21877
+#   Range:             0..15mm
+#   Sensor AI channel: 1
 breaktable(typeTelemess33020_21877) {
 	2502.48 0
 	4058.89 1.5
@@ -35,9 +18,10 @@ breaktable(typeTelemess33020_21877) {
 }
 
 # Calibration data for Telemess combination:
-#   Sensor:    33021
-#   Amplifier: 21878
-#   Range:     0..15mm
+#   Sensor:            33021
+#   Amplifier:         21878
+#   Range:             0..15mm
+#   Sensor AI channel: 2
 breaktable(typeTelemess33021_21878) {
 	2532.99 0
 	4058.89 1.5
@@ -53,9 +37,29 @@ breaktable(typeTelemess33021_21878) {
 }
 
 # Calibration data for Telemess combination:
-#   Sensor:    32900
-#   Amplifier: 21875
-#   Range:     0..10mm
+#   Sensor:            33018
+#   Amplifier:         21876
+#   Range:             0..15mm
+#   Sensor AI channel: 3
+breaktable(typeTelemess33018_21876) {
+	2594.03 0
+	4119.93 1.5
+    6195.15 3
+    8911.26 4.5
+    12024.09 6
+    15259.00 7.5
+    18341.32 9
+    21301.56 10.5
+    24597.51 12
+    27466.20 13.5
+    29388.83 15
+}
+
+# Calibration data for Telemess combination:
+#   Sensor:            32900
+#   Amplifier:         21875
+#   Range:             0..10mm
+#   Sensor AI channel: 4
 breaktable(typeTelemess32900_21875) {
 	2319.37 0
 	4119.93 1
