@@ -11,14 +11,13 @@ epicsEnvSet("ECMCCFG_INIT" ,"")  #Only run startup once (auto at PSI, need call 
 epicsEnvSet("SCRIPTEXEC" ,"$(SCRIPTEXEC="iocshLoad")")
 
 require ecmccfg develop
+require iocshutils 2.10.0  # For updateMenuConvert()
 
 # run module startup.cmd (only needed at ESS  PSI auto call at require)
 $(ECMCCFG_INIT)$(SCRIPTEXEC) ${ecmccfg_DIR}startup.cmd, "IOC=$(IOC),ECMC_VER=develop,stream_VER=2.8.10, EC_RATE=1000"
 
-dbLoadDatabase ./menuConvert.dbd
-dbDumpBreaktable
-dbLoadRecords ./bptTelemess33018_21876.dbd
-dbDumpBreaktable
+dbLoadRecords ./bptTypeTelemess33018_21876.dbd
+updateMenuConvert
 
 ##############################################################################
 ## Configure hardware:
