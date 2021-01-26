@@ -58,18 +58,18 @@ breaktable(typeTelemess33018_21876) {
 # Calibration data for Telemess combination:
 #   Sensor:            32900
 #   Amplifier:         21875
-#   Range:             0..10mm
+#   Range:             0..20mm
 #   Sensor AI channel: 4
 breaktable(typeTelemess32900_21875) {
 	2319.37 0
-	4119.93 1
-    6408.78 2
-    9094.36 3
-    12115.65 4
-    15259.00 5
-    18371.84 6
-    21454.15 7
-    24536.47 8
-    27405.16 9
-    29724.53 10
+	4119.93 2
+    6408.78 4
+    9094.36 6
+    12115.65 8
+    15259.00 10
+    18371.84 12
+    21454.15 14
+    24536.47 16
+    27405.16 18
+    29724.53 20
 }

@@ -1,9 +1,9 @@
 registerChannelProviderLocal firstTime true
 #
-# Start at "2021-W04-Jan26-0935-31-CET"
+# Start at "2021-W04-Jan26-0952-21-CET"
 #
 # Version information:
-# European Spallation Source ERIC : iocsh.bash (3.4.0-PID-7064)
+# European Spallation Source ERIC : iocsh.bash (3.4.0-PID-8726)
 #
 # --->--> snip -->--> 
 # Please Use Version and other environment variables
@@ -31,10 +31,10 @@ registerChannelProviderLocal firstTime true
 # --->--> snip -->--> 
 #
 # Set REQUIRE_IOC for its internal PVs
-epicsEnvSet REQUIRE_IOC "REQMOD:mcag-trgt-muts--7064"
+epicsEnvSet REQUIRE_IOC "REQMOD:mcag-trgt-muts--8726"
 #
 # Enable an exit subroutine for sotfioc
-dbLoadRecords "/home/dev/epics/base-7.0.4/db/softIocExit.db" "IOC=REQMOD:mcag-trgt-muts--7064"
+dbLoadRecords "/home/dev/epics/base-7.0.4/db/softIocExit.db" "IOC=REQMOD:mcag-trgt-muts--8726"
 #
 # Set E3_IOCSH_TOP for the absolute path where iocsh.bash is executed.
 epicsEnvSet E3_IOCSH_TOP "/home/dev/sources/ecmc_target_muts_logger/iocsh"
@@ -201,24 +201,17 @@ epicsEnvSet("ECMC_PREC",              3)
 epicsEnvSet("ECMC_AXISFIELDINIT",     "")                  # Extra field init to motor record
 epicsEnvSet("ECMC_AXISCONFIG",        "")                  # Extra parameters to driver
 ############################################################
-############# ASYN2021/01/26 09:35:31.905 
+############# ASYN2021/01/26 09:52:21.660 
 ECMC Initializes.............
-2021/01/26 09:35:31.905 ESS Open Source EtherCAT Motion Control Epics Module2021/01/26 09:35:31.905 
+2021/01/26 09:52:21.660 ESS Open Source EtherCAT Motion Control Epics Module2021/01/26 09:52:21.660 
 Mode: Configuration
-2021/01/26 09:35:31.905 OK
-2021/01/26 09:35:31.905 OK
-2021/01/26 09:35:31.905 OK
-2021/01/26 09:35:31.906 OK
-2021/01/26 09:35:31.906 OK
-2021/01/26 09:35:31.906 OK
-2021/01/26 09:35:31.906 OK
-0  0:0  PREOP  +  EK1100 EtherCAT-Koppler (2A E-Bus)
-1  0:1  PREOP  +  EL5021 1Ch. Sin/Cos Encoder
-2  0:2  PREOP  +  EL3174-0002 4K. Ana. Eingang  +/-10V, +/-20mA, 16 Bit, Galvanis
-3  0:3  PREOP  +  EL9505 Netzteilklemme 5V
-4  0:4  PREOP  +  EL1252-0050 2K. Fast Dig. Eingang 5V, 1µs, DC Latch
-2021/01/26 09:35:31.910 OK
-2021/01/26 09:35:31.910 OK
+2021/01/26 09:52:21.660 OK
+2021/01/26 09:52:21.660 OK
+2021/01/26 09:52:21.660 OK
+2021/01/26 09:52:21.660 OK
+2021/01/26 09:52:21.660 OK
+2021/01/26 09:52:21.660 OK
+2021/01/26 09:52:21.660 OK
  Configuration:
 epicsEnvSet("ECMC_MOTOR_PORT"     "MCU1")
 epicsEnvSet("ECMC_ASYN_PORT"      "MC_CPU1")
@@ -271,6 +264,73 @@ Adding breakpoint table "typeTelemess32900_21875" to menuConvert.
 Adding breakpoint table "typeTelemess33018_21876" to menuConvert.
 Adding breakpoint table "typeTelemess33020_21877" to menuConvert.
 Adding breakpoint table "typeTelemess33021_21878" to menuConvert.
+dbDumpBreaktable
+breaktable(typeTelemess32900_21875) {
+	raw=2319.370000 slope=1.110766e-03 eng=0.000000
+	raw=4119.930000 slope=8.738013e-04 eng=2.000000
+	raw=6408.780000 slope=7.447181e-04 eng=4.000000
+	raw=9094.360000 slope=6.619689e-04 eng=6.000000
+	raw=12115.650000 slope=6.362639e-04 eng=8.000000
+	raw=15259.000000 slope=6.425001e-04 eng=10.000000
+	raw=18371.840000 slope=6.488640e-04 eng=12.000000
+	raw=21454.150000 slope=6.488619e-04 eng=14.000000
+	raw=24536.470000 slope=6.971823e-04 eng=16.000000
+	raw=27405.160000 slope=8.623031e-04 eng=18.000000
+	raw=29724.530000 slope=8.623031e-04 eng=20.000000
+}
+breaktable(typeTelemess33018_21876) {
+	raw=2594.030000 slope=9.830264e-04 eng=0.000000
+	raw=4119.930000 slope=7.228149e-04 eng=1.500000
+	raw=6195.150000 slope=5.522604e-04 eng=3.000000
+	raw=8911.260000 slope=4.818766e-04 eng=4.500000
+	raw=12024.090000 slope=4.636914e-04 eng=6.000000
+	raw=15259.000000 slope=4.866464e-04 eng=7.500000
+	raw=18341.320000 slope=5.067157e-04 eng=9.000000
+	raw=21301.560000 slope=4.551040e-04 eng=10.500000
+	raw=24597.510000 slope=5.228868e-04 eng=12.000000
+	raw=27466.200000 slope=7.801813e-04 eng=13.500000
+	raw=29388.830000 slope=7.801813e-04 eng=15.000000
+}
+breaktable(typeTelemess33020_21877) {
+	raw=2502.480000 slope=9.637563e-04 eng=0.000000
+	raw=4058.0  0:0  PREOP  +  EK1100 EtherCAT-Koppler (2A E-Bus)
+1  0:1  PREOP  +  EL5021 1Ch. Sin/Cos Encoder
+2  0:2  PREOP  +  EL3174-0002 4K. Ana. Eingang  +/-10V, +/-20mA, 16 Bit, Galvanis
+3  0:3  PREOP  +  EL9505 Netzteilklemme 5V
+4  0:4  PREOP  +  EL1252-0050 2K. Fast Dig. Eingang 5V, 1µs, DC Latch
+2021/01/26 09:52:21.664 OK
+2021/01/26 09:52:21.664 OK
+2021/01/26 09:52:21.665 OK
+2021/01/26 09:52:21.676 OK
+2021/01/26 09:52:21.676 OK
+2021/01/26 09:52:21.676 OK
+2021/01/26 09:52:21.676 OK
+2021/01/26 09:52:21.676 OK
+2021/01/26 09:52:21.676 OK
+890000 slope=7.123353e-04 eng=1.500000
+	raw=6164.640000 slope=5.522624e-04 eng=3.000000
+	raw=8880.740000 slope=4.818766e-04 eng=4.500000
+	raw=11993.570000 slope=4.593576e-04 eng=6.000000
+	raw=15259.000000 slope=4.818751e-04 eng=7.500000
+	raw=18371.840000 slope=5.173823e-04 eng=9.000000
+	raw=21271.050000 slope=4.428057e-04 eng=10.500000
+	raw=24658.540000 slope=5.585365e-04 eng=12.000000
+	raw=27344.130000 slope=7.679902e-04 eng=13.500000
+	raw=29297.280000 slope=7.679902e-04 eng=15.000000
+}
+breaktable(typeTelemess33021_21878) {
+	raw=2532.990000 slope=9.830264e-04 eng=0.000000
+	raw=4058.890000 slope=7.123353e-04 eng=1.500000
+	raw=6164.640000 slope=5.585386e-04 eng=3.000000
+	raw=8850.220000 slope=4.771979e-04 eng=4.500000
+	raw=11993.570000 slope=4.593576e-04 eng=6.000000
+	raw=15259.000000 slope=4.818751e-04 eng=7.500000
+	raw=18371.840000 slope=5.067157e-04 eng=9.000000
+	raw=21332.080000 slope=4.681078e-04 eng=10.500000
+	raw=24536.470000 slope=4.964783e-04 eng=12.000000
+	raw=27557.750000 slope=7.021617e-04 eng=13.500000
+	raw=29694.010000 slope=7.021617e-04 eng=15.000000
+}
 ##############################################################################
 ## Configure hardware:
 system "ethercat slaves"
@@ -292,22 +352,7 @@ ecmcFileExist(ecmcEK1100.substitutions,1,1)
 dbLoadTemplate(ecmcEK1100.substitutions,"P=IOC_TEST:,PORT=MC_CPU1,ADDR=0,TIMEOUT=1,MASTER_ID=0,SLAVE_POS=0,HWTYPE=EK1100,T_SMP_MS=10,TSE=-2,NELM=1")
 # increment SLAVE_ID
 ecmcEpicsEnvSetCalc("SLAVE_ID", "0+1","%d")
-epicsEnvSet("ECMC_EC_SLAVE_NUM",              "12021/01/26 09:35:31.911 OK
-2021/01/26 09:35:31.924 OK
-2021/01/26 09:35:31.925 OK
-2021/01/26 09:35:31.925 OK
-2021/01/26 09:35:31.925 OK
-2021/01/26 09:35:31.925 OK
-2021/01/26 09:35:31.925 OK
-2021/01/26 09:35:31.926 OK
-2021/01/26 09:35:32.034 OK
-2021/01/26 09:35:32.034 OK
-2021/01/26 09:35:32.034 OK
-2021/01/26 09:35:32.035 OK
-2021/01/26 09:35:32.035 OK
-2021/01/26 09:35:32.035 OK
-2021/01/26 09:35:32.035 OK
-")
+epicsEnvSet("ECMC_EC_SLAVE_NUM",              "1")
 iocshLoad /home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmccfg/develop/addSlave.cmd, "SLAVE_ID=1, HW_DESC=EL5021, SUBST_FILE=../db/amo.substitutions"
 #==============================================================================
 # addSlave.cmd
@@ -332,7 +377,22 @@ dbLoadTemplate(../db/amo.substitutions,"P=IOC_TEST:,PORT=MC_CPU1,ADDR=0,TIMEOUT=
 ecmcEpicsEnvSetCalc("SLAVE_ID", "1+1","%d")
 # Enable reset on c-latch (index track)
 #ecmcConfigOrDie "Cfg.EcAddSdo($(ECMC_EC_SLAVE_NUM),0x8000,0x1,1,1)"
-epicsEnvSet("ECMC_EC_SLAVE_NUM",              "2")
+epicsEnvSet("ECM2021/01/26 09:52:21.677 OK
+2021/01/26 09:52:21.786 OK
+2021/01/26 09:52:21.786 OK
+2021/01/26 09:52:21.786 OK
+2021/01/26 09:52:21.787 OK
+2021/01/26 09:52:21.787 OK
+2021/01/26 09:52:21.787 OK
+2021/01/26 09:52:21.787 OK
+2021/01/26 09:52:21.787 OK
+2021/01/26 09:52:21.787 OK
+2021/01/26 09:52:21.787 OK
+2021/01/26 09:52:21.787 OK
+2021/01/26 09:52:21.787 OK
+2021/01/26 09:52:21.787 OK
+2021/01/26 09:52:21.787 OK
+C_EC_SLAVE_NUM",              "2")
 iocshLoad /home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmccfg/develop/addSlave.cmd, "SLAVE_ID=2, HW_DESC=EL3174_0to10V, SUBST_FILE=../db/telemessEddyCurrentSensors.substitutions"
 #==============================================================================
 # addSlave.cmd
@@ -368,20 +428,7 @@ ecmcConfigOrDie "Cfg.EcAddEntryComplete(2,0x2,0x0c663052,2,3,0x1a02,0x6010,0x11,
 epicsEnvSet("ECMC_EC_SDO_INDEX",         "0x801D")
 iocshLoad /home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmccfg/develop/ecmcEL3174_0to10V-Sensor-chX.cmd
 ############################################################
-############# P2021/01/26 09:35:32.035 OK
-2021/01/26 09:35:32.035 OK
-2021/01/26 09:35:32.035 OK
-2021/01/26 09:35:32.035 OK
-2021/01/26 09:35:32.035 OK
-2021/01/26 09:35:32.035 OK
-2021/01/26 09:35:32.035 OK
-2021/01/26 09:35:32.035 OK
-2021/01/26 09:35:32.035 OK
-2021/01/26 09:35:32.035 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-armetrization Default SDO settings for EL3174
+############# Parmetrization Default SDO settings for EL3174
 epicsEnvSet("ECMC_EC_SDO_INDEX_OFFSET",  "0x11")
 epicsEnvSet("ECMC_EC_SDO_SIZE",          "2")
 epicsEnvSet("ECMC_EC_SDO_VALUE",         "0x0E")  # 0..10V
@@ -411,7 +458,21 @@ epicsEnvUnset("ECMC_EC_SDO_INDEX_OFFSET")
 epicsEnvUnset("ECMC_EC_SDO_SIZE")
 epicsEnvUnset("ECMC_EC_SDO_VALUE")
 ecmcConfigOrDie "Cfg.EcAddEntryComplete(2,0x2,0x0c663052,2,3,0x1a06,0x6030,0x1,16,CH4_STATUS)"
-ecmcConfigOrDie "Cfg.EcAddEntryComplete(2,0x2,0x0c663052,2,3,0x1a06,0x6030,0x11,16,CH4_VALUE)"
+ecmcConfigOrDie "Cfg.EcAddEntryComplet2021/01/26 09:52:21.787 OK
+2021/01/26 09:52:21.787 OK
+2021/01/26 09:52:21.787 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+e(2,0x2,0x0c663052,2,3,0x1a06,0x6030,0x11,16,CH4_VALUE)"
 epicsEnvSet("ECMC_EC_SDO_INDEX",         "0x803D")
 iocshLoad /home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmccfg/develop/ecmcEL3174_0to10V-Sensor-chX.cmd
 ############################################################
@@ -452,25 +513,7 @@ epicsEnvSet("ECMC_EC_SDO_INDEX_OFFSET",  "0x2")
 epicsEnvSet("ECMC_EC_SDO_SIZE",          "1")
 epicsEnvSet("ECMC_EC_SDO_VALUE",         "0")  # Signed
 ecmcConfigOrDie "Cfg.EcAddSdo(2,0x8000,0x2,0,1)"
-epicsEnvSet("ECMC_EC_S2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.037 OK
-2021/01/26 09:35:32.038 OK
-DO_INDEX_OFFSET",  "0x5")
+epicsEnvSet("ECMC_EC_SDO_INDEX_OFFSET",  "0x5")
 epicsEnvSet("ECMC_EC_SDO_SIZE",          "1")
 epicsEnvSet("ECMC_EC_SDO_VALUE",         "0")  # Disabled
 ecmcConfigOrDie "Cfg.EcAddSdo(2,0x8000,0x5,0,1)"
@@ -505,7 +548,25 @@ ecmcConfigOrDie "Cfg.EcAddSdo(2,0x8000,0x12,65536,4)"
 epicsEnvSet("ECMC_EC_SDO_INDEX_OFFSET",  "0x13")
 epicsEnvSet("ECMC_EC_SDO_SIZE",          "2")
 epicsEnvSet("ECMC_EC_SDO_VALUE",         "0")
-ecmcConfigOrDie "Cfg.EcAddSdo(2,0x8000,0x13,0,2)"
+ecm2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.789 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+cConfigOrDie "Cfg.EcAddSdo(2,0x8000,0x13,0,2)"
 epicsEnvSet("ECMC_EC_SDO_INDEX_OFFSET",  "0x14")
 epicsEnvSet("ECMC_EC_SDO_SIZE",          "2")
 epicsEnvSet("ECMC_EC_SDO_VALUE",         "0")
@@ -553,25 +614,7 @@ epicsEnvSet("ECMC_EC_SDO_VALUE",         "0")  # Disabled
 ecmcConfigOrDie "Cfg.EcAddSdo(2,0x8010,0x8,0,1)"
 epicsEnvSet("ECMC_EC_SDO_INDEX_OFFSET",  "0xA")
 epicsEnvSet("ECMC_EC_SDO_SIZE",          "1")
-e2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-picsEnvSet("ECMC_EC_SDO_VALUE",         "0")  # Disabled
+epicsEnvSet("ECMC_EC_SDO_VALUE",         "0")  # Disabled
 ecmcConfigOrDie "Cfg.EcAddSdo(2,0x8010,0xA,0,1)"
 epicsEnvSet("ECMC_EC_SDO_INDEX_OFFSET",  "0xB")
 epicsEnvSet("ECMC_EC_SDO_SIZE",          "1")
@@ -606,7 +649,24 @@ epicsEnvUnset("ECMC_EC_SDO_SIZE")
 epicsEnvUnset("ECMC_EC_SDO_VALUE")
 # Example of default configuration of analog sensor CH2
 epicsEnvSet("ECMC_EC_SDO_INDEX",         "0x8020")
-iocshLoad /home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmccfg/develop/ecmcEL3164-Sensor-chX-default.cmd
+iocshLoad /home/dev/epics/base-2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+2021/01/26 09:52:21.790 OK
+7.0.4/require/3.4.0/siteMods/ecmccfg/develop/ecmcEL3164-Sensor-chX-default.cmd
 ############################################################
 ############# Parmetrization Default SDO settings for EL3164
 #
@@ -653,25 +713,7 @@ ecmcConfigOrDie "Cfg.EcAddSdo(2,0x8020,0x12,65536,4)"
 epicsEnvSet("ECMC_EC_SDO_INDEX_OFFSET",  "0x13")
 epicsEnvSet("ECMC_EC_SDO_SIZE",          "2")
 epicsEnvSet("ECMC_EC_SDO_VALUE",         "0")
-ecmcConfigOrDie "Cfg.EcAddSdo(2,0x8020,02021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.038 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-x13,0,2)"
+ecmcConfigOrDie "Cfg.EcAddSdo(2,0x8020,0x13,0,2)"
 epicsEnvSet("ECMC_EC_SDO_INDEX_OFFSET",  "0x14")
 epicsEnvSet("ECMC_EC_SDO_SIZE",          "2")
 epicsEnvSet("ECMC_EC_SDO_VALUE",         "0")
@@ -706,7 +748,21 @@ epicsEnvSet("ECMC_EC_SDO_SIZE",          "1")
 epicsEnvSet("ECMC_EC_SDO_VALUE",         "0")  # Disabled
 ecmcConfigOrDie "Cfg.EcAddSdo(2,0x8030,0x5,0,1)"
 epicsEnvSet("ECMC_EC_SDO_INDEX_OFFSET",  "0x6")
-epicsEnvSet("ECMC_EC_SDO_SIZE",          "1")
+epicsEnvSet("ECMC_EC_SDO_2021/01/26 09:52:21.791 OK
+2021/01/26 09:52:21.791 OK
+2021/01/26 09:52:21.791 OK
+2021/01/26 09:52:21.791 OK
+2021/01/26 09:52:21.791 OK
+2021/01/26 09:52:21.791 OK
+2021/01/26 09:52:21.791 OK
+2021/01/26 09:52:21.791 OK
+2021/01/26 09:52:21.791 OK
+2021/01/26 09:52:21.791 OK
+2021/01/26 09:52:21.791 OK
+2021/01/26 09:52:21.791 OK
+2021/01/26 09:52:21.791 OK
+2021/01/26 09:52:21.791 OK
+SIZE",          "1")
 epicsEnvSet("ECMC_EC_SDO_VALUE",         "0")  # Disabled
 ecmcConfigOrDie "Cfg.EcAddSdo(2,0x8030,0x6,0,1)"
 epicsEnvSet("ECMC_EC_SDO_INDEX_OFFSET",  "0x7")
@@ -754,20 +810,7 @@ epicsEnvUnset("ECMC_EC_SDO_SIZE")
 epicsEnvUnset("ECMC_EC_SDO_VALUE")
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "3")
 iocshLoad /home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmccfg/develop/addSlave.cmd, "SLAVE_ID=3, HW_DESC=EL9505"
-#====2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.039 OK
-2021/01/26 09:35:32.040 OK
-2021/01/26 09:35:32.040 OK
-2021/01/26 09:35:32.040 OK
-2021/01/26 09:35:32.040 OK
-2021/01/26 09:35:32.040 OK
-2021/01/26 09:35:32.040 OK
-2021/01/26 09:35:32.040 OK
-2021/01/26 09:35:32.040 OK
-2021/01/26 09:35:32.040 OK
-2021/01/26 09:35:32.041 OK
-==========================================================================
+#==============================================================================
 # addSlave.cmd
 epicsEnvSet("ECMC_EC_SLAVE_NUM",  "3")
 epicsEnvSet("HW_DESC",            "EL9505")
@@ -794,7 +837,18 @@ epicsEnvSet("HW_DESC",            "EL1252")
 # add ${HW_DESC} to the bus at position ${SLAVE_ID}
 ecmcFileExist("/home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmccfg/develop/ecmcEL1252.cmd",1)
 iocshLoad /home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmccfg/develop/ecmcEL1252.cmd "NELM=1"
-epicsEnvSet("ECMC_EC_HWTYPE"             "EL1252")
+e2021/01/26 09:52:21.792 OK
+2021/01/26 09:52:21.792 OK
+2021/01/26 09:52:21.792 OK
+2021/01/26 09:52:21.792 OK
+2021/01/26 09:52:21.792 OK
+2021/01/26 09:52:21.792 OK
+2021/01/26 09:52:21.792 OK
+2021/01/26 09:52:21.792 OK
+2021/01/26 09:52:21.792 OK
+2021/01/26 09:52:21.793 OK
+2021/01/26 09:52:21.798 OK
+picsEnvSet("ECMC_EC_HWTYPE"             "EL1252")
 epicsEnvSet("ECMC_EC_VENDOR_ID"          "0x2")
 epicsEnvSet("ECMC_EC_PRODUCT_ID"         "0x04e43052")
 ecmcConfigOrDie "Cfg.EcSlaveVerify(0,4,0x2,0x04e43052)"
@@ -831,8 +885,6 @@ epicsEnvSet("ECMC_FFT_RATE", 1000)
 ecmcEpicsEnvSetCalc("ECMC_FFT_NELM",   "10*36.0/14.0*1000","%d")
 # Scale sensors in mm (same as in ./db/telemessEddyCurrentSensors.substitutions)
 # According to EL3174 doc: 0..10V is 0..30518  (10.737V = 32767)
-2021/01/26 09:35:32.046 OK
-2021/01/26 09:35:32.049 OK
 # CH1 0..15mm =>  scale = 15/30518
 # CH1 0..15mm =>  scale = 15/30518
 # CH1 0..15mm =>  scale = 15/30518
@@ -855,7 +907,8 @@ iocshLoad /home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmccfg/develop/load
 # loadPlugin.cmd
 ecmcConfigOrDie "Cfg.LoadPlugin(0,/home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmc_plugin_fft/master/lib/linux-x86_64/libecmc_plugin_fft.so,SOURCE=ec0.s1.POSITION;RM_LIN=1;DBG_PRINT=0;NFFT=25714;RATE=1000;RM_DC=1;SCALE=0.000172 ;MODE=CONT;ENABLE=1;)"
 ecmcEpicsEnvSetCalcTernary("ECMC_PLUGIN_REPORT", "0>0","","#")
-#ecmcConfigOrDie "Cfg.ReportPlugin(0)"
+#ecmcConfigO2021/01/26 09:52:21.801 OK
+rDie "Cfg.ReportPlugin(0)"
 epicsEnvUnset(ECMC_PLUGIN_REPORT);
 # Note: INDEX is the index of FFT object in FFT plugin and not PLUGIN_ID. In this case the same
 dbLoadRecords(ecmcPluginFFT.template,"P=IOC_TEST:,INDEX=0, NELM=25714, ,AMP_DESC='Position amplitude',AMP_EGU='Â°',RAW_DESC='Position',RAW_EGU='Â°',TITLE='FFT for rotational AMO encoder'")
@@ -882,9 +935,7 @@ Plugin info:
     RM_LIN=<1/0>       : Remove linear component in data (SOURCE) by least square, default = disabled.
     ENABLE=<1/0>       : Enable data acq. and calcs (can be controlled over asyn), default = disabled.
     MODE=<CONT/TRIGG>  : Continious or triggered mode, defaults to TRIGG
-    RATE=<rate in hz>  : fft data sample rate in hz (must be lower than ecmc rate and (ecmc_rate/fft_rate)=integer), default = ecmc rate2021/01/26 09:35:32.050 OK
-2021/01/26 09:35:32.053 OK
-.
+    RATE=<rate in hz>  : fft data sample rate in hz (must be lower than ecmc rate and (ecmc_rate/fft_rate)=integer), default = ecmc rate.
   Filename             = /home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmc_plugin_fft/master/lib/linux-x86_64/libecmc_plugin_fft.so
   Config string        = SOURCE=ec0.s2.CH1_VALUE;DBG_PRINT=0;NFFT=25714;RATE=1000;RM_DC=1;SCALE=0.000492;MODE=CONT;ENABLE=1;
   Version              = 2
@@ -892,40 +943,43 @@ Plugin info:
      max plc funcs     = 64
      max plc func args = 10
      max plc consts    = 64
-  Construct func       = @0x7f89fbdf9900
-  Enter realtime func  = @0x7f89fbdf9950
-  Exit realtime func   = @0x7f89fbdf98f0
-  Realtime func        = @0x7f89fbdf98e0
-  Destruct func        = @0x7f89fbdf9920
-  dlhandle             = @0x1048a70
+  Construct func       = @0x7f163ee7a900
+  Enter realtime func  = @0x7f163ee7a950
+  Exit realtime func   = @0x7f163ee7a8f0
+  Realtime func        = @0x7f163ee7a8e0
+  Destruct func        = @0x7f163ee7a920
+  dlhandle             = @0x101daa0
   Plc functions:
     funcs[00]:
       Name       = "fft_clear(arg0);"
       Desc       = double fft_clear(index) : Clear/reset fft[index].
       Arg count  = 1
-      func       = @0x7f89fbdf9960
+      func       = @0x7f163ee7a960
     funcs[01]:
       Name       = "fft_enable(arg0, arg1);"
       Desc       = double fft_enable(index, enable) : Set enable for fft[index].
       Arg count  = 2
-      func       = @0x7f89fbdf9980
+      func       = @0x7f163ee7a980
     funcs[02]:
       Name       = "fft_trigg(arg0);"
       Desc       = double fft_trigg(index) : Trigg new measurement for fft[index]. Will clear buffers.
       Arg count  = 1
-      func       = @0x7f89fbdf99a0
+      func       = @0x7f163ee7a9a0
     funcs[03]:
       Name       = "fft_mode(arg0, arg1);"
       Desc       = double fft_mode(index, mode) : Set mode Cont(1)/Trigg(2) for fft[index].
       Arg count  = 2
-      func       = @0x7f89fbdf99c0
+      func       = @0x7f163ee7a9c0
     funcs[04]:
       Name       = "fft_stat(arg0);"
       Desc       = double fft_stat(index) : Get status of fft (NO_STAT, IDLE, ACQ, CALC) for fft[index].
       Arg count  = 1
-      func       = @0x7f89fbdf99e0
+      func       = @0x7f163ee7a9e0
   Plc constants:
-    consts[00]:
+    consts[00]:2021/01/26 09:52:21.801 OK
+2021/01/26 09:52:21.805 OK
+2021/01/26 09:52:21.808 OK
+
       Name     = "fft_CONT" = 1.000
       Desc     = FFT Mode: Continious
     consts[01]:
@@ -961,11 +1015,7 @@ epicsEnvUnset(ECMC_PLUGIN_REPORT);
 # Note: INDEX is the index of FFT object in FFT plugin and not PLUGIN_ID. In this case the same
 dbLoadRecords(ecmcPluginFFT.template,"P=IOC_TEST:,INDEX=2, NELM=25714,AMP_DESC='Position amplitude',AMP_EGU='mm',RAW_DESC='Position',RAW_EGU='mm',TITLE='FFT for Telemess sensor 120Â°'")
 ##############################################################################
-## Load plugin: FFT A2021/01/26 09:35:32.056 OK
-2021/01/26 09:35:32.060 OK
-2021/01/26 09:35:32.065 OK
-2021/01/26 09:35:32.066 OK
-I CH3 : Telemess 0..15
+## Load plugin: FFT AI CH3 : Telemess 0..15
 epicsEnvSet(ECMC_FFT_ID, 3)
 epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH3_VALUE;DBG_PRINT=0;NFFT=25714;RATE=1000;RM_DC=1;SCALE=0.000492;MODE=CONT;ENABLE=1;")
 iocshLoad /home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmccfg/develop/loadPlugin.cmd, "PLUGIN_ID=3,FILE=/home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmc_plugin_fft/master/lib/linux-x86_64/libecmc_plugin_fft.so,CONFIG='SOURCE=ec0.s2.CH3_VALUE;DBG_PRINT=0;NFFT=25714;RATE=1000;RM_DC=1;SCALE=0.000492;MODE=CONT;ENABLE=1;', REPORT=0"
@@ -981,7 +1031,34 @@ dbLoadRecords(ecmcPluginFFT.template,"P=IOC_TEST:,INDEX=3, NELM=25714, ,AMP_DESC
 ## Load plugin: FFT AI CH4 : Telemess 0..20
 epicsEnvSet(ECMC_FFT_ID, 4)
 epicsEnvSet(ECMC_PLUGIN_CONFIG,"SOURCE=ec0.s2.CH4_VALUE;DBG_PRINT=0;NFFT=25714;RATE=1000;RM_DC=1;SCALE=0.000655;MODE=CONT;ENABLE=1;")
-iocshLoad /home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmccfg/develop/loadPlugin.cmd, "PLUGIN_ID=4,FILE=/home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmc_plugin_fft/master/lib/linux-x86_64/libecmc_plugin_fft.so,CONFIG='SOURCE=ec0.s2.CH4_VALUE;DBG_PRINT=0;NFFT=25714;RATE=1000;RM_DC=1;SCALE=0.000655;MODE=CONT;ENABLE=1;', REPORT=0"
+iocshLoad /home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmccfg/develop/loadPlugin.cmd, "PLUGIN_ID=4,FILE=/home/dev/epics/base-7.0.4/re2021/01/26 09:52:21.811 OK
+2021/01/26 09:52:21.817 OK
+2021/01/26 09:52:21.817 OK
+2021/01/26 09:52:21.821 OK
+2021/01/26 09:52:21.821 OK
+2021/01/26 09:52:21.821 OK
+2021/01/26 09:52:21.822 ../devEcmcSup/plc/ecmcPLCDataIF.cpp/parseAndLinkEcDataSource:1265: WARNING: Entry ec0.s4.CH2_LATCH_POS is of type S64, U64 or undefined. PLC values are doubles and might not be able to represent the ethercat value correct.
+2021/01/26 09:52:21.822 ../devEcmcSup/plc/ecmcPLCDataIF.cpp/parseAndLinkEcDataSource:1265: WARNING: Entry ec0.s4.CH1_LATCH_POS is of type S64, U64 or undefined. PLC values are doubles and might not be able to represent the ethercat value correct.
+2021/01/26 09:52:21.823 INFO: Locking memory
+2021/01/26 09:52:21.823 WARNING: mlockall() failed (0x20045).
+2021/01/26 09:52:21.827 Starting up EtherCAT bus: 0 second(s). Max wait time 30 second(s).
+2021/01/26 09:52:21.924 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:374: ERROR: Slave 0: Not operational (0x24011).
+2021/01/26 09:52:21.924 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:379: ERROR_EC_SLAVE_NOT_OPERATIONAL (0x24011).
+2021/01/26 09:52:21.924 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:374: ERROR: Slave 1: Not operational (0x24011).
+2021/01/26 09:52:21.924 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:379: ERROR_EC_SLAVE_NOT_OPERATIONAL (0x24011).
+2021/01/26 09:52:21.924 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:374: ERROR: Slave 2: Not operational (0x24011).
+2021/01/26 09:52:21.924 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:379: ERROR_EC_SLAVE_NOT_OPERATIONAL (0x24011).
+2021/01/26 09:52:21.924 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:374: ERROR: Slave 3: Not operational (0x24011).
+2021/01/26 09:52:21.924 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:379: ERROR_EC_SLAVE_NOT_OPERATIONAL (0x24011).
+2021/01/26 09:52:21.924 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:374: ERROR: Slave 4: Not operational (0x24011).
+2021/01/26 09:52:21.924 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:379: ERROR_EC_SLAVE_NOT_OPERATIONAL (0x24011).
+2021/01/26 09:52:22.531 ../devEcmcSup/main/ecmcError.cpp/errorReset:103: NO_ERROR (0x0).
+2021/01/26 09:52:23.828 EtherCAT bus started!
+2021/01/26 09:52:23.828 OK
+2021/01/26 09:52:23.828 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAtIocBuild (0). Allow callbacks: true.
+Starting iocInit
+2021/01/26 09:52:23.828 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAtBeginning (1). Allow callbacks: true.
+quire/3.4.0/siteMods/ecmc_plugin_fft/master/lib/linux-x86_64/libecmc_plugin_fft.so,CONFIG='SOURCE=ec0.s2.CH4_VALUE;DBG_PRINT=0;NFFT=25714;RATE=1000;RM_DC=1;SCALE=0.000655;MODE=CONT;ENABLE=1;', REPORT=0"
 #==============================================================================
 # loadPlugin.cmd
 ecmcConfigOrDie "Cfg.LoadPlugin(4,/home/dev/epics/base-7.0.4/require/3.4.0/siteMods/ecmc_plugin_fft/master/lib/linux-x86_64/libecmc_plugin_fft.so,SOURCE=ec0.s2.CH4_VALUE;DBG_PRINT=0;NFFT=25714;RATE=1000;RM_DC=1;SCALE=0.000655;MODE=CONT;ENABLE=1;)"
@@ -1009,108 +1086,7 @@ dbLoadRecords("ecmcPlc.db", "PORT=MC_CPU1,A=0,Index=0,Name=IOC_TEST:")
 dbLoadRecords("ecmcPlcAnalog.db","P=IOC_TEST:,PORT=MC_CPU1,ASYN_NAME=plcs.plc0.static.phaseErrorMM,REC_NAME=-PhaseErrorMM,TSE=0,T_SMP_MS=10")
 ##############################################################################
 ############# Cleanup:
-epicsEnvUn2021/01/26 09:35:32.069 OK
-2021/01/26 09:35:32.070 OK
-2021/01/26 09:35:32.070 OK
-2021/01/26 09:35:32.071 ../devEcmcSup/plc/ecmcPLCDataIF.cpp/parseAndLinkEcDataSource:1265: WARNING: Entry ec0.s4.CH2_LATCH_POS is of type S64, U64 or undefined. PLC values are doubles and might not be able to represent the ethercat value correct.
-2021/01/26 09:35:32.071 ../devEcmcSup/plc/ecmcPLCDataIF.cpp/parseAndLinkEcDataSource:1265: WARNING: Entry ec0.s4.CH1_LATCH_POS is of type S64, U64 or undefined. PLC values are doubles and might not be able to represent the ethercat value correct.
-2021/01/26 09:35:32.071 INFO: Locking memory
-2021/01/26 09:35:32.071 WARNING: mlockall() failed (0x20045).
-2021/01/26 09:35:32.075 Starting up EtherCAT bus: 0 second(s). Max wait time 30 second(s).
-2021/01/26 09:35:32.172 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:374: ERROR: Slave 0: Not operational (0x24011).
-2021/01/26 09:35:32.172 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:379: ERROR_EC_SLAVE_NOT_OPERATIONAL (0x24011).
-2021/01/26 09:35:32.172 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:374: ERROR: Slave 1: Not operational (0x24011).
-2021/01/26 09:35:32.172 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:379: ERROR_EC_SLAVE_NOT_OPERATIONAL (0x24011).
-2021/01/26 09:35:32.172 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:374: ERROR: Slave 2: Not operational (0x24011).
-2021/01/26 09:35:32.172 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:379: ERROR_EC_SLAVE_NOT_OPERATIONAL (0x24011).
-2021/01/26 09:35:32.172 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:374: ERROR: Slave 3: Not operational (0x24011).
-2021/01/26 09:35:32.172 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:379: ERROR_EC_SLAVE_NOT_OPERATIONAL (0x24011).
-2021/01/26 09:35:32.172 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:374: ERROR: Slave 4: Not operational (0x24011).
-2021/01/26 09:35:32.172 ../devEcmcSup/ethercat/ecmcEcSlave.cpp/checkConfigState:379: ERROR_EC_SLAVE_NOT_OPERATIONAL (0x24011).
-2021/01/26 09:35:32.779 ../devEcmcSup/main/ecmcError.cpp/errorReset:103: NO_ERROR (0x0).
-2021/01/26 09:35:34.076 EtherCAT bus started!
-2021/01/26 09:35:34.076 OK
-2021/01/26 09:35:34.076 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAtIocBuild (0). Allow callbacks: true.
-Starting iocInit
-2021/01/26 09:35:34.076 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAtBeginning (1). Allow callbacks: true.
-2021/01/26 09:35:34.076 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterCallbackInit (2). Allow callbacks: true.
-2021/01/26 09:35:34.076 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterCaLinkInit (3). Allow callbacks: true.
-2021/01/26 09:35:34.076 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterInitDrvSup (4). Allow callbacks: true.
-2021/01/26 09:35:34.076 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterInitRecSup (5). Allow callbacks: true.
-2021/01/26 09:35:34.076 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterInitDevSup (6). Allow callbacks: true.
-2021/01/26 09:35:34.078 ecmcAsynPortDriver:drvUserCreate: Parameter plcs.plc0.enable linked to record (asyn reason 1).
-2021/01/26 09:35:34.078 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.error.reset linked to record (asyn reason 2).
-2021/01/26 09:35:34.078 ecmcAsynPortDriver:drvUserCreate: Parameter plcs.plc0.static.phaseErrorMM linked to record (asyn reason 3).
-2021/01/26 09:35:34.078 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s1.ENC_STATUS linked to record (asyn reason 4).
-2021/01/26 09:35:34.079 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH1_STATUS linked to record (asyn reason 5).
-2021/01/26 09:35:34.079 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH2_STATUS linked to record (asyn reason 6).
-2021/01/26 09:35:34.079 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH3_STATUS linked to record (asyn reason 7).
-2021/01/26 09:35:34.079 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH4_STATUS linked to record (asyn reason 8).
-2021/01/26 09:35:34.079 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.CH1_STATUS linked to record (asyn reason 9).
-2021/01/26 09:35:34.079 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.CH2_STATUS linked to record (asyn reason 10).
-2021/01/26 09:35:34.079 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.error.msg linked to record (asyn reason 11).
-2021/01/26 09:35:34.079 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.updated linked to record (asyn reason 12).
-2021/01/26 09:35:34.079 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s0.slavestatus linked to record (asyn reason 13).
-2021/01/26 09:35:34.079 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s1.slavestatus linked to record (asyn reason 14).
-2021/01/26 09:35:34.080 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.slavestatus linked to record (asyn reason 15).
-2021/01/26 09:35:34.080 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s3.slavestatus linked to record (asyn reason 16).
-2021/01/26 09:35:34.080 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.slavestatus linked to record (asyn reason 17).
-2021/01/26 09:35:34.080 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.masterstatus linked to record (asyn reason 18).
-2021/01/26 09:35:34.080 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.slavecounter linked to record (asyn reason 19).
-2021/01/26 09:35:34.081 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.memmapcounter linked to record (asyn reason 20).
-2021/01/26 09:35:34.081 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.domainfailcountertotal linked to record (asyn reason 21).
-2021/01/26 09:35:34.081 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.entrycounter linked to record (asyn reason 22).
-2021/01/26 09:35:34.081 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.domainstatus linked to record (asyn reason 23).
-2021/01/26 09:35:34.081 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s3.POWER_OK linked to record (asyn reason 24).
-2021/01/26 09:35:34.082 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s3.OVERLOAD linked to record (asyn reason 25).
-2021/01/26 09:35:34.082 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.BI_1 linked to record (asyn reason 26).
-2021/01/26 09:35:34.083 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.BI_2 linked to record (asyn reason 27).
-2021/01/26 09:35:34.083 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.ok linked to record (asyn reason 28).
-2021/01/26 09:35:34.084 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s0.ONE linked to record (asyn reason 29).
-2021/01/26 09:35:34.084 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s0.ZERO linked to record (asyn reason 30).
-2021/01/26 09:35:34.084 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s1.ONE linked to record (asyn reason 31).
-2021/01/26 09:35:34.085 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s1.ZERO linked to record (asyn reason 32).
-2021/01/26 09:35:34.085 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.ONE linked to record (asyn reason 33).
-2021/01/26 09:35:34.086 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.ZERO linked to record (asyn reason 34).
-2021/01/26 09:35:34.086 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s3.ONE linked to record (asyn reason 35).
-2021/01/26 09:35:34.086 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s3.ZERO linked to record (asyn reason 36).
-2021/01/26 09:35:34.087 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.ONE linked to record (asyn reason 37).
-2021/01/26 09:35:34.087 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.ZERO linked to record (asyn reason 38).
-2021/01/26 09:35:34.088 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s1.POSITION linked to record (asyn reason 39).
-2021/01/26 09:35:34.088 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH1_VALUE linked to record (asyn reason 40).
-2021/01/26 09:35:34.089 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH2_VALUE linked to record (asyn reason 41).
-2021/01/26 09:35:34.089 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH3_VALUE linked to record (asyn reason 42).
-2021/01/26 09:35:34.089 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH4_VALUE linked to record (asyn reason 43).
-2021/01/26 09:35:34.090 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.CH1_LATCH_POS linked to record (asyn reason 44).
-2021/01/26 09:35:34.090 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.CH1_LATCH_NEG linked to record (asyn reason 45).
-2021/01/26 09:35:34.091 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.CH2_LATCH_POS linked to record (asyn reason 46).
-2021/01/26 09:35:34.091 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.CH2_LATCH_NEG linked to record (asyn reason 47).
-2021/01/26 09:35:34.092 ecmcAsynPortDriver:drvUserCreate: Parameter plcs.plc0.scantime linked to record (asyn reason 48).
-2021/01/26 09:35:34.092 ecmcAsynPortDriver:drvUserCreate: Parameter plcs.plc0.error linked to record (asyn reason 49).
-2021/01/26 09:35:34.093 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.appmode linked to record (asyn reason 50).
-2021/01/26 09:35:34.093 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.error.id linked to record (asyn reason 51).
-2021/01/26 09:35:34.094 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.latency.min linked to record (asyn reason 52).
-2021/01/26 09:35:34.094 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.latency.max linked to record (asyn reason 53).
-2021/01/26 09:35:34.094 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.period.min linked to record (asyn reason 54).
-2021/01/26 09:35:34.095 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.period.max linked to record (asyn reason 55).
-2021/01/26 09:35:34.096 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.execute.min linked to record (asyn reason 56).
-2021/01/26 09:35:34.096 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.execute.max linked to record (asyn reason 57).
-2021/01/26 09:35:34.097 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.send.min linked to record (asyn reason 58).
-2021/01/26 09:35:34.097 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.send.max linked to record (asyn reason 59).
-2021/01/26 09:35:34.098 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterInitDatabase (7). Allow callbacks: true.
-2021/01/26 09:35:34.098 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterFinishDevSup (8). Allow callbacks: true.
-2021/01/26 09:35:35.770 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterScanInit (9). Allow callbacks: true.
-2021/01/26 09:35:35.771 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterInitialProcess (10). Allow callbacks: true.
-2021/01/26 09:35:35.771 ecmcAsynPortDriver:getEpicsState: EPICS state: Unknown state (11). Allow callbacks: true.
-2021/01/26 09:35:35.771 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterIocBuilt (12). Allow callbacks: true.
-2021/01/26 09:35:35.771 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAtIocRun (13). Allow callbacks: true.
-2021/01/26 09:35:35.771 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterDatabaseRunning (14). Allow callbacks: true.
-2021/01/26 09:35:35.771 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterInterruptAccept (28). Allow callbacks: true.
-2021/01/26 09:35:35.771 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterCaServerRunning (15). Allow callbacks: true.
-2021/01/26 09:35:35.771 ecmcAsynPortDriver:getEpicsState: EPICS state: Unknown state (29). Allow callbacks: true.
-iocRun: All initialization complete
-2021/01/26 09:35:35.772 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterIocRunning (16). Allow callbacks: true.
-set(ECMC_FFT_ID)
+epicsEnvUnset(ECMC_FFT_ID)
 epicsEnvUnset(ECMC_FFT_NELM)
 epicsEnvUnset(ECMC_REVS_TO_FFT)
 epicsEnvUnset(ECMC_PLUGIN_CONFIG)
@@ -1148,10 +1124,87 @@ iocInit()
 ############################################################################
 ## EPICS R7.0.4-E3-7.0.4-patch
 ## Rev. 2021-01-19T11:34+0100
-############################################################################
+###########################2021/01/26 09:52:23.829 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterCallbackInit (2). Allow callbacks: true.
+2021/01/26 09:52:23.829 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterCaLinkInit (3). Allow callbacks: true.
+2021/01/26 09:52:23.829 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterInitDrvSup (4). Allow callbacks: true.
+2021/01/26 09:52:23.829 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterInitRecSup (5). Allow callbacks: true.
+2021/01/26 09:52:23.829 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterInitDevSup (6). Allow callbacks: true.
+2021/01/26 09:52:23.831 ecmcAsynPortDriver:drvUserCreate: Parameter plcs.plc0.enable linked to record (asyn reason 1).
+2021/01/26 09:52:23.831 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.error.reset linked to record (asyn reason 2).
+2021/01/26 09:52:23.831 ecmcAsynPortDriver:drvUserCreate: Parameter plcs.plc0.static.phaseErrorMM linked to record (asyn reason 3).
+2021/01/26 09:52:23.832 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s1.ENC_STATUS linked to record (asyn reason 4).
+2021/01/26 09:52:23.832 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH1_STATUS linked to record (asyn reason 5).
+2021/01/26 09:52:23.832 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH2_STATUS linked to record (asyn reason 6).
+2021/01/26 09:52:23.832 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH3_STATUS linked to record (asyn reason 7).
+2021/01/26 09:52:23.832 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH4_STATUS linked to record (asyn reason 8).
+2021/01/26 09:52:23.832 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.CH1_STATUS linked to record (asyn reason 9).
+2021/01/26 09:52:23.832 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.CH2_STATUS linked to record (asyn reason 10).
+2021/01/26 09:52:23.832 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.error.msg linked to record (asyn reason 11).
+2021/01/26 09:52:23.832 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.updated linked to record (asyn reason 12).
+2021/01/26 09:52:23.833 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s0.slavestatus linked to record (asyn reason 13).
+2021/01/26 09:52:23.833 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s1.slavestatus linked to record (asyn reason 14).
+2021/01/26 09:52:23.833 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.slavestatus linked to record (asyn reason 15).
+2021/01/26 09:52:23.833 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s3.slavestatus linked to record (asyn reason 16).
+2021/01/26 09:52:23.833 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.slavestatus linked to record (asyn reason 17).
+2021/01/26 09:52:23.834 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.masterstatus linked to record (asyn reason 18).
+2021/01/26 09:52:23.834 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.slavecounter linked to record (asyn reason 19).
+2021/01/26 09:52:23.834 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.memmapcounter linked to record (asyn reason 20).
+2021/01/26 09:52:23.834 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.domainfailcountertotal linked to record (asyn reason 21).
+2021/01/26 09:52:23.835 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.entrycounter linked to record (asyn reason 22).
+2021/01/26 09:52:23.835 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.domainstatus linked to record (asyn reason 23).
+2021/01/26 09:52:23.835 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s3.POWER_OK linked to record (asyn reason 24).
+2021/01/26 09:52:23.836 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s3.OVERLOAD linked to record (asyn reason 25).
+2021/01/26 09:52:23.836 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.BI_1 linked to record (asyn reason 26).
+2021/01/26 09:52:23.837 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.BI_2 linked to record (asyn reason 27).
+2021/01/26 09:52:23.837 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.ok linked to record (asyn reason 28).
+2021/01/26 09:52:23.838 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s0.ONE linked to record (asyn reason 29).
+2021/01/26 09:52:23.838 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s0.ZERO linked to record (asyn reason 30).
+2021/01/26 09:52:23.839 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s1.ONE linked to record (asyn reason 31).
+2021/01/26 09:52:23.839 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s1.ZERO linked to record (asyn reason 32).
+2021/01/26 09:52:23.839 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.ONE linked to record (asyn reason 33).
+2021/01/26 09:52:23.840 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.ZERO linked to record (asyn reason 34).
+2021/01/26 09:52:23.840 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s3.ONE linked to record (asyn reason 35).
+2021/01/26 09:52:23.841 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s3.ZERO linked to record (asyn reason 36).
+2021/01/26 09:52:23.841 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.ONE linked to record (asyn reason 37).
+2021/01/26 09:52:23.841 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.ZERO linked to record (asyn reason 38).
+2021/01/26 09:52:23.842 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s1.POSITION linked to record (asyn reason 39).
+2021/01/26 09:52:23.842 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH1_VALUE linked to record (asyn reason 40).
+2021/01/26 09:52:23.843 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH2_VALUE linked to record (asyn reason 41).
+2021/01/26 09:52:23.844 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH3_VALUE linked to record (asyn reason 42).
+2021/01/26 09:52:23.844 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s2.CH4_VALUE linked to record (asyn reason 43).
+2021/01/26 09:52:23.845 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.CH1_LATCH_POS linked to record (asyn reason 44).
+2021/01/26 09:52:23.845 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.CH1_LATCH_NEG linked to record (asyn reason 45).
+2021/01/26 09:52:23.846 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.CH2_LATCH_POS linked to record (asyn reason 46).
+2021/01/26 09:52:23.846 ecmcAsynPortDriver:drvUserCreate: Parameter ec0.s4.CH2_LATCH_NEG linked to record (asyn reason 47).
+2021/01/26 09:52:23.847 ecmcAsynPortDriver:drvUserCreate: Parameter plcs.plc0.scantime linked to record (asyn reason 48).
+2021/01/26 09:52:23.847 ecmcAsynPortDriver:drvUserCreate: Parameter plcs.plc0.error linked to record (asyn reason 49).
+2021/01/26 09:52:23.847 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.appmode linked to record (asyn reason 50).
+2021/01/26 09:52:23.848 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.error.id linked to record (asyn reason 51).
+2021/01/26 09:52:23.849 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.latency.min linked to record (asyn reason 52).
+2021/01/26 09:52:23.849 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.latency.max linked to record (asyn reason 53).
+2021/01/26 09:52:23.850 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.period.min linked to record (asyn reason 54).
+2021/01/26 09:52:23.850 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.period.max linked to record (asyn reason 55).
+2021/01/26 09:52:23.851 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.execute.min linked to record (asyn reason 56).
+2021/01/26 09:52:23.852 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.execute.max linked to record (asyn reason 57).
+2021/01/26 09:52:23.852 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.send.min linked to record (asyn reason 58).
+2021/01/26 09:52:23.853 ecmcAsynPortDriver:drvUserCreate: Parameter ecmc.thread.send.max linked to record (asyn reason 59).
+2021/01/26 09:52:23.854 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterInitDatabase (7). Allow callbacks: true.
+2021/01/26 09:52:23.854 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterFinishDevSup (8). Allow callbacks: true.
+2021/01/26 09:52:25.533 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterScanInit (9). Allow callbacks: true.
+2021/01/26 09:52:25.533 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterInitialProcess (10). Allow callbacks: true.
+2021/01/26 09:52:25.533 ecmcAsynPortDriver:getEpicsState: EPICS state: Unknown state (11). Allow callbacks: true.
+2021/01/26 09:52:25.533 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterIocBuilt (12). Allow callbacks: true.
+2021/01/26 09:52:25.533 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAtIocRun (13). Allow callbacks: true.
+2021/01/26 09:52:25.533 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterDatabaseRunning (14). Allow callbacks: true.
+2021/01/26 09:52:25.533 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterInterruptAccept (28). Allow callbacks: true.
+2021/01/26 09:52:25.533 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterCaServerRunning (15). Allow callbacks: true.
+2021/01/26 09:52:25.533 ecmcAsynPortDriver:getEpicsState: EPICS state: Unknown state (29). Allow callbacks: true.
+iocRun: All initialization complete
+2021/01/26 09:52:25.534 ecmcAsynPortDriver:getEpicsState: EPICS state: initHookAfterIocRunning (16). Allow callbacks: true.
+#################################################
 # Store Records to file
 dbl > pvs.log
 # Set the IOC Prompt String One 
-epicsEnvSet IOCSH_PS1 "mcag-trgt-muts--7064 > "
+epicsEnvSet IOCSH_PS1 "mcag-trgt-muts--8726 > "
 #
-[?1034hmcag-trgt-muts--7064 > 
+[?1034hmcag-trgt-muts--8726 > 

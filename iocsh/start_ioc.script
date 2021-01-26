@@ -18,6 +18,7 @@ $(ECMCCFG_INIT)$(SCRIPTEXEC) ${ecmccfg_DIR}startup.cmd, "IOC=$(IOC),ECMC_VER=dev
 
 dbLoadRecords ./bptTypeTelemessCalib.dbd
 updateMenuConvert
+dbDumpBreaktable
 
 ##############################################################################
 ## Configure hardware:
