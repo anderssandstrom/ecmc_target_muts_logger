@@ -1,8 +1,17 @@
 ##############################################################################
-## Startscript for MUTS logger.
-## One sin/cos 1VPP encoder input
-## Four analog inputs for telemess distance sensors
-## Timesatmped inputs for phase error calculation
+## Startscript for MUTS logger:
+##   Logging data from displacements sensors, phase error and encoder value.
+##   The encoder and displacement sensors are linked to ecmc fft plugin.
+##
+## Hardware:
+##   1. One sin/cos 1VPP encoder input
+##   2. Four analog inputs for telemess distance sensors
+##   3. Timesatmped inputs for phase error calculation
+##   Note: Calibration of telemess sensors by use of epics breaktables (bptTypeTelemessCalib.dbd).
+##         The breaktables are used for both ai records and FFT plugins.
+##
+## Author: Anders Sandström, anders.sandstrom@ess.eu
+##
 
 ##############################################################################
 ## Initiation:
@@ -11,18 +20,19 @@ epicsEnvSet("ECMCCFG_INIT" ,"")  #Only run startup once (auto at PSI, need call 
 epicsEnvSet("SCRIPTEXEC" ,"$(SCRIPTEXEC="iocshLoad")")
 
 require ecmccfg develop
-require iocshutils 2.10.0  # For updateMenuConvert()
 
 # run module startup.cmd (only needed at ESS  PSI auto call at require)
 $(ECMCCFG_INIT)$(SCRIPTEXEC) ${ecmccfg_DIR}startup.cmd, "IOC=$(IOC),ECMC_VER=develop,stream_VER=2.8.10, EC_RATE=1000"
 
+##############################################################################
+## Load breaktables with calibration data for Telemess sensors.
+require iocshutils 2.10.0  # For updateMenuConvert()
 dbLoadRecords ./bptTypeTelemessCalib.dbd
 updateMenuConvert
 dbDumpBreaktable
 
 ##############################################################################
 ## Configure hardware:
-
 system "ethercat slaves"
 
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "0")
@@ -67,7 +77,7 @@ ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DES
 ecmcConfigOrDie "Cfg.EcApplyConfig(1)"
 
 ##############################################################################
-# Prepare FFT plugins
+## Prepare FFT plugins
 require ecmc_plugin_fft master  # to get access to db file..
 
 # Decide how many revs to FFT then calc buffer size
@@ -129,8 +139,7 @@ $(SCRIPTEXEC) $(ecmccfg_DIR)loadPLCFile.cmd, "PLC_ID=0, SAMPLE_RATE_MS=10,FILE=.
 dbLoadRecords("ecmcPlcAnalog.db","P=$(IOC):,PORT=MC_CPU1,ASYN_NAME=plcs.plc0.static.phaseErrorMM,REC_NAME=-PhaseErrorMM,TSE=0,T_SMP_MS=10")
 
 ##############################################################################
-############# Cleanup:
-
+## Cleanup:
 epicsEnvUnset(ECMC_FFT_ID)
 epicsEnvUnset(ECMC_FFT_NELM)
 epicsEnvUnset(ECMC_REVS_TO_FFT)
@@ -139,16 +148,16 @@ epicsEnvUnset(ECMC_PLUGIN_FILNAME)
 epicsEnvUnset(ECMC_ENC_SCALE)
 
 ##############################################################################
-############# Configure diagnostics:
-
+## Configure diagnostics:
 ecmcConfigOrDie "Cfg.EcSetDiagnostics(1)"
 ecmcConfigOrDie "Cfg.EcEnablePrintouts(0)"
 ecmcConfigOrDie "Cfg.EcSetDomainFailedCyclesLimit(100)"
 
-# go active
+##############################################################################
+## go active
 $(SCRIPTEXEC) ($(ecmccfg_DIR)setAppMode.cmd)
-
 iocInit()
 
-# Store Records to file
+##############################################################################
+## Store Records to file
 dbl > pvs.log
