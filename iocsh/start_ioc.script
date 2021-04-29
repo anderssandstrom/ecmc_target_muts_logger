@@ -26,7 +26,7 @@ $(ECMCCFG_INIT)$(SCRIPTEXEC) ${ecmccfg_DIR}startup.cmd, "IOC=$(IOC),ECMC_VER=6.3
 
 ##############################################################################
 ## Load breaktables with calibration data for Telemess sensors.
-require iocshutils 2.10.0  # For updateMenuConvert()
+#require iocshutils 2.10.0  # For updateMenuConvert()
 #dbLoadRecords ../src/bptTypeTelemessCalib.dbd
 #updateMenuConvert
 #dbDumpBreaktable
