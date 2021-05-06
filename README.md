@@ -45,7 +45,6 @@ The phase is calculated as the difference between the two timestamps by a ecmc p
 
 Note: Require version 3.4.0
 
-Note: Use ecmccomgui_py36 to activate python env for ecmccomgui
 ```
 $ cd iosch
 $ iocsh.bash start_ioc.script
@@ -55,10 +54,10 @@ $ iocsh.bash start_ioc.script
 Item | Prefix| Pv name | Description
 --- | --- | --- | --- |
 1 | IOC_TEST: | ec0-s1-EL5021-PosAct  | AMO SinCos encoder terminal Actual position (Amo encoder) [raw counts]
-2 | IOC_TEST: | ec0-s2-EL3174_0to10V-AI1  | Telemess displacement sensor 1 0..15 [mm]
-3 | IOC_TEST: | ec0-s2-EL3174_0to10V-AI2  | Telemess displacement sensor 2 0..15 [mm]
-4 | IOC_TEST: | ec0-s2-EL3174_0to10V-AI3  | Telemess displacement sensor 3 0..15 [mm]
-5 | IOC_TEST: | ec0-s2-EL3174_0to10V-AI4  | Telemess displacement sensor 4 0..20 [mm]
+2 | IOC_TEST: | ec0-s2-EL3174_0to10V-AI1  | Telemess displacement sensor 1 (0deg)  0..15 [mm]
+3 | IOC_TEST: | ec0-s2-EL3174_0to10V-AI2  | Telemess displacement sensor 2 (120deg) 0..15 [mm]
+4 | IOC_TEST: | ec0-s2-EL3174_0to10V-AI3  | Telemess displacement sensor 3 (240deg) 0..15 [mm]
+5 | IOC_TEST: | ec0-s2-EL3174_0to10V-AI4  | Telemess displacement sensor 4 (vertical) 0..20 [mm]
 6 | IOC_TEST: | ec0-s4-EL1252-CH1-PosTime-Act  | Photecell timestamp positive edge [ns]
 7 | IOC_TEST: | ec0-s4-EL1252-CH1-NegTime-Act  | Photecell timestamp negative edge [ns]
 8 | IOC_TEST: | ec0-s4-EL1252-CH2-PosTime-Act  | Timing system timestamp positive edge [ns]
@@ -74,5 +73,8 @@ https://github.com/anderssandstrom/e3-ecmc_plugin_fft
 The signales are scaled in the FFT plugin to [mm]. So the resulting spectra and rawdata is then also in [mm]. By default the system samples data in 1kHz for 10 revs at 36/14 Hz speed (25714 values). 
 
 ### GUI
+
+Note: Use ecmccomgui_py37 to activate python env for ecmccomgui
+
 The ecmccomgui can be used to view the FFT results: https://github.com/anderssandstrom/ecmccomgui
 
