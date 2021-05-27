@@ -12,8 +12,8 @@ The system is also setup to make FFTs of displacement sensors and encoder signal
 
 ### Electrical connections
 
-1. IMPORTANT: Make sure the measurement box and the measurement object are grounded.
-2. Connect power coord.
+1. IMPORTANT: Make sure the crate and the measurement objects are grounded.
+2. Connect power coord (this should also connect the crate to ground).
 3. Open crate and switch on the power.
 
 ### Ethercat hardware
