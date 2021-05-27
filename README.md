@@ -27,7 +27,7 @@ $ ethercat slaves
 
 ### Encoder
 
-AMO encoder should be conneted to the black cable with heidenhain connector. This is interbally conencted to EL5021 (slave 1). 
+AMO encoder should be conneted to the black cable with heidenhain connector. This is internally conencted to EL5021 (slave 1). 
 
 ### Telemess sensors
 
