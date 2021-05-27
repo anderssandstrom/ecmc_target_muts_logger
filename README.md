@@ -113,7 +113,7 @@ All accessible PVs are listed in: [PVs](./iocsh/pvs.log)
 
 ## FFTs
 
-The analog displacement sensors are linked fft plugins:
+The analog displacement sensors are linked to ecmc fft plugin:
 https://github.com/anderssandstrom/e3-ecmc_plugin_fft
 
 The spectras can be viewed with a dedicated GUI through ecmccomgui by entering the below prefix and pv name: 
