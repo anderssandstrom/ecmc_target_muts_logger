@@ -6,6 +6,8 @@ The crate can be used to accuire the following data:
 2. Encoder signal
 3. Phase error
 
+The system is also setup to make FFTs of displacement sensors and encoder signal.
+
 ## Hardware
 
 ### Electrical connections
