@@ -1,7 +1,7 @@
 # ecmc_target_muts_logger
 Logger for target tests at ESS MUTS and FAT at ESS Bilbao (Galicia).
 
-The crate can be used to accuire teh following data:
+The crate can be used to accuire the following data:
 1. Dispalcements of rotor by 4 sensors
 2. Encoder signal
 3. Phase error
@@ -12,8 +12,8 @@ The crate can be used to accuire teh following data:
 
 IMPORTANT: Make sure the measurement box and the measurement object are grounded.
 
-
 ### Ethercat hardware
+
 ```
 $ ethercat slaves
 0  0:0  PREOP  +  EK1100 EtherCAT-Koppler (2A E-Bus)
@@ -24,7 +24,8 @@ $ ethercat slaves
 ```
 
 ### Encoder
-AMO encoder should be conneted to EL5021 (slave 1)
+
+AMO encoder should be conneted to the black cable with heidenhain connector. This is interbally conencted to EL5021 (slave 1). 
 
 ### Telemess sensors
 
@@ -39,7 +40,7 @@ Item | Serial No. | Position [deg] | Range [mm] | Description
 
 Note: It's important that the sensor are connected to the correct cable of the box since the amplifiers are calibrated to the sensors.
 
-The telemess sensors are connected internally to the EL3174-002 (slave 2).
+The telemess sensors are connected internally to an EL3174-002 (slave 2).
 
 Values are then accessed in the follwoing records (scaled in mm):
 ```
@@ -61,7 +62,7 @@ WARNING: The EL1252-0050 is a 5V terminal and will break if a 24 V signal is con
 
 The phase is calculated as the difference between the two timestamps by a ecmc plc. Phase errors bigger than 20mm will be filtered away by the plc.
 
-## Start ioc
+## Start IOC
 
 Note: Require version 3.4.0
 
