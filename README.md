@@ -88,7 +88,7 @@ Enjoy E3!
 
 Start IOC:
 ```
-$ cd iosch
+$ cd /home/dev/sources/ecmc_target_muts_logger/iocsh
 $ iocsh.bash start_ioc.script
 ```
 
