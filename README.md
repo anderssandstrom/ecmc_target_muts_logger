@@ -4,7 +4,7 @@ Logger for target tests at ESS MUTS and FAT at ESS Bilbao (Galicia).
 The crate can be used to accuire the following data:
 1. Dispalcements of rotor by 4 sensors
 2. Encoder signal
-3. Phase error
+3. Phase error (only for MUTS)
 
 The system is also setup to make FFTs of displacement sensors and encoder signal.
 
