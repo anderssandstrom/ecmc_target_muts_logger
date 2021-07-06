@@ -1,3 +1,5 @@
-0  0:0  OP     +  EK1100 EtherCAT-Koppler (2A E-Bus)
+0  0:0  PREOP  +  EK1100 EtherCAT-Koppler (2A E-Bus)
 1  0:1  PREOP  +  EL5021 1Ch. Sin/Cos Encoder
 2  0:2  PREOP  +  EL3174-0002 4K. Ana. Eingang  +/-10V, +/-20mA, 16 Bit, Galvanis
+3  0:3  PREOP  +  EL9505 Netzteilklemme 5V
+4  0:4  PREOP  +  EL1252-0050 2K. Fast Dig. Eingang 5V, 1µs, DC Latch
