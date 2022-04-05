@@ -154,9 +154,10 @@ ecmcConfigOrDie "Cfg.EcApplyConfig(1)"
 #$(SCRIPTEXEC) $(ecmccfg_DIR)loadPLCFile.cmd, "PLC_ID=0, SAMPLE_RATE_MS=10,FILE=./plc/phaseError.plc, PLC_MACROS='DBG=#,PLC_ID=0,PHOTOCELL_POSTIME=ec0.s4.CH1_LATCH_POS,TIMING_POSTIME=ec0.s4.CH2_LATCH_POS,MIN_PHASE_ERROR=0,MAX_PHASE_ERROR=5'")
 #dbLoadRecords("ecmcPlcAnalog.db","P=$(IOC):,PORT=MC_CPU1,ASYN_NAME=plcs.plc0.static.phaseErrorMM,REC_NAME=-PhaseErrorMM,TSE=0,T_SMP_MS=10")
 
-
 dbLoadRecords("ILD2300DownSample.db","ECMC_P=$(IOC):")
 
+# Load record for autotest
+dbLoadRecords("testAdmin.db","P=$(IOC):")
 
 ##############################################################################
 ## Cleanup:
