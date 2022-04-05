@@ -1,0 +1,5 @@
+record(ai,"${ECMC_P}ILD_DownSample"){
+  field(PINI, "${PINI=1}")  
+  field(INP,  "IOC_TEST:m0s005-Enc01-PosAct.VAL")
+  field(SCAN, ".1 second")
+}
