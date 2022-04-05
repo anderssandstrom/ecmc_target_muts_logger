@@ -85,15 +85,15 @@ ecmcConfigOrDie "Cfg.EcApplyConfig(1)"
 
 ##############################################################################
 ## Prepare FFT plugins
-require ecmc_plugin_fft master  # to get access to db file..
+#require ecmc_plugin_fft master  # to get access to db file..
 
 # Decide how many revs to FFT then calc buffer size
-epicsEnvSet("ECMC_REVS_TO_FFT", 70)
-epicsEnvSet("ECMC_FFT_RATE", 200)
-ecmcEpicsEnvSetCalc("ECMC_FFT_NELM",   "${ECMC_REVS_TO_FFT=2}*36.0/14.0*${ECMC_FFT_RATE=1000}","%d")
+#epicsEnvSet("ECMC_REVS_TO_FFT", 70)
+#epicsEnvSet("ECMC_FFT_RATE", 200)
+#ecmcEpicsEnvSetCalc("ECMC_FFT_NELM",   "${ECMC_REVS_TO_FFT=2}*36.0/14.0*${ECMC_FFT_RATE=1000}","%d")
 
 # Scale encoder in deg (21 bit per rev)
-ecmcEpicsEnvSetCalc("ECMC_ENC_SCALE",   "360/2097152","%lf")
+#ecmcEpicsEnvSetCalc("ECMC_ENC_SCALE",   "360/2097152","%lf")
 
 ##############################################################################
 ## Load plugin: FFT AMO encoder
