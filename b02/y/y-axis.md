@@ -1,5 +1,13 @@
 ## Range y
 Opto range: 
+70.74..28.48
+
+range= 42.26
+
+set 21 at upper limit
+
+## current
+8 amps peak
 
 ```
 # no log
