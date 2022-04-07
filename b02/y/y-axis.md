@@ -18,3 +18,4 @@ camonitor -n -g10 TARGET_DU:Y-PosAct TARGET_DU:ec0-s11-EL7201-PosAct IOC_TEST:IL
 camonitor -n -g10 TARGET_DU:Y-PosAct TARGET_DU:ec0-s11-EL7201-PosAct IOC_TEST:ILD_DownSample TARGET_DU:Y-LimitMax TARGET_DU:Y-LimitMin IOC_TEST:TestNumber TARGET_DU:Y-PosCmd TARGET_DU:Y-TempAct | tee y.log
 
 ```
+temperature rise from 28 to approx 42
