@@ -1,0 +1,79 @@
+# File for stainless steel calibration
+#
+# EL3174 IO range 0..10V 0..30518
+#
+# Calibration data for Telemess combination:
+#   Sensor:            33020
+#   Amplifier:         21877
+#   Range:             0..15mm
+#   Sensor AI channel: 1
+breaktable(typeTelemess33020_21877) {
+	-2807.656 0
+	1129.166 1.5
+    5340.65 3
+    9094.364 4.5
+    12329.272 6
+    15259.0 7.5
+    18005.62 9
+    19836.7 10.5
+    21393.118 12
+    22125.55 13.5
+    22705.392 15
+}
+
+# Calibration data for Telemess combination:
+#   Sensor:            33021
+#   Amplifier:         21878
+#   Range:             0..15mm
+#   Sensor AI channel: 2
+breaktable(typeTelemess33021_21878) {
+	-2868.692 0
+	854.504 1.5
+    5188.06 3
+    8911.256 4.5
+    12329.272 6
+    15320.036 7.5
+    18097.174 9
+    20202.916 10.5
+    21576.226 12
+    22552.802 13.5
+    23224.198 15
+}
+
+# Calibration data for Telemess combination:
+#   Sensor:            33018
+#   Amplifier:         21876
+#   Range:             0..15mm
+#   Sensor AI channel: 3
+breaktable(typeTelemess33018_21876) {
+	-2899.21 0
+	793.468 1.5
+    5035.47 3
+    8911.256 4.5
+    12268.236 6
+    15259.0 7.5
+    18127.692 9
+    20141.88 10.5
+    21545.708 12
+    22552.802 13.5
+    23193.68 15
+}
+
+# Calibration data for Telemess combination:
+#   Sensor:            32900
+#   Amplifier:         21875
+#   Range:             0..20mm
+#   Sensor AI channel: 4
+breaktable(typeTelemess32900_21875) {
+	-2594.03 0
+	1617.454 2
+    5798.42 4
+    9185.918 6
+    12268.236 8
+    15259.0 10
+    18371.836 12
+    21148.974 14
+    22888.5 16
+    23895.594 18
+    24566.99 20
+}
