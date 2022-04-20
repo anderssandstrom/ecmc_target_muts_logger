@@ -89,7 +89,7 @@ Enjoy E3!
 Start IOC:
 ```
 $ cd /home/dev/sources/ecmc_target_muts_logger/iocsh
-$ iocsh.bash start_ioc.script
+$ iocsh.bash start_ioc_stainless.script
 ```
 
 ## Intresting PVs
