@@ -19,3 +19,9 @@ camonitor -n -g10 TARGET_DU:Y-PosAct TARGET_DU:ec0-s11-EL7201-PosAct IOC_TEST:IL
 
 ```
 temperature rise from 28 to approx 42
+
+# Y max max
+Stops and disables
+
+# Y min min
+Stops and disables

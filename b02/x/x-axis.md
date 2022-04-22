@@ -20,3 +20,9 @@ camonitor -n -g10 TARGET_DU:X-PosAct TARGET_DU:ec0-s10-EL7201-PosAct IOC_TEST:IL
 ```
 
 Forgot to log temp in first test but temperature increase from 28 to 48degC
+
+# X max max
+Stops and disables
+
+# X min min
+Stops and disables

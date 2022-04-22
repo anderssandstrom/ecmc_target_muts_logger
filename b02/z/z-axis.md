@@ -34,3 +34,21 @@ Redesign of low limit cam would be great so it's activated all the way down to p
 
 # GUI
 Need to visualize correct limit switch in GUI depending on if parkingrange or not
+
+
+# Z max max
+Stops and disables
+engage 8.42mm
+
+# Z min
+engage at -1.72mm
+
+# Z min min
+engage at -2.73
+Stops and disables when parking range not enabled
+
+# Z park min 
+engage at -15.7mm
+
+# Z park min min
+engage at -16.6mm and disables when parking range enable
