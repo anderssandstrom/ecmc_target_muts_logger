@@ -15,10 +15,10 @@ Process:
 5. Execute command
 
 
-Plot of velo and drive IL:
+Plot of velo and PLC error:
 ![Results](overspeedIL_plc_plot.png)
 
-Indra drive diagnostic trace:
+Picture of GUI PLC error:
 ![Diagnostic](plcOverspeedILDiag.jpeg)
 
 
