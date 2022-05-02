@@ -4,8 +4,8 @@
 ## Ovespeed test
 Overspeed test PLC:
 Have been tested several times.
-28RPM act velo Works
-25RPM set Velo Works
+* 28RPM act velo Works
+* 25RPM set Velo Works
 
 ### Overspeed test in drive
 Drive is limiting velocity setpoint at 25rpm and disables torque at 1.125*25=28RPM.
