@@ -20,7 +20,7 @@ Process:
 7. Execute command
 
 Plot of velo and drive IL:
-![Results](./b02/rot/overspeedIL_drive_plot.png)
+![Results](overspeedIL_drive_plot.png)
 
 Indra drive diagnostic trace:
-![Diagnostic](./b02/rot/driveOverspeedILDiag.jpeg)
+![Diagnostic](driveOverspeedILDiag.jpeg)
