@@ -2,7 +2,7 @@
 
 
 ## Ovespeed test
-Overspeed test PLC:
+### Overspeed test PLC:
 Have been tested several times.
 * 28RPM act velo Works
 * 25RPM set Velo Works
@@ -26,8 +26,14 @@ Conclusion:
 
 PLC overspeed interlock works as intended.
 
+### Notes
 ```
+# Sample data
 camonitor -n -g10 TARGET_DU:Rotation-VelLastSectorAct_2 TARGET_DU:Rotation-VelAct TARGET_DU:Rotation-Err | tee test_PLC_x.log
+
+# Plot
+conda activate ecmccomgui_py35
+cat test_PLC_x.log | python ~/source/ecmccomgui/pyDataManip/plotCaMonitor.py 
 ```
 
 ### Overspeed test in drive
@@ -59,6 +65,6 @@ camonitor -n -g10 TARGET_DU:Rotation-Drv-Stat-Err TARGET_DU:Rotation-VelAct | te
 
 # Plot
 conda activate ecmccomgui_py35
-cat test_x.log | python ~/source/ecmccomgui/pyDataManip/plotCaMonitor.py 
+cat test_drive_x.log | python ~/source/ecmccomgui/pyDataManip/plotCaMonitor.py 
 
 ``` 
