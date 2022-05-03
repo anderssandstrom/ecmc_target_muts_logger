@@ -2,17 +2,39 @@
 # ecmc PLC file to calculate phase error from timestaps:
 # MACROS:
 #  PLC_ID            : Id of this PLC
-#
+#  CYCLE_TIME_S      : PLC cycle time
 # ALWAYS output the velocity.
 #
 # Author: Anders Sandström 2020-11-20
 # 
 
-#println('Encoder pos: ',ec0.s1.positionActual01 );
+# Scale to degrees
+static.pos:=ec0.s1.positionActual01*360/2097152;
+
+#println('Encoder pos: ',static.pos);
 
 ec0.s1.encoderValue01:=0;
+
+static.dist:=static.pos-static.oldPos;
+
+if(abs(static.pos-static.oldPos)>200) {
+    if(static.oldPos>static.pos) {
+        # overflow
+        static.dist:=360-static.oldPos+static.pos;
+    } else {
+        # undeflow
+        static.dist:=static.oldPos+static.pos-360;
+    };
+};
+
+static.velo:=static.dist/360*60/${CYCLE_TIME_S};
+#println('******************************');
+#println('Encoder pos : ',static.pos);
+#println('Encoder dist: ',static.dist);
+#println('Encoder velo: ',static.velo);
+
 
 # ec0.s1.positionActual01
 # ec0.s3.analogOutput02
 
-static.oldPos := ec0.s1.positionActual01;
+static.oldPos:=static.pos;

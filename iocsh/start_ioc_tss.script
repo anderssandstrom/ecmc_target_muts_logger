@@ -43,7 +43,7 @@ epicsEnvSet("ECMC_EC_SLAVE_NUM",              "1")
 ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL5021, SUBST_FILE=../db/amo.substitutions"
 
 # Enable reset on c-latch (index track)
-#ecmcConfigOrDie "Cfg.EcAddSdo($(ECMC_EC_SLAVE_NUM),0x8000,0x1,1,1)"
+ecmcConfigOrDie "Cfg.EcAddSdo($(ECMC_EC_SLAVE_NUM),0x8000,0x1,1,1)"
 
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "2")
 ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL3174_0to10V, SUBST_FILE=../db/telemessEddyCurrentSensors.substitutions"
@@ -83,8 +83,8 @@ ecmcConfigOrDie "Cfg.EcApplyConfig(1)"
 
 ###############################################################################
 ### PLC 0: For calculating velocity
-$(SCRIPTEXEC) $(ecmccfg_DIR)loadPLCFile.cmd, "PLC_ID=0, SAMPLE_RATE_MS=60,FILE=./plc/velo.plc, PLC_MACROS='DBG=#,PLC_ID=0'")
-#dbLoadRecords("ecmcPlcAnalog.db","P=$(IOC):,PORT=MC_CPU1,ASYN_NAME=plcs.plc0.static.phaseErrorMM,REC_NAME=-PhaseErrorMM,TSE=0,T_SMP_MS=10")
+$(SCRIPTEXEC) $(ecmccfg_DIR)loadPLCFile.cmd, "PLC_ID=0, SAMPLE_RATE_MS=60,FILE=./plc/velo.plc, PLC_MACROS='DBG=#,PLC_ID=0,CYCLE_TIME_S=0.06'")
+dbLoadRecords("../db/velo.db","P=$(IOC):,PORT=MC_CPU1,ASYN_NAME=plcs.plc0.static.velo,TSE=-2,T_SMP_MS=1")
 
 ##############################################################################
 ## Cleanup:
