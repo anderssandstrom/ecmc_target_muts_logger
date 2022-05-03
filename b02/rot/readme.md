@@ -80,6 +80,9 @@ caput TARGET_DU:Rotation-VelSetCmd 5
 
 # ecmc PLC velo:
 camonitor IOC_TEST:PLC-VelAct
+
+# All:
+camonitor -n -g10 TARGET_DU:Rotation-VelLastSectorAct TARGET_DU:Rotation-VelAct TARGET_DU:Rotation-Err TARGET_DU:Rotation-Drv-Stat-STOActiveCh1 TARGET_DU:Rotation-Drv-Stat-STOActiveCh2 IOC_TEST:PLC-VelAct | tee test.log
 ``` 
 
 
