@@ -29,7 +29,7 @@ PLC overspeed interlock works as intended.
 ### Notes
 ```
 # Sample data
-camonitor -n -g10 TARGET_DU:Rotation-VelLastSectorAct_2 TARGET_DU:Rotation-VelAct TARGET_DU:Rotation-Err | tee test_PLC_x.log
+camonitor -n -g10 TARGET_DU:Rotation-VelLastSectorAct TARGET_DU:Rotation-VelAct TARGET_DU:Rotation-Err | tee test_PLC_x.log
 
 # Plot
 conda activate ecmccomgui_py35
@@ -61,7 +61,7 @@ Drive overspeed interlock works as intended.
 ### Notes
 ```
 # Sample data
-camonitor -n -g10 TARGET_DU:Rotation-Drv-Stat-Err TARGET_DU:Rotation-VelAct | tee test_drive_x.log
+camonitor -n -g10 TARGET_DU:Rotation-Drv-Stat-Err TARGET_DU:Rotation-VelAct TARGET_DU:Rotation-VelLastSectorAct | tee test_drive_x.log
 
 # Plot
 conda activate ecmccomgui_py35
