@@ -1,0 +1,18 @@
+############################################
+# ecmc PLC file to calculate phase error from timestaps:
+# MACROS:
+#  PLC_ID            : Id of this PLC
+#
+# ALWAYS output the velocity.
+#
+# Author: Anders Sandström 2020-11-20
+# 
+
+#println('Encoder pos: ',ec0.s1.positionActual01 );
+
+ec0.s1.encoderValue01:=0;
+
+# ec0.s1.positionActual01
+# ec0.s3.analogOutput02
+
+static.oldPos := ec0.s1.positionActual01;

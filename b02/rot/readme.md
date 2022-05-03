@@ -68,3 +68,14 @@ conda activate ecmccomgui_py35
 cat test_drive_x.log | python ~/source/ecmccomgui/pyDataManip/plotCaMonitor.py 
 
 ``` 
+
+## Normnal test for MPS
+
+``` 
+camonitor -n -g10 TARGET_DU:Rotation-VelLastSectorAct TARGET_DU:Rotation-VelAct TARGET_DU:Rotation-Err TARGET_DU:Rotation-Drv-Stat-STOActiveCh1 TARGET_DU:Rotation-Drv-Stat-STOActiveCh2 | tee test_mps_x.log
+``` 
+
+
+
+
+
