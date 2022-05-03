@@ -77,6 +77,9 @@ camonitor -n -g10 TARGET_DU:Rotation-VelLastSectorAct TARGET_DU:Rotation-VelAct 
 
 # Change velo
 caput TARGET_DU:Rotation-VelSetCmd 5
+
+# ecmc PLC velo:
+camonitor IOC_TEST:PLC-VelAct
 ``` 
 
 
