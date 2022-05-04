@@ -83,7 +83,7 @@ ecmcConfigOrDie "Cfg.EcApplyConfig(1)"
 
 ###############################################################################
 ### PLC 0: For calculating velocity
-$(SCRIPTEXEC) $(ecmccfg_DIR)loadPLCFile.cmd, "PLC_ID=0, SAMPLE_RATE_MS=60,FILE=./plc/velo.plc, PLC_MACROS='DBG=#,PLC_ID=0,CYCLE_TIME_S=0.06'")
+$(SCRIPTEXEC) $(ecmccfg_DIR)loadPLCFile.cmd, "PLC_ID=0, SAMPLE_RATE_MS=70,FILE=./plc/velo.plc, PLC_MACROS='DBG=#,PLC_ID=0,CYCLE_TIME_S=0.07'")
 dbLoadRecords("../db/velo.db","P=$(IOC):,PORT=MC_CPU1,ASYN_NAME=plcs.plc0.static.velo,TSE=-2,T_SMP_MS=1")
 
 ##############################################################################
