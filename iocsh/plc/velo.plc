@@ -1,11 +1,10 @@
 ############################################
-# ecmc PLC file to calculate phase error from timestaps:
+# ecmc PLC file to calculate velocity of wheel an output on EL4122 (4..20mA)
 # MACROS:
 #  PLC_ID            : Id of this PLC
 #  CYCLE_TIME_S      : PLC cycle time
-# ALWAYS output the velocity.
 #
-# Author: Anders Sandström 2020-11-20
+# Author: Anders Sandström 2022-05-03
 # 
 
 # Scale to degrees
@@ -33,8 +32,12 @@ static.velo:=static.dist/360*60/${CYCLE_TIME_S};
 #println('Encoder dist: ',static.dist);
 #println('Encoder velo: ',static.velo);
 
-
-# ec0.s1.positionActual01
-# ec0.s3.analogOutput02
+# Absolute value of velo to analog output 
+# 0 = 4mA, 32767 = 20mA (scale 0..30rpm),
+static.veloToOutput:=static.velo;
+if(static.velo < 0) {
+  static.veloToOutput:=-static.velo;
+};
+ec0.s3.analogOutput02:=static.veloToOutput/30.0*32767;
 
 static.oldPos:=static.pos;
