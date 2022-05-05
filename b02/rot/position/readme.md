@@ -1,5 +1,11 @@
 # Positioning 0..360deg step 10 deg
 
+Data acq:
+```
+camonitor -n -g10 TARGET_DU:Rotation-VelLastSectorAct TARGET_DU:Rotation-PosAct | tee pos0x.log
+```
+
+
 Plot:
 
 ```
