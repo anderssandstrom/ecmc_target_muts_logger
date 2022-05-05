@@ -30,7 +30,6 @@ static.velo:=static.dist/360*60/${CYCLE_TIME_S};
 #println('******************************');
 #println('Encoder pos : ',static.pos);
 #println('Encoder dist: ',static.dist);
-#println('Encoder velo: ',static.velo);
 
 # Absolute value of velo to analog output 
 # 0 = 4mA, 32767 = 20mA (scale 0..30rpm),
@@ -38,6 +37,12 @@ static.veloToOutput:=static.velo;
 if(static.velo < 0) {
   static.veloToOutput:=-static.velo;
 };
-ec0.s3.analogOutput02:=static.veloToOutput/30.0*32767;
+if(static.velo > 30 or static.velo < -30) {
+  static.veloToOutput:=30;
+};
+
+ec0.s3.analogOutput01:=static.veloToOutput/30.0*32767;
+
+println('Encoder velo: ',static.velo, ' raw 01: ', ec0.s3.analogOutput01);
 
 static.oldPos:=static.pos;
