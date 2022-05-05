@@ -12,6 +12,6 @@ TARGET_DU:Rotation-PosAct[42270] 0.0099..359.9985, mean: 168.06928105512188, std
 TARGET_DU:Rotation-Home-Homed[2] 0.0..1.0, mean: 0.5, std: 0.5
 ```
 Result:
-![Homeing](home.png)
+![Homing](home.png)
 
 
