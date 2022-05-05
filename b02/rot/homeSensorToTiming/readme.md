@@ -7,7 +7,7 @@ camonitor -n -g10 TARGET_DU:ec0-s9-EL1252-BI1 TARGET_DU:Rotation-PosAct | tee ho
 ```
 
 ```
-(ecmccomgui_py35) [anderssandstrom@mcag-trgt-muts-log homeSensorToTiming]$ cat homeSenor.log | python ~/source/ecmccomgui/pyDataManip/plotCaMonitor.py 
+(ecmccomgui_py35) [anderssandstrom@mcag-trgt-muts-log homeSensorToTiming]$ cat homeSensor.log | python ~/source/ecmccomgui/pyDataManip/plotCaMonitor.py 
 Added PV: TARGET_DU:ec0-s9-EL1252-BI1
 Added PV: TARGET_DU:Rotation-PosAct
 Statistics: 
