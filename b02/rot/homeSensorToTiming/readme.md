@@ -19,5 +19,5 @@ TARGET_DU:Rotation-PosAct[5023] 0.8557..359.9863, mean: 179.2554188134581, std: 
 Result:
 ![Plot](plot.png)
 
-Optocoupler:
+Optocoupler (led light on opto coupler):
 ![Plot](opto.jpeg)
