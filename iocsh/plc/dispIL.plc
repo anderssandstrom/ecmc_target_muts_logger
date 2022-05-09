@@ -5,10 +5,19 @@
 # MACROS:
 #  DBG               : Debug printouts ('' = printouts, '#' == no debug printouts)
 #  PLC_ID            : Id of this PLC
+#  RELAY_S_ID        : Relay slave ID
+#  ANALOG_S_ID       : Analog slave ID
 #
 # Author: Anders Sandström 2022-05-09
 # 
 
+# Analog sensors:
+#  * ec0.s3.analogOutput01  (0..15mm) 0   deg
+#  * ec0.s3.analogOutput02  (0..15mm) 120 deg
+#  * ec0.s3.analogOutput03  (0..15mm) 240 deg
+#  * ec0.s3.analogOutput04  (vertical 0..20mm)
+# NOTE calibration curve needed!!
+
 # Everthing is OK test (set relay to 1)
-ec0.s7.binaryOutput01:=not(ec0.s7.binaryOutput01);
-println('Relay state: ', ec0.s7.binaryOutput01);
+ec0.s${RELAY_S_ID=7}.binaryOutput01:=not(ec0.s${RELAY_S_ID=7}.binaryOutput01);
+println('Relay state: ', ec0.s${RELAY_S_ID=7}.binaryOutput01);
