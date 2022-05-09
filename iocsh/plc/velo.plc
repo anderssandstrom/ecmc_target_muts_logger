@@ -1,6 +1,7 @@
 ############################################
 # ecmc PLC file to calculate velocity of wheel an output on EL4122 (4..20mA)
 # MACROS:
+#  DBG               : Debug printouts ('' = printouts, '#' == no debug printouts)
 #  PLC_ID            : Id of this PLC
 #  CYCLE_TIME_S      : PLC cycle time
 #
@@ -43,6 +44,6 @@ if(static.velo > 30 or static.velo < -30) {
 
 ec0.s3.analogOutput01:=static.veloToOutput/30.0*32767;
 
-println('Encoder velo: ',static.velo, ' raw 01: ', ec0.s3.analogOutput01);
+#println('Encoder velo: ',static.velo, ' raw 01: ', ec0.s3.analogOutput01);
 
 static.oldPos:=static.pos;
