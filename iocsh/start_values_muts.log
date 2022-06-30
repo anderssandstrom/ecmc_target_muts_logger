@@ -1,0 +1,10 @@
+start values:
+
+mcag-trgt-muts--8103 > dbgf IOC_TEST:m0s002-AI01
+DBF_DOUBLE:         8.0122659851        
+mcag-trgt-muts--8103 > dbgf IOC_TEST:m0s002-AI02
+DBF_DOUBLE:         15.6362906541       
+mcag-trgt-muts--8103 > dbgf IOC_TEST:m0s002-AI03
+DBF_DOUBLE:         12.0302235938       
+mcag-trgt-muts--8103 > dbgf IOC_TEST:m0s002-AI04
+DBF_DOUBLE:         1.23188405797 
