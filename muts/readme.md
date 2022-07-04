@@ -15,10 +15,6 @@
 * Both low and lowlow lim it in z direction
 
 
-
-
-
-
 # Notes
 * No xy possible due to lifting braket
 * DU Ended up very high. removbed mech shims and lowered z axis below mimmin (overided interlocks) to position -6.794 (from start position that was -13mm, but was zero since PLC was rebooted)
@@ -26,7 +22,7 @@
 * Then up and down a few times
 * zer*.log is data from sensors before lowering
 * final_position.log is when unit finaly mech fixed
+* One resolver lemo broken
 
 
-
-
+13:11: sensor is "pushed" so lost calibartion
