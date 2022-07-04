@@ -19,8 +19,12 @@ Encoder noises at 17rpm-20rpm
 check with Eider!
 
 
-## Wrong 
+## Wrong direction
 data_01.log started to late at 15rpm.. ramped up to 20
 data_02.log started to late at Xrpm.. ramped up to 20 then to 23.3
 data_03.log 23.3rpm
 data_04.log rampdown
+
+## Right direction
+data_05.log rampup 23.3rpm
+data_06.log constant velo 23.3rpm
