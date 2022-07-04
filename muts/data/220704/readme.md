@@ -33,4 +33,8 @@ data_07.log rampdown
 ## Right direction
 data_08.log rampup
 data_09.log const velo
+data_10.log rampdown
 
+## Z movement
+Moved approx 11 mm before touched piedistal
+data_11.log rampdown
