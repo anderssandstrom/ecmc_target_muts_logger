@@ -28,3 +28,4 @@ data_04.log rampdown
 ## Right direction
 data_05.log rampup 23.3rpm
 data_06.log constant velo 23.3rpm
+data_07.log rampdown
