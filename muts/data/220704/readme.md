@@ -38,3 +38,7 @@ data_10.log rampdown
 ## Z movement
 Moved approx 11 mm before touched piedistal
 data_11.log rampdown
+
+
+## filter opto
+cat data_08.log | head -n 30000 | grep Opto | awk 'BEGIN{f=1;}{if(f){f=0;old=$4;} if($4<old+0.1 && $4>old-0.1){print $0;} old=$4;}' | awk '{if($4<21){print $0;}}
