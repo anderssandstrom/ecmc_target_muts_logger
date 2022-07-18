@@ -41,4 +41,8 @@ data_11.log rampdown
 
 
 ## filter opto
-cat data_08.log | head -n 30000 | grep Opto | awk 'BEGIN{f=1;}{if(f){f=0;old=$4;} if($4<old+0.1 && $4>old-0.1){print $0;} old=$4;}' | awk '{if($4<21){print $0;}}
+cat data_08.log | head -n 130000 | grep Opto | awk 'BEGIN{f=1;}{if(f){f=0;old=$4;} if($4<old+0.1 && $4>old-0.1){print $0;} old=$4;}' | awk '{if($4<20.25){print $0;}}' | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py 
+
+## filter vertical
+ cat data_08.log | head -n 130000 | grep AI04 | awk 'BEGIN{f=1;}{if(f){f=0;old=$4;} if($4<old+0.015 && $4>old-0.015){print $0;} old=$4;}' | awk '{if($4<10.755){print $0;}}' | awk 'BEGIN{f=1;}{if(f){f=0;old=$4;} if($4<old+0.015 && $4>old-0.015){print $0;} old=$4;}' | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py 
+
