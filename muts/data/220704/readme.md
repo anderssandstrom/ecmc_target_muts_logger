@@ -63,7 +63,8 @@ IOC_TEST:m0s002-AI03[24604] 12.8569..14.6239, mean: 13.746221244513086, std: 0.5
 
 ## Opto
 cat data_07.log |  grep Opto | awk 'BEGIN{f=1;}{if(f){f=0;old=$4;} if($4<old+0.1 && $4>old-0.1){print $0;} old=$4;}' | awk '{if($4<20.25){print $0;}}' | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py 
-IOC_TEST:m0s008-ec0-s8-OptoILD2300_50mm-CH01-PosAct[1240] 18.9951..20.2388, mean: 19.54435370967742, std: 0.3327594920763094, +-0.62
+IOC_TEST:m0s008-ec0-s8-OptoILD2300_50mm-CH01-PosAct[1268] 18.9951..20.4683, mean: 19.562906703470027, std: 0.35161172550840847, +-0.74
+
 
 ## vertical AI04
 cat data_07.log | grep AI04 | awk 'BEGIN{f=1;}{if(f){f=0;old=$4;} if($4<old+0.015 && $4>old-0.015){print $0;} old=$4;}' | awk '{if($4<10.755){print $0;}}' | awk 'BEGIN{f=1;}{if(f){f=0;old=$4;} if($4<old+0.015 && $4>old-0.015){print $0;} old=$4;}' | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py 
