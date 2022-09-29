@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Main</name>
+  <width>1010</width>
+  <height>570</height>
+  <grid_color>
+    <color red="127" green="127" blue="127">
+    </color>
+  </grid_color>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse_1</name>
+    <x>210</x>
+    <y>80</y>
+    <width>370</width>
+    <height>360</height>
+    <line_color>
+      <color name="GREEN-GROUP-BACKGROUND" red="172" green="191" blue="173">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>IOC_TEST:m0s002-AI01</pv_name>
+    <x>125</x>
+    <y>150</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>IOC_TEST:m0s002-AI02</pv_name>
+    <x>565</x>
+    <y>150</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>IOC_TEST:m0s002-AI03</pv_name>
+    <x>320</x>
+    <y>450</y>
+    <precision>3</precision>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>610</x>
+    <y>260</y>
+    <width>320</width>
+    <height>30</height>
+    <line_color>
+      <color name="GREEN-GROUP-BACKGROUND" red="172" green="191" blue="173">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>IOC_TEST:m0s002-AI04</pv_name>
+    <x>810</x>
+    <y>310</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>IOC_TEST:m0s008-ec0-s8-OptoILD2300_50mm-CH01-PosAct</pv_name>
+    <x>640</x>
+    <y>350</y>
+    <precision>3</precision>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <x>781</x>
+    <y>298</y>
+    <width>10</width>
+    <height>30</height>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>695</x>
+    <y>291</y>
+    <width>1</width>
+    <height>40</height>
+    <line_color>
+      <color name="ERROR" red="252" green="13" blue="27">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="40.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="10.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_2</name>
+    <x>690</x>
+    <y>320</y>
+    <width>10</width>
+    <height>30</height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_5</name>
+    <x>750</x>
+    <y>1</y>
+    <width>40</width>
+    <height>260</height>
+    <line_color>
+      <color name="GREEN-GROUP-BACKGROUND" red="172" green="191" blue="173">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+  </widget>
+</display>

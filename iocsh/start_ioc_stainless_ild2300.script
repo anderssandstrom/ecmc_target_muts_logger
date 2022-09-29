@@ -2,7 +2,7 @@
 ## Startscript for MUTS logger:
 ##   Logging data from displacements sensors, phase error and encoder value.
 ##   The encoder and displacement sensors are linked to ecmc fft plugin.
-##
+# #
 ## Hardware:
 ##   1. One sin/cos 1VPP encoder input
 ##   2. Four analog inputs for telemess distance sensors
@@ -25,6 +25,7 @@ require ecmccfg 7.0.1
 $(ECMCCFG_INIT)$(SCRIPTEXEC) ${ecmccfg_DIR}startup.cmd, "IOC=$(IOC),ECMC_VER=7.0.1,EC_RATE=1000"
 
 ##############################################################################
+
 ## Load breaktables with calibration data for Telemess sensors.
 require iocshutils 2.10.0  # For updateMenuConvert()
 dbLoadRecords ../src/bptTypeTelemessCalib_stainless.dbd
@@ -90,7 +91,7 @@ ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DES
 ##Add optic sensor
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "8")
 ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=OptoILD2300_50mm"
-dbLoadTemplate(ecmcOptoILD2300_50mm.substitutions,"P=IOC_TEST:,PORT=MC_CPU1,ADDR=0,TIMEOUT=1,MASTER_ID=0,SLAVE_POS=5,HWTYPE=OptoILD2300_50mm,T_SMP_MS=100,TSE=-2,NELM=1")
+dbLoadTemplate(ecmcOptoILD2300_50mm.substitutions,"ECMC_P=IOC_TEST:,PORT=MC_CPU1,ADDR=0,TIMEOUT=1,MASTER_ID=0,SLAVE_POS=5,HWTYPE=OptoILD2300_50mm,T_SMP_MS=100,TSE=-2,NELM=1")
 
 
 #Apply hardware configuration
