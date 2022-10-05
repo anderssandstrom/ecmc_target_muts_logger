@@ -10,7 +10,7 @@
   <widget type="ellipse" version="2.0.0">
     <name>Ellipse_1</name>
     <x>210</x>
-    <y>80</y>
+    <y>30</y>
     <width>370</width>
     <height>360</height>
     <line_color>
@@ -25,20 +25,20 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update</name>
     <pv_name>IOC_TEST:m0s002-AI01</pv_name>
-    <x>125</x>
-    <y>150</y>
+    <x>130</x>
+    <y>90</y>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_1</name>
     <pv_name>IOC_TEST:m0s002-AI02</pv_name>
-    <x>565</x>
-    <y>150</y>
+    <x>570</x>
+    <y>90</y>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_2</name>
     <pv_name>IOC_TEST:m0s002-AI03</pv_name>
-    <x>320</x>
-    <y>450</y>
+    <x>330</x>
+    <y>400</y>
     <precision>3</precision>
   </widget>
   <widget type="rectangle" version="2.0.0">
@@ -124,8 +124,8 @@
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <text>Seems to be in almost exactly in minus Y direction</text>
-    <x>470</x>
-    <y>430</y>
+    <x>450</x>
+    <y>400</y>
     <width>410</width>
     <height>40</height>
   </widget>
@@ -133,7 +133,7 @@
     <name>Strip Chart_1</name>
     <x>10</x>
     <y>490</y>
-    <width>1060</width>
+    <width>720</width>
     <height>340</height>
     <time_range>5 minute</time_range>
     <y_axes>
@@ -190,13 +190,48 @@
         <point_size>10</point_size>
         <visible>true</visible>
       </trace>
+    </traces>
+  </widget>
+  <widget type="stripchart" version="2.0.0">
+    <name>Strip Chart_3</name>
+    <x>730</x>
+    <y>490</y>
+    <width>720</width>
+    <height>340</height>
+    <time_range>5 minute</time_range>
+    <y_axes>
+      <y_axis>
+        <title>Y</title>
+        <autoscale>false</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>35.0</maximum>
+        <show_grid>true</show_grid>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
       <trace>
-        <name>$(traces[3].y_pv)</name>
-        <y_pv>IOC_TEST:m0s002-AI04</y_pv>
+        <name>$(traces[0].y_pv)</name>
+        <y_pv>IOC_TEST:m0s002-AI03</y_pv>
         <axis>0</axis>
         <trace_type>2</trace_type>
         <color>
-          <color red="170" green="0" blue="255">
+          <color red="0" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <y_pv>IOC_TEST:m0s008-ec0-s8-OptoILD2300_50mm-CH01-PosAct</y_pv>
+        <axis>0</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color red="255" green="0" blue="0">
           </color>
         </color>
         <line_width>2</line_width>
@@ -205,5 +240,29 @@
         <visible>true</visible>
       </trace>
     </traces>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Horizontal</text>
+    <x>200</x>
+    <y>440</y>
+    <width>410</width>
+    <height>40</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Vertical</text>
+    <x>930</x>
+    <y>440</y>
+    <width>410</width>
+    <height>40</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
   </widget>
 </display>
