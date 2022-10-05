@@ -121,4 +121,12 @@
       </color>
     </background_color>
   </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Seems to be in almost exactly in minus Y direction</text>
+    <x>201</x>
+    <y>480</y>
+    <width>410</width>
+    <height>40</height>
+  </widget>
 </display>
