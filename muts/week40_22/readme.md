@@ -31,3 +31,7 @@ now teh eddy current sensors show rather equal values.
 
 ## Now at operating position in xyz
 Took log (have not homed motors)
+
+took some resolver measurements camonitor -g10 TARGET_DU:ec0-s10-EL7201-PosAct TARGET_DU:ec0-s11-EL7201-PosAct TARGET_DU:ec0-s12-EL7201-PosAct | tee resolver_zero_op_pos.log
+also:
+
