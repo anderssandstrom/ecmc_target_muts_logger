@@ -1,0 +1,59 @@
+##############################################################################
+## Startscript for MUTS logger:
+##   Logging data from displacements sensors, phase error and encoder value.
+##   The encoder and displacement sensors are linked to ecmc fft plugin.
+# #
+## Hardware:
+##   1. One sin/cos 1VPP encoder input
+##   2. Four analog inputs for telemess distance sensors
+##   3. Timesatmped inputs for phase error calculation
+##   Note: Calibration of telemess sensors by use of epics breaktables (bptTypeTelemessCalib_stainless.dbd).
+##         The breaktables are used for both ai records and FFT plugins.
+##
+## Author: Anders Sandström, anders.sandstrom@ess.eu
+##
+
+##############################################################################
+## Initiation:
+epicsEnvSet("IOC" ,"$(IOC="IOC_TEST")")
+epicsEnvSet("ECMCCFG_INIT" ,"")  #Only run startup once (auto at PSI, need call at ESS), variable set to "#" in startup.cmd
+epicsEnvSet("SCRIPTEXEC" ,"$(SCRIPTEXEC="iocshLoad")")
+
+require ecmccfg 7.0.1
+
+# run module startup.cmd (only needed at ESS  PSI auto call at require)
+$(ECMCCFG_INIT)$(SCRIPTEXEC) ${ecmccfg_DIR}startup.cmd, "IOC=$(IOC),ECMC_VER=7.0.1,EC_RATE=1000"
+
+##############################################################################
+
+## Load breaktables with calibration data for Telemess sensors.
+require iocshutils 2.10.0  # For updateMenuConvert()
+dbLoadRecords ../src/bptTypeTelemessCalib_stainless.dbd
+updateMenuConvert
+dbDumpBreaktable
+
+##############################################################################
+## Configure hardware:
+system "ethercat slaves"
+
+## Add optic sensor ILD2300-100 (100mm range)
+epicsEnvSet("ECMC_EC_SLAVE_NUM",              "0")
+${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=OptoILD2300_100mm"
+
+#Apply hardware configuration
+ecmcConfigOrDie "Cfg.EcApplyConfig(1)"
+
+##############################################################################
+## Configure diagnostics:
+ecmcConfigOrDie "Cfg.EcSetDiagnostics(1)"
+ecmcConfigOrDie "Cfg.EcEnablePrintouts(0)"
+ecmcConfigOrDie "Cfg.EcSetDomainFailedCyclesLimit(100)"
+
+##############################################################################
+## go active
+$(SCRIPTEXEC) ($(ecmccfg_DIR)setAppMode.cmd)
+iocInit()
+
+##############################################################################
+## Store Records to file
+dbl > pvs.log
