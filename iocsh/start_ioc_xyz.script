@@ -1,0 +1,117 @@
+##############################################################################
+## Startscript for measuring accuracy of steppers
+## All sensors in  normal MUTS logger and 2 additional micro-epsilon ILD2300 sensors
+##
+## Author: Anders Sandström, anders.sandstrom@ess.eu
+##
+
+##############################################################################
+## Initiation:
+epicsEnvSet("IOC" ,"$(IOC="IOC_TEST")")
+epicsEnvSet("ECMCCFG_INIT" ,"")  #Only run startup once (auto at PSI, need call at ESS), variable set to "#" in startup.cmd
+epicsEnvSet("SCRIPTEXEC" ,"$(SCRIPTEXEC="iocshLoad")")
+
+require ecmccfg 8.0.0
+
+# run module startup.cmd (only needed at ESS  PSI auto call at require)
+$(ECMCCFG_INIT)$(SCRIPTEXEC) ${ecmccfg_DIR}startup.cmd, "IOC=$(IOC),ECMC_VER=8.0.0,EC_RATE=1000"
+
+##############################################################################
+
+## Load breaktables with calibration data for Telemess sensors.
+require iocshutils 2.10.0  # For updateMenuConvert()
+dbLoadRecords ../src/bptTypeTelemessCalib_stainless.dbd
+updateMenuConvert
+dbDumpBreaktable
+
+##############################################################################
+## Configure hardware:
+system "ethercat slaves"
+
+# 0  0:0   OP     +  EK1100 EtherCAT Coupler (2A E-Bus)
+# 1  0:1   PREOP  +  EK1110 EtherCAT-Verl�ngerung
+# 2  0:2   PREOP  +  ILD2300
+# 3  0:3   PREOP  +  EK1100 EtherCAT-Koppler (2A E-Bus)
+# 4  0:4   PREOP  +  EL5021 1Ch. Sin/Cos Encoder
+# 5  0:5   PREOP  +  EL3174-0002 4K. Ana. Eingang  +/-10V, +/-20mA, 16 Bit, Galvanis
+# 6  0:6   PREOP  +  EL4122 2K. Ana. Ausgang 4-20mA, 16bit
+# 7  0:7   PREOP  +  EL9505 Netzteilklemme 5V
+# 8  0:8   PREOP  +  EL1252-0050 2K. Fast Dig. Eingang 5V, 1�s, DC Latch
+# 9  0:9   PREOP  +  EL9410 E-Bus Netzteilklemme (Diagnose)
+#10  0:10  PREOP  +  EL2004 4K. Dig. Ausgang 24V, 0.5A
+#11  0:11  PREOP  +  ILD2300
+
+
+epicsEnvSet("ECMC_EC_SLAVE_NUM",              "0")
+${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EK1100"
+
+epicsEnvSet("ECMC_EC_SLAVE_NUM",              "1")
+${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EK1110"
+
+##Add optic sensor
+epicsEnvSet("ECMC_EC_SLAVE_NUM",              "2")
+${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=OptoILD2300_100mm"
+
+epicsEnvSet("ECMC_EC_SLAVE_NUM",              "3")
+${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EK1100"
+
+epicsEnvSet("ECMC_EC_SLAVE_NUM",              "4")
+${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL5021, SUBST_FILE=../db/amo.substitutions"
+
+# Enable reset on c-latch (index track)
+ecmcConfigOrDie "Cfg.EcAddSdo($(ECMC_EC_SLAVE_NUM),0x8000,0x1,1,1)"
+
+epicsEnvSet("ECMC_EC_SLAVE_NUM",              "5")
+${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL3174_0to10V, SUBST_FILE=../db/telemessEddyCurrentSensors.substitutions"
+
+# Configure analog sensors common (filter settings valid for all channles)
+${SCRIPTEXEC} ${ecmccfg_DIR}ecmcEL31XX-Sensor-common.cmd
+
+# Example of default configuration of analog sensor CH0
+epicsEnvSet("ECMC_EC_SDO_INDEX",         "0x8000")
+${SCRIPTEXEC} ${ecmccfg_DIR}ecmcEL3164-Sensor-chX-default.cmd
+
+# Example of default configuration of analog sensor CH1
+epicsEnvSet("ECMC_EC_SDO_INDEX",         "0x8010")
+${SCRIPTEXEC} ${ecmccfg_DIR}ecmcEL3164-Sensor-chX-default.cmd
+
+# Example of default configuration of analog sensor CH2
+epicsEnvSet("ECMC_EC_SDO_INDEX",         "0x8020")
+${SCRIPTEXEC} ${ecmccfg_DIR}ecmcEL3164-Sensor-chX-default.cmd
+
+# Example of default configuration of analog sensor CH3
+epicsEnvSet("ECMC_EC_SDO_INDEX",         "0x8030")
+${SCRIPTEXEC} ${ecmccfg_DIR}ecmcEL3164-Sensor-chX-default.cmd
+
+epicsEnvSet("ECMC_EC_SLAVE_NUM",              "6")
+${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL4122"
+
+epicsEnvSet("ECMC_EC_SLAVE_NUM",              "7")
+${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL9505"
+
+#epicsEnvSet("ECMC_SAMPLE_RATE_MS", 1)
+epicsEnvSet("ECMC_EC_SLAVE_NUM",              "8")
+${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL1252"
+#epicsEnvSet("ECMC_SAMPLE_RATE_MS", 10)
+
+##Add optic sensor
+epicsEnvSet("ECMC_EC_SLAVE_NUM",              "11")
+${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=OptoILD2300_50mm"
+
+#Apply hardware configuration
+ecmcConfigOrDie "Cfg.EcApplyConfig(1)"
+
+##############################################################################
+## Configure diagnostics:
+ecmcConfigOrDie "Cfg.EcSetDiagnostics(1)"
+ecmcConfigOrDie "Cfg.EcEnablePrintouts(0)"
+ecmcConfigOrDie "Cfg.EcSetDomainFailedCyclesLimit(100)"
+
+##############################################################################
+## go active
+$(SCRIPTEXEC) ($(ecmccfg_DIR)setAppMode.cmd)
+iocInit()
+
+##############################################################################
+## Store Records to file
+dbl > pvs.log
