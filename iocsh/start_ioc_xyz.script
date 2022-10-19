@@ -49,10 +49,13 @@ ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DES
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "1")
 ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EK1110"
 
+
 ##Add optic sensor
+epicsEnvSet("ECMC_SAMPLE_RATE_MS", 10)
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "2")
 ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=OptoILD2300_100mm"
 
+epicsEnvSet("ECMC_SAMPLE_RATE_MS", 100)
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "3")
 ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EK1100"
 
