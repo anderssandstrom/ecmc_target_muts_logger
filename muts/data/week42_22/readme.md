@@ -109,7 +109,7 @@ Hi Hi 5.6
 
 Z zero is 0.6-0.7mm higher than b02 tests since adjustment of feet of drive unit is to low. Therefore the z range is shifted approx 0.6 in negative direction (swithces are not moved).
 
-Low     -2.0  
+Low     -2.0
 Low Low -3.0
 Hi       7.0
 Hi Hi    8.1
