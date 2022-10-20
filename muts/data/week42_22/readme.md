@@ -79,6 +79,11 @@ TARGET_DU:Y-PosAct02           2022-10-19 10:37:19.848564 4294387202
 TARGET_DU:Z-PosAct             2022-10-19 10:36:11.867072 0  
 TARGET_DU:Z-PosAct02           2022-10-19 10:37:19.897147 4224719651
 ```
+# Data collection ISO test
+
+```
+camonitor -g10 -n IOC_TEST:m0s002-Enc01-PosAct IOC_TEST:m0s011-Enc01-PosAct IOC_TEST:m0s005-AI01 IOC_TEST:m0s005-AI02 IOC_TEST:m0s005-AI03 IOC_TEST:m0s005-AI04 TARGET_DU:X-PosAct TARGET_DU:Y-PosAct TARGET_DU:Z-PosAct TARGET_DU:X-PosAct02 TARGET_DU:Y-PosAct02 TARGET_DU:Z-PosAct02 IOC_TEST:TestNumber TARGET_DU:X-LimitMax TARGET_DU:X-LimitMin TARGET_DU:Y-LimitMax TARGET_DU:Y-LimitMin TARGET_DU:Z-LimitMax TARGET_DU:Z-LimitMin TARGET_DU:X-PosCmd TARGET_DU:Y-PosCmd TARGET_DU:Z-PosCmd | tee x_axis_lim.log
+```
 
 ## X axis
 
@@ -90,9 +95,7 @@ Low Low -6
 Hi  5.6
 Hi Hi 6.4
 
-### Run ISO test
-
-camonitor -g10 -n IOC_TEST:m0s002-Enc01-PosAct IOC_TEST:m0s011-Enc01-PosAct IOC_TEST:m0s005-AI01 IOC_TEST:m0s005-AI02 IOC_TEST:m0s005-AI03 IOC_TEST:m0s005-AI04 TARGET_DU:X-PosAct TARGET_DU:Y-PosAct TARGET_DU:Z-PosAct TARGET_DU:X-PosAct02 TARGET_DU:Y-PosAct02 TARGET_DU:Z-PosAct02 IOC_TEST:TestNumber TARGET_DU:X-LimitMax TARGET_DU:X-LimitMin TARGET_DU:Y-LimitMax TARGET_DU:Y-LimitMin TARGET_DU:Z-LimitMax TARGET_DU:Z-LimitMin TARGET_DU:X-PosCmd TARGET_DU:Y-PosCmd TARGET_DU:Z-PosCmd | tee x_axis_lim.log
+Seems axis is slipping.. Test higher current..
 
 ## Y axis
 
@@ -102,4 +105,14 @@ Low Low -6.9
 Hi  5.5
 Hi Hi 5.6
 
+## Z Axis
 
+Z zero is 0.6-0.7mm higher than b02 tests since adjustment of feet of drive unit is to low. Therefore the z range is shifted approx 0.6 in negative direction (swithces are not moved).
+
+Low     -2.0  
+Low Low -3.0
+Hi       7.0
+Hi Hi    8.1
+
+Parking swithes not tested since we do not want to park the wheel. Reason is manual measurements of axis out of round could be affected (theory is that the shaft can be offset to the socket/collar then it could resolut in different centere point of axis every time it is offloaded/parked. The size of the movement could then be determined as the play between the shaft and the socket/collar)..
+BTW, the measured out of round was approx 0.15mm (shaft centre offset vs "bearing"/rotation-centre).
