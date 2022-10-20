@@ -20,5 +20,8 @@ iocsh start_ioc_xyz.script
 * TARGET_DU:Z-PosAct02 (open loop counter Z)
 
 ```
-camonitor IOC_TEST:m0s002-Enc01-PosAct IOC_TEST:m0s011-Enc01-PosAct IOC_TEST:m0s005-AI01 IOC_TEST:m0s005-AI02 IOC_TEST:m0s005-AI03 IOC_TEST:m0s005-AI04 TARGET_DU:X-PosAct TARGET_DU:Y-PosAct TARGET_DU:Z-PosAct TARGET_DU:X-PosAct02 TARGET_DU:Y-PosAct02 TARGET_DU:Z-PosAct02
+camonitor -g10 IOC_TEST:m0s002-Enc01-PosAct IOC_TEST:m0s011-Enc01-PosAct IOC_TEST:m0s005-AI01 IOC_TEST:m0s005-AI02 IOC_TEST:m0s005-AI03 IOC_TEST:m0s005-AI04 TARGET_DU:X-PosAct TARGET_DU:Y-PosAct TARGET_DU:Z-PosAct TARGET_DU:X-PosAct02 TARGET_DU:Y-PosAct02 TARGET_DU:Z-PosAct02
 ```
+
+
+Seems ILD2300-100 is not good.. needs to redo tests with 50mm sensor..
