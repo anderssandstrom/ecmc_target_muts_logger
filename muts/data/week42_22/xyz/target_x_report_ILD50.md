@@ -1,13 +1,14 @@
 # ecmc motion system test report
 
 * Data file   : /home/anderssandstrom/source/ecmc_target_muts_logger/muts/data/week42_22/xyz/x_axis_ild50.log
-* Date        : Fri Oct 21 13:18:23 CEST 2022
+* Date        : Fri Oct 21 13:21:20 CEST 2022
 * Author      : anderssandstrom
 
 
 # Gear Ratios
 From | To | Ratio [] | Offset [mm] | Data count [] | Residual error [mm²]
 --- | --- | --- | --- | --- | --- |
+Target Position | Resolver | -.01256 | 167958.45829 | 50.00000 | 397.66311455
 Target Position | Reference | -1.00003 | 28.75173 | 50.00000 | .07317916
 
 # ISO 230-2 motion test
@@ -182,4 +183,99 @@ A_bwd = 0.19756 [mm]
 **A = Bi-directional accuracy of an axis [mm]**
 
 **A = 0.20114 [mm]** 
+
+# Limit Switch Performance
+
+## Configuration
+
+Setting | Value |
+--- | --- |
+Data file | /home/anderssandstrom/source/ecmc_target_muts_logger/muts/data/week42_22/xyz/x_axis_ild50.log |
+Reference position source | IOC_TEST:m0s002-Enc01-PosAct |
+Reference gear ratio | -1.0000375404 |
+Reference offset | 28.7517335499 |
+Low Limit source | TARGET_DU:X-LimitMin |
+High Limit source | TARGET_DU:X-LimitMax |
+Test number source | IOC_TEST:TestNumber |
+Unit | mm |
+
+## Low Limit
+
+Test | Engage [mm] | Disengage [mm] |
+--- | --- | --- |
+1 | -5.66599 | -5.44934 |
+2 | -5.67619 | -5.50442 |
+3 | -5.72597 | -5.44893 |
+4 | -5.62703 | -5.45158 |
+5 | -5.63621 | -5.43077 |
+6 | -5.72210 | -5.48790 |
+7 | -5.71904 | -5.51340 |
+8 | -5.73597 | -5.50972 |
+9 | -5.67864 | -5.43771 |
+10 | -5.65722 | -5.42445 |
+AVG   | -5.68444 | -5.46582 |
+STD   | 0.03715 | 0.03265 |
+Range | 0.10894 | 0.08895 |
+
+## High Limit
+
+Test | Engage [mm] | Disengage [mm] |
+--- | --- | --- |
+1 | 5.29677 | 5.17742 |
+2 | 5.29840 | 5.06501 |
+3 | 5.22455 | 5.09378 |
+4 | 5.22495 | 5.09194 |
+5 | 5.19925 | 5.09378 |
+6 | 5.20027 | 5.06991 |
+7 | 5.19089 | 5.08256 |
+8 | 5.20455 | 5.06685 |
+9 | 5.19517 | 5.16702 |
+10 | 5.22149 | 5.10989 |
+AVG   | 5.22563 | 5.10182 |
+STD   | 0.03780 | 0.03772 |
+Range | 0.10751 | 0.11241 |
+
+## Summary
+
+**Low limit engage range    = 0.10894 [mm]**
+
+**Low limit disengage range = 0.08895 [mm]**
+
+**High limit engage range    = 0.10751 [mm]**
+
+**High limit disengage range = 0.11241 [mm]**
+
+**Total  travel range (engage to engage) = 10.91007 [mm]**
+
+
+# Resolver Performance
+
+## Configuration
+
+Setting | Value |
+--- | --- |
+Data file | /home/anderssandstrom/source/ecmc_target_muts_logger/muts/data/week42_22/xyz/x_axis_ild50.log |
+Resolver position source | TARGET_DU:X-PosAct02 |
+Resolver gain | -0.0125639003 |
+Resolver offset | 167958.4582901187 |
+Target position source | TARGET_DU:X-PosCmd |
+Test number source | IOC_TEST:TestNumber |
+Unit | mm |
+
+## Resolver reading over one turn
+Measured at 8 positions offset by 45deg resolver shaft angle.
+The distrubution values are based on 10 values at each location.
+
+Test | Setpoint [mm] | Resolver AVG[mm] | Diff [mm] | Resolver STD[mm]
+--- | --- | --- | --- | --- |
+1 | 1.00082 | -0.0640561 | -1.0648735 | 0.1893980
+2 | 1.04282 | 16790.8000000 | 16789.7571826 | 50372.5000000
+3 | 1.08482 | 16790.8000000 | 16789.7151826 | 50372.5000000
+4 | 1.12682 | 16790.8000000 | 16789.6731826 | 50372.4000000
+5 | 1.16882 | 16790.7000000 | 16789.5311826 | 50372.5000000
+6 | 1.21082 | 16790.7000000 | 16789.4891826 | 50372.5000000
+7 | 1.25282 | 16790.9000000 | 16789.6471826 | 50372.4000000
+8 | 1.29482 | 16790.8000000 | 16789.5051826 | 50372.4000000
+
+**Resolver accuracy: 16789.8000000 [mm]**
 
