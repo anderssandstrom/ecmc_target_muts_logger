@@ -98,6 +98,9 @@ epicsEnvSet("ECMC_EC_SLAVE_NUM",              "8")
 ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL1252"
 epicsEnvSet("ECMC_SAMPLE_RATE_MS", 100)
 
+epicsEnvSet("ECMC_EC_SLAVE_NUM_DIG_OUT",      "10")
+${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM_DIG_OUT), HW_DESC=EL2004"
+
 ##Add optic sensor
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "11")
 ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=OptoILD2300_50mm"
@@ -107,6 +110,8 @@ ecmcConfigOrDie "Cfg.EcApplyConfig(1)"
 
 dbLoadRecords("testAdmin.db","P=$(IOC):")
 
+# Turn laser on
+ecmcConfigOrDie "Cfg.WriteEcEntryIDString(${ECMC_EC_SLAVE_NUM_DIG_OUT},binaryOutput02,1)"
 ##############################################################################
 ## Configure diagnostics:
 ecmcConfigOrDie "Cfg.EcSetDiagnostics(1)"
@@ -121,3 +126,5 @@ iocInit()
 ##############################################################################
 ## Store Records to file
 dbl > pvs.log
+
+
