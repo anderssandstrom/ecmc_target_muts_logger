@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>Main</name>
+  <macros>
+    <AI_SID>005</AI_SID>
+    <ILD_SID>002</ILD_SID>
+  </macros>
   <width>1010</width>
   <height>570</height>
   <grid_color>
@@ -24,19 +28,19 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update</name>
-    <pv_name>IOC_TEST:m0s002-AI01</pv_name>
+    <pv_name>IOC_TEST:m0s${AI_SID}-AI01</pv_name>
     <x>130</x>
     <y>90</y>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_1</name>
-    <pv_name>IOC_TEST:m0s002-AI02</pv_name>
+    <pv_name>IOC_TEST:m0s${AI_SID}-AI02</pv_name>
     <x>570</x>
     <y>90</y>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_2</name>
-    <pv_name>IOC_TEST:m0s002-AI03</pv_name>
+    <pv_name>IOC_TEST:m0s${AI_SID}-AI03</pv_name>
     <x>330</x>
     <y>400</y>
     <precision>3</precision>
@@ -58,13 +62,13 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_3</name>
-    <pv_name>IOC_TEST:m0s002-AI04</pv_name>
+    <pv_name>IOC_TEST:m0s${AI_SID}-AI04</pv_name>
     <x>810</x>
     <y>310</y>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_4</name>
-    <pv_name>IOC_TEST:m0s008-ec0-s8-OptoILD2300_50mm-CH01-PosAct</pv_name>
+    <pv_name>IOC_TEST:m0s${ILD_SID}-Enc01-PosAct</pv_name>
     <x>640</x>
     <y>350</y>
     <precision>3</precision>
@@ -150,7 +154,7 @@
     <traces>
       <trace>
         <name>$(traces[0].y_pv)</name>
-        <y_pv>IOC_TEST:m0s002-AI01</y_pv>
+        <y_pv>IOC_TEST:m0s${AI_SID}-AI01</y_pv>
         <axis>0</axis>
         <trace_type>2</trace_type>
         <color>
@@ -164,7 +168,7 @@
       </trace>
       <trace>
         <name>$(traces[1].y_pv)</name>
-        <y_pv>IOC_TEST:m0s002-AI02</y_pv>
+        <y_pv>IOC_TEST:m0s${AI_SID}-AI02</y_pv>
         <axis>0</axis>
         <trace_type>2</trace_type>
         <color>
@@ -178,7 +182,7 @@
       </trace>
       <trace>
         <name>$(traces[2].y_pv)</name>
-        <y_pv>IOC_TEST:m0s002-AI03</y_pv>
+        <y_pv>IOC_TEST:m0s${AI_SID}-AI03</y_pv>
         <axis>0</axis>
         <trace_type>2</trace_type>
         <color>
@@ -213,7 +217,7 @@
     <traces>
       <trace>
         <name>$(traces[0].y_pv)</name>
-        <y_pv>IOC_TEST:m0s002-AI03</y_pv>
+        <y_pv>IOC_TEST:m0s${AI_SID}-AI03</y_pv>
         <axis>0</axis>
         <trace_type>2</trace_type>
         <color>
@@ -227,7 +231,7 @@
       </trace>
       <trace>
         <name>$(traces[1].y_pv)</name>
-        <y_pv>IOC_TEST:m0s008-ec0-s8-OptoILD2300_50mm-CH01-PosAct</y_pv>
+        <y_pv>IOC_TEST:m0s${ILD_SID}-Enc01-PosActIOC_TEST:m0s${ILD_SID}-Enc01-PosAct</y_pv>
         <axis>0</axis>
         <trace_type>2</trace_type>
         <color>
