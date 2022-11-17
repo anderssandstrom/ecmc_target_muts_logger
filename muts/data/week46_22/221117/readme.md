@@ -20,4 +20,15 @@ Tourque osc. alitlle more
 
 ## 20rpm
 Tourque osc seems to go down above 19rpm
+"Burring" Sound is there
+
+## 23.33
+ looks fine
+ kristoffer needed to go while i was at lunch so stopped
+
+## 23.33 after lunch phasing
+
+started in pahsing mode instead.
+everything just worked +-1mm!! Success!
+
 
