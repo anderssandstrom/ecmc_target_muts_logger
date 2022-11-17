@@ -31,3 +31,5 @@ started in pahsing mode instead.
 everything just worked +-0.8mm!! Success!
 
 
+cat vib_1khz_phasing_3.log | python ~/source/ecmccomgui/pyDataManip/plotCaMonitorFFT.py 
+cat torqueAndVelo_*.log | grep Tor | python ~/source/ecmccomgui/pyDataManip/plotCaMonitor.py 
