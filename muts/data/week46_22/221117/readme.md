@@ -27,8 +27,7 @@ Tourque osc seems to go down above 19rpm
  kristoffer needed to go while i was at lunch so stopped
 
 ## 23.33 after lunch phasing
-
 started in pahsing mode instead.
-everything just worked +-1mm!! Success!
+everything just worked +-0.8mm!! Success!
 
 
