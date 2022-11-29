@@ -1,0 +1,9 @@
+
+static.counter:=static.counter+1;
+ec0.s${EL4122_ID}.analogOutput01:=static.veloFromEpics/30.0*32767;
+
+if(static.counter>10) {
+  println('Velo from EPICS: ', static.veloFromEpics, ' Raw: ', ec0.s${EL4122_ID}.analogOutput01);
+  static.counter:=0;
+}
+

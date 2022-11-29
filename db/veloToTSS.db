@@ -1,0 +1,10 @@
+# PLC AO record
+record(ao,"$(P)VeloToPLC"){
+  field(PINI, "1")
+  field(DTYP, "asynFloat64")
+  field(OUT,  "@asyn($(PORT),$(ADDR=0),$(TIMEOUT=0))T_SMP_MS=$(T_SMP_MS=50)/TYPE=asynFloat64/plcs.plc0.static.veloFromEpics=")
+  field(PREC, "$(PREC=3)")
+  field(SCAN, "Passive")
+  field(OMSL, "closed_loop")
+  field(DOL,  "TARGET_DU:Rotation-VelLastSectorAct CP")
+}
