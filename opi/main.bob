@@ -71,6 +71,7 @@
     <pv_name>IOC_TEST:m0s${ILD_SID}-Enc01-PosAct</pv_name>
     <x>640</x>
     <y>350</y>
+    <visible>false</visible>
     <precision>3</precision>
   </widget>
   <widget type="rectangle" version="2.0.0">
@@ -86,6 +87,7 @@
     <y>291</y>
     <width>1</width>
     <height>40</height>
+    <visible>false</visible>
     <line_color>
       <color name="ERROR" red="252" green="13" blue="27">
       </color>
@@ -109,6 +111,7 @@
     <y>320</y>
     <width>10</width>
     <height>30</height>
+    <visible>false</visible>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_5</name>
@@ -127,18 +130,22 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
-    <text>Seems to be in almost exactly in minus X direction</text>
-    <x>450</x>
-    <y>400</y>
+    <text>Minus X direction</text>
+    <x>314</x>
+    <y>420</y>
     <width>410</width>
     <height>40</height>
   </widget>
   <widget type="stripchart" version="2.0.0">
     <name>Strip Chart_1</name>
-    <x>10</x>
+    <x>77</x>
     <y>490</y>
-    <width>720</width>
+    <width>800</width>
     <height>340</height>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
     <time_range>5 minute</time_range>
     <y_axes>
       <y_axis>
@@ -198,10 +205,14 @@
   </widget>
   <widget type="stripchart" version="2.0.0">
     <name>Strip Chart_3</name>
-    <x>730</x>
+    <x>905</x>
     <y>490</y>
-    <width>720</width>
+    <width>800</width>
     <height>340</height>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
     <time_range>5 minute</time_range>
     <y_axes>
       <y_axis>
@@ -248,7 +259,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_1</name>
     <text>Horizontal</text>
-    <x>200</x>
+    <x>161</x>
     <y>440</y>
     <width>410</width>
     <height>40</height>
@@ -260,7 +271,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_2</name>
     <text>Vertical</text>
-    <x>930</x>
+    <x>969</x>
     <y>440</y>
     <width>410</width>
     <height>40</height>
