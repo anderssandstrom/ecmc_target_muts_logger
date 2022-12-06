@@ -1,0 +1,1 @@
+camonitor -g10 TARGET_DU:Rotation-PosCmd TARGET_DU:Rotation-PosAct TARGET_DU:Rotation-TorqueAct TARGET_DU:Rotation-VelAct | tee pos.log
