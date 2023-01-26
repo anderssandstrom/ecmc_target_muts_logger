@@ -7,7 +7,7 @@
 
 ##############################################################################
 ## Initiation:
-epicsEnvSet("IOC" ,"$(IOC="IOC_TEST")")
+epicsEnvSet("IOC" ,"$(IOC="TARGET_MUTS_LOGGER")")
 epicsEnvSet("ECMCCFG_INIT" ,"")  #Only run startup once (auto at PSI, need call at ESS), variable set to "#" in startup.cmd
 epicsEnvSet("SCRIPTEXEC" ,"$(SCRIPTEXEC="iocshLoad")")
 
@@ -49,7 +49,7 @@ ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DES
 ##Add Vibration sensor
 epicsEnvSet("ECMC_SAMPLE_RATE_MS", 1)
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "1")
-${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL3632, NELM=1"
+${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL3632, NELM=10"
 
 epicsEnvSet("ECMC_SAMPLE_RATE_MS", 100)
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "2")
@@ -72,9 +72,12 @@ ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DES
 # Enable reset on c-latch (index track)
 ecmcConfigOrDie "Cfg.EcAddSdo($(ECMC_EC_SLAVE_NUM),0x8000,0x1,1,1)"
 
+epicsEnvSet("ECMC_SAMPLE_RATE_MS", 10)
+
 epicsEnvSet("ECMC_EC_SLAVE_NUM",              "6")
 ${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, "SLAVE_ID=$(ECMC_EC_SLAVE_NUM), HW_DESC=EL3174_0to10V, SUBST_FILE=../db/telemessEddyCurrentSensors.substitutions"
 
+epicsEnvSet("ECMC_SAMPLE_RATE_MS", 100)
 # Configure analog sensors common (filter settings valid for all channles)
 ${SCRIPTEXEC} ${ecmccfg_DIR}ecmcEL31XX-Sensor-common.cmd
 
