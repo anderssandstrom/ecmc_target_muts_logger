@@ -17,8 +17,8 @@ Measure veritcal movements in z1 and z2 and horizontal movement in x1
 Wheel has not been moved or rotated since teh measueremnts of alignment team. So zero position is in the fiducial points.. The optical sensors should be positioned to measure in the fiducial points before start to use as zero position.
 
 Extra sensors:
-1. ILD230-50 (vertical from above)
-2. ILD230-100 (vertical from below)
+1. ILD230-50 (vertical from below)
+2. ILD230-100 (vertical from above)
 3. Micro Epsilon fork sensor,46mm (horizontal)
 
 ## ioc
@@ -50,11 +50,11 @@ TARGET_MUTS_LOGGER:m0s002-AI04
 
 
 Extra sensors:
-Below: smaller value then lower position of wheel
+Above: smaller value then lower position of wheel
 TARGET_MUTS_LOGGER:m0s013-Enc01-PosAct 
 Horizontal 
 TARGET_MUTS_LOGGER:m0s014-Enc01-PosAct
-Top smmaler value higher position of wheel
+Below smmaler value higher position of wheel
 TARGET_MUTS_LOGGER:m0s015-Enc01-PosAct
 
 
