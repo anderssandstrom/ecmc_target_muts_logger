@@ -14,13 +14,19 @@ Measure veritcal movements in z1 and z2 and horizontal movement in x1
                   z2 ^                
 --------------------------- Moderator low
 
-Wheel has not been moved or rotated since teh measueremnts of alignment team. So zero position is in the fiducial points.. The optical sensors should be positioned to measuer in the fiducial points before start to use as zero position.
+Wheel has not been moved or rotated since teh measueremnts of alignment team. So zero position is in the fiducial points.. The optical sensors should be positioned to measure in the fiducial points before start to use as zero position.
 
 Extra sensors:
 1. ILD230-50 (vertical from above)
 2. ILD230-100 (vertical from below)
 3. Micro Epsilon fork sensor,46mm (horizontal)
 
+## ioc
+ecmc_target_muts_logger:
+
+start_ioc_wobbling_20230208.script
+
+then also data from TARGET_DU ioc
 
 ## Logging should include:
 
@@ -29,6 +35,7 @@ Extra sensors:
 * eddy current sensors
 * all optical micro epsilon sensors (teh extra sensors)
 
+```
 camonitor 
 
 From drive system:
@@ -36,18 +43,56 @@ TARGET_DU:Rotation-PosAct
 TARGET_DU:Rotation-VelLastSecorAct 
 
 From muts logger system:
-TARGET_MUTS_LOGGER:m0s00x-AI01
-TARGET_MUTS_LOGGER:m0s00x-AI02
-TARGET_MUTS_LOGGER:m0s00x-AI03
-TARGET_MUTS_LOGGER:m0s00x-AI04
+TARGET_MUTS_LOGGER:m0s002-AI01
+TARGET_MUTS_LOGGER:m0s002-AI02
+TARGET_MUTS_LOGGER:m0s002-AI03
+TARGET_MUTS_LOGGER:m0s002-AI04
+
 
 Extra sensors:
+Below: smaller value then lower position of wheel
+TARGET_MUTS_LOGGER:m0s013-Enc01-PosAct 
+Horizontal 
+TARGET_MUTS_LOGGER:m0s014-Enc01-PosAct
+Top smmaler value higher position of wheel
+TARGET_MUTS_LOGGER:m0s015-Enc01-PosAct
+
+
 TARGET_MUTS_LOGGER:m0s00x-Enc01
 TARGET_MUTS_LOGGER:m0s00x-Enc01
 TARGET_MUTS_LOGGER:m0s00x-Enc01
 
+camonitor TARGET_MUTS_LOGGER:m0s013-Enc01-PosAct TARGET_MUTS_LOGGER:m0s014-Enc01-PosAct TARGET_MUTS_LOGGER:m0s015-Enc01-PosAct TARGET_MUTS_LOGGER:m0s002-AI01 TARGET_MUTS_LOGGER:m0s002-AI02 TARGET_MUTS_LOGGER:m0s002-AI03 TARGET_MUTS_LOGGER:m0s002-AI04 TARGET_DU:Rotation-PosAct TARGET_DU:Rotation-VelLastSectorAct
+```
 
 
 
 
+
+
+zero.log standstill
+
+test01.log ramp up and stop due to indrawarning.
+
+test02.log rampup to 5rpm (high torque)
+
+test03.log a few revs at 5rpm constant velo
+
+test04.log a few revs at 5rpm constant velo same smaple rate on all
+
+test05.log a few revs at 5rpm constant velo same smaple rate on 200Hz 
+
+test06.log a few revs at 5rpm constant velo same smaple rate on 1000Hz 
+
+test07.log a rampup 5-9.5rpm
+
+test08.log a at 10rpm 1khz
+
+test09.log a at 15rpm 1khz
+
+test10.log a at 18rpm 1khz
+
+test11.log a at 20rpm 1khz
+
+test12.log a at 23.333rpm 1khz
 
