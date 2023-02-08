@@ -96,3 +96,14 @@ test11.log a at 20rpm 1khz
 
 test12.log a at 23.333rpm 1khz
 
+test13.log a at 23.333rpm 1khz
+
+test14.log rampup to 23.8 1khz
+
+test15.log to test23 rampup to from 24.x to 1khz
+
+test24.log 25 rpm constant velo
+test25.log 25 rpm constant velo
+
+
+test26.log rampdown 25rpm to 0rpm disable (no power)
