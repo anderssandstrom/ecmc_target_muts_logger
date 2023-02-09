@@ -107,3 +107,53 @@ test25.log 25 rpm constant velo
 
 
 test26.log rampdown 25rpm to 0rpm disable (no power)
+
+
+## Zero
+```
+
+Sensor s13: above (100mm range)
+TARGET_MUTS_LOGGER:m0s013-Enc01-PosAct[746] 33.2977..33.3042, mean: 33.30164798927614, std: 0.001173330759960683
+
+Sensor s14: Horizontal
+TARGET_MUTS_LOGGER:m0s014-Enc01-PosAct[397] 14.446..14.449, mean: 14.447725440806048, std: 0.0007116749460704261
+
+Sensor s15: below (50mm range)
+TARGET_MUTS_LOGGER:m0s015-Enc01-PosAct[116] 18.6795..18.6815, mean: 18.680729310344823, std: 0.00045957574914655695
+
+
+```
+
+## s13
+```
+cat test_25.log | grep s013 | python ~/sources/ecmccomgui/pyDataManip/add.py -33.30165 | python ~/sources/ecmccomgui/pyDataManip/scale.py -1 | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py
+
+```
+
+## s14
+```
+cat test_25.log | grep s014 | python ~/sources/ecmccomgui/pyDataManip/add.py -14.447725 | python ~/sources/ecmccomgui/pyDataManip/scale.py -1 | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py
+```
+
+## s15
+```
+cat test_25.log | grep s015 | python ~/sources/ecmccomgui/pyDataManip/add.py -18.680729 | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py
+```
+
+# Rampdown
+
+## s13
+```
+cat test_26.log | grep s013 | python ~/sources/ecmccomgui/pyDataManip/add.py -33.30165 | python ~/sources/ecmccomgui/pyDataManip/scale.py -1 | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py
+
+```
+
+## s14
+```
+cat test_26.log | grep s014 | python ~/sources/ecmccomgui/pyDataManip/add.py -14.447725 | python ~/sources/ecmccomgui/pyDataManip/scale.py -1 | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py
+```
+
+## s15
+```
+cat test_26.log | grep s015 | python ~/sources/ecmccomgui/pyDataManip/add.py -18.680729 | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py
+```
