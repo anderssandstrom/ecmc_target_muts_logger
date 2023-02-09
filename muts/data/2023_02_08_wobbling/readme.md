@@ -1,7 +1,7 @@
 # Measuring of wobbling of target wheel
 
 Measure veritcal movements in z1 and z2 and horizontal movement in x1
-
+```
 --------------------------- Moderator high
                   z1 v
                ---------------------- target wheel high
@@ -13,7 +13,7 @@ Measure veritcal movements in z1 and z2 and horizontal movement in x1
                ---------------------- target wheel low
                   z2 ^                
 --------------------------- Moderator low
-
+```
 Wheel has not been moved or rotated since teh measueremnts of alignment team. So zero position is in the fiducial points.. The optical sensors should be positioned to measure in the fiducial points before start to use as zero position.
 
 Extra sensors:
