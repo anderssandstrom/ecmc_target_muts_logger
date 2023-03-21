@@ -157,3 +157,41 @@ cat test_26.log | grep s014 | python ~/sources/ecmccomgui/pyDataManip/add.py -14
 ```
 cat test_26.log | grep s015 | python ~/sources/ecmccomgui/pyDataManip/add.py -18.680729 | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py
 ```
+
+
+
+# Test at 20 rpm test_11
+
+## s13
+```
+cat test_11.log | grep s013 | python ~/sources/ecmccomgui/pyDataManip/add.py -33.30165 | python ~/sources/ecmccomgui/pyDataManip/scale.py -1 | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py
+
+```
+
+## s14
+```
+cat test_11.log | grep s014 | python ~/sources/ecmccomgui/pyDataManip/add.py -14.447725 | python ~/sources/ecmccomgui/pyDataManip/scale.py -1 | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py
+```
+
+## s15
+```
+cat test_11.log | grep s015 | python ~/sources/ecmccomgui/pyDataManip/add.py -18.680729 | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py
+```
+
+# Test at 5 rpm test_03
+
+## s13
+```
+cat test_03.log | grep s013 | python ~/sources/ecmccomgui/pyDataManip/add.py -33.30165 | python ~/sources/ecmccomgui/pyDataManip/scale.py -1 | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py
+
+```
+
+## s14
+```
+cat test_03.log | grep s014 | python ~/sources/ecmccomgui/pyDataManip/add.py -14.447725 | python ~/sources/ecmccomgui/pyDataManip/scale.py -1 | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py
+```
+
+## s15
+```
+cat test_03.log | grep s015 | python ~/sources/ecmccomgui/pyDataManip/add.py -18.680729 | python ~/sources/ecmccomgui/pyDataManip/plotCaMonitor.py
+```
